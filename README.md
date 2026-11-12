@@ -1,2 +1,3 @@
 # Proyecto-Ecuaciones-Diferenciales
-Proyecto
+
+Proyecto realizado por Said Escobar, Reyna y Julio Guerra 
