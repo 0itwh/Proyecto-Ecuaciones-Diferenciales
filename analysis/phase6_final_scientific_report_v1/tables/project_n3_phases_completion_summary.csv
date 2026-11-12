@@ -1,0 +1,7 @@
+﻿phase_number,phase_name,status,primary_deliverable,quality_checks_failed
+1,Data Audit & Family Selection,CLOSED_VERIFIED,Selection of l254-castillo-2011; quarantine of l172-corpus-v1,0
+2,Relational Curation & Canonical Freeze,CLOSED_VERIFIED,"archive/phase2-corpus-release-v1 (36 samples, 70 compositions, 29 electrical)",0
+3,Exploratory Analysis & 5-Curve Reproduction,CLOSED_VERIFIED,archive/phase3-reproduction-release-v1 (V2.2 + 5 curve fits + joint comparison),0
+4,Physics-Constrained Symbolic & Percolation Modeling,CLOSED_VERIFIED,analysis/phase4_castillo_enriched_modeling_v1 (10 equations in equation_registry.csv),0
+5,Out-of-Sample LOSO Validation & Model Selection,CLOSED_VERIFIED,analysis/phase5_validation_and_model_selection_v1 (LOSO Eval C + Perturbation Eval E),0
+6,Final Scientific Manuscript & Reproducible Package,CLOSED_VERIFIED,analysis/phase6_final_scientific_report_v1 & archive/phase6-final-project-release-v1,0

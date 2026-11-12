@@ -1,0 +1,10 @@
+{
+  "release": "phase5-validation-sensitivity-and-model-selection-v1",
+  "generated_at": "2026-11-12T17:52:24-05:00",
+  "source_phase4_dataset_sha256": "28ce75bcee36b49becbfabe7079b7f033331bffb6233f2f0a14cea5ea027deed",
+  "source_phase4_equations_sha256": "bf2a70b5194f54bb68edf221c781b4c48fd680b3b8790111ac79a1757f0cc89a",
+  "loso_rmse_eq005_wt_percent": 0.08397675874829633,
+  "loso_rmse_eq006_wt_percent": 0.10017467047900235,
+  "loso_rmse_eq009_MPa": 3.174832861941435,
+  "quality_passed": true
+}

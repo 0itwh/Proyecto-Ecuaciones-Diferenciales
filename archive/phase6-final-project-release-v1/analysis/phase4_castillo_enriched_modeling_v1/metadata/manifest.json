@@ -1,0 +1,13 @@
+{
+  "release": "phase4-castillo-enriched-modeling-v1",
+  "generated_at": "2026-11-12T00:22:50-05:00",
+  "source_exploratory_dataset_sha256": "3df41a6e3b9614a7eaa264617188a9239886e1be7f5fbd9bdc6d104c8fba2677",
+  "source_joint_comparison_sha256": "e59e07dd17903d7625227b08e70f4271fcf82441720cce2a1e0881a2d0088a64",
+  "homogeneous_densities_g_cm3": {
+    "polycarbonate_matrix": 1.2,
+    "embedded_mwcnt": 1.75
+  },
+  "equations_registered": 10,
+  "sindy_excluded_by_static_protocol": true,
+  "quality_passed": true
+}

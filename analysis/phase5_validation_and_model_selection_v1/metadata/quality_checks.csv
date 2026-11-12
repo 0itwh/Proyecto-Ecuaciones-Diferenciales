@@ -1,0 +1,9 @@
+﻿check_id,passed,observed,expected,description
+Q001,True,7,7,seven models/baselines compared on identical conducting dataset
+Q002,True,checked,True,percolation law reduces log10 RMSE by >75% vs linear baseline
+Q003,True,4,4,Leave-One-Series-Out (Evaluation C) completed across all 4 direct-powder series
+Q004,True,0.0840 < 0.1002,True,1-parameter Excluded Volume law (EQ-N3-005) beats 2-parameter linear fit out-of-sample
+Q005,True,3,3,parameter perturbation and LOSO sensitivity checks completed (Evaluation E)
+Q006,True,8,8,applicability domain and final selection tier documented per equation
+Q007,True,checked,True,all diagnostic figures generated in English
+Q008,True,checked,True,no canonical Phase 2 or frozen Phase 3/4 files modified

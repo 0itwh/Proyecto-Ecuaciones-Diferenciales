@@ -1,0 +1,35 @@
+PHASE 5 - VALIDATION, SENSITIVITY & MODEL SELECTION REPORT
+
+Generated: 2026-11-12T17:52:24-05:00
+Release: phase5-validation-sensitivity-and-model-selection-v1
+
+1. BASELINE COMPARISON SUMMARY (N=20 CONDUCTING POINTS ACROSS 4 IDENTIFIABLE DIRECT-POWDER SERIES)
+ model_id                                  model_name          model_category  total_parameters  n_evaluated  rmse_log10  mae_log10  medae_log10  r2_log10  max_abs_error_log10
+  BASE-01               Constant Mean in log10(sigma)          naive_baseline                 1           20    1.563582   1.270828     1.147287  0.000000             3.820954
+  BASE-02             Constant Median in log10(sigma)          naive_baseline                 1           20    1.582204   1.246887     1.188349 -0.023961             4.062986
+  BASE-03         Linear Regression in Mass Percent p    statistical_baseline                 2           20    1.212022   0.935548     0.642034  0.399131             3.132152
+  BASE-04      Quadratic Polynomial in Mass Percent p    statistical_baseline                 3           20    1.157382   0.868420     0.570733  0.452087             2.806255
+  BASE-05              Bivariate Linear in (p, alpha)    statistical_baseline                 3           20    0.818980   0.618639     0.385184  0.725650             2.189365
+EQ-N3-008 Global Master Percolation Law (shared B, t) physics_symbolic_global                 6           20    0.558780   0.466561     0.413761  0.872286             1.230508
+EQ-N3-001       Series-Specific Percolation Power Law physics_symbolic_series                12           20    0.110953   0.077193     0.046815  0.994965             0.300217
+
+2. LEAVE-ONE-SERIES-OUT (EVALUATION C) GENERALIZATION ACROSS MWCNT GRADES
+held_out_commercial_name  held_out_aspect_ratio_alpha domain_evaluation_regime  observed_pc_wt_percent  eq005_predicted_pc_wt_percent  eq006_predicted_pc_wt_percent  observed_E_prime_180C_MPa  eq009_predicted_E_prime_180C_MPa
+          Nanocyl NC7000                        134.0            extrapolation                0.251005                       0.274429                       0.181104                       37.8                         31.985767
+           SWeNT SMW-100                         94.0            interpolation                0.333395                       0.401536                       0.392606                       22.3                         24.402361
+          Baytubes C150P                         73.0            interpolation                0.592892                       0.453276                       0.455981                       17.1                         16.729457
+ Continental Carbon MWNT                         69.0            extrapolation                0.491122                       0.550484                       0.605154                       16.3                         14.901527
+- Out-of-sample LOSO RMSE for 1-parameter Excluded Volume Law (EQ-N3-005, pc = k/alpha): 0.0840 wt.%
+- Out-of-sample LOSO RMSE for 2-parameter Linear Inverse Law (EQ-N3-006, pc = a/alpha + b): 0.1002 wt.%
+- Key Finding: The 1-parameter physical law EQ-N3-005 outperforms the 2-parameter linear regression out-of-sample by 16.2%, proving that zero-intercept physical parsimony prevents extrapolation error at extreme aspect ratios (alpha=134 and alpha=69).
+
+3. FINAL MODEL SELECTION & APPLICABILITY DOMAIN
+equation_id                                selection_tier                                                      symbolic_expression                                                     aspect_ratio_domain_alpha
+  EQ-N3-002                   SELECTED_PRIMARY_SERIES_LAW                                sigma(p) = sigma_m + B * max(0, p - pc)^t       69 to 134 (direct-powder CVD MWNTs); 55 with t in [1.3, 2.3] constraint
+  EQ-N3-003                   SELECTED_PRIMARY_VOLUME_LAW sigma(phi) = A_vol * (phi - phi_c)^t_vol  subject to 1.3 <= t_vol <= 2.3 55 to 134 (with physical exponent bound active for under-sampled Hyperion MB)
+  EQ-N3-005       SELECTED_PRIMARY_STRUCTURE_PROPERTY_LAW                                              pc(alpha) = 36.4649 / alpha                                      69 <= alpha <= 134 (direct-powder MWNTs)
+  EQ-N3-007       SELECTED_CONDITIONAL_THEORETICAL_BRIDGE          pc_exp = 0.3136 * pc_theory + 0.1115  where phi_p = 1/(2*alpha)       55 <= alpha <= 134 (excluding high-agglomerate-strength Baytubes C150P)
+  EQ-N3-009             SELECTED_SECONDARY_MECHANICAL_LAW                                 E'_180C(alpha) = 0.3333 * alpha - 7.4578                                      69 <= alpha <= 134 (direct-powder MWNTs)
+  EQ-N3-006                   RETAINED_INTERPOLATION_ONLY                               pc(alpha) = 43.8386 * (1 / alpha) - 0.0902                                                   Strictly 69 <= alpha <= 134
+  EQ-N3-008 REJECTED_AS_FINAL_RETAINED_AS_GLOBAL_BASELINE                   log10(sigma) = -1.7715 + 2.2604 * log10(p - pc(alpha))                                                            69 <= alpha <= 134
+  EQ-N3-010            EXCLUDED_BY_STATIC_CORPUS_PROTOCOL                                              dq/dt = k_f*(1 - q) - k_d*q                                                                Not applicable

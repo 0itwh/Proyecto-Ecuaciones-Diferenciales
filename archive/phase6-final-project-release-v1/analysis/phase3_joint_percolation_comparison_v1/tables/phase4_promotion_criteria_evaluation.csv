@@ -1,0 +1,6 @@
+﻿filler_variant_id,commercial_name,criterion_at_least_5_conducting_points,criterion_observed_prethreshold_point,criterion_positive_degrees_of_freedom,criterion_interior_pc_minimum,criterion_physical_exponent_range_1_to_3,criterion_zero_imputation,criterion_all_package_quality_checks_passed,phase4_promotion_decision
+l254-mwcnt-v1-ar134,Nanocyl NC7000,True,True,True,False,True,True,True,eligible_primary_full_curve
+l254-mwcnt-v2-ar94,SWeNT SMW-100,True,True,True,True,True,True,True,eligible_primary_5_conducting_points
+l254-mwcnt-v4-ar73,Baytubes C150P,False,True,True,True,True,True,True,conditional_eligible_4_conducting_points
+l254-mwcnt-v3-ar55,Hyperion Masterbatch (15 wt.%),False,True,False,False,False,True,True,restricted_underdetermined_3_conducting_points
+l254-mwcnt-v5-ar69,Continental Carbon MWNT,True,False,True,True,True,True,True,conditional_restricted_no_observed_prethreshold_baseline

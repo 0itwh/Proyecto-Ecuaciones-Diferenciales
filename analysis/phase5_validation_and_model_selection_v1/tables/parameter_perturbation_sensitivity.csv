@@ -1,0 +1,4 @@
+﻿check_name,target_equation,nominal_estimate,mean_perturbed,std_perturbed,ci95_low,ci95_high,stability_conclusion
+Excluded Volume Constant k under 5% RMSE pc Identifiability Perturbation (N=2000),EQ-N3-005: pc(alpha) = k / alpha,36.46489752091976,36.549922102584176,0.14340702595612498,36.27563275904292,36.830710577871464,highly_stable_variation_under_1.5_percent
+Out-of-Sample LOSO Comparison: 1-Param Excluded Volume (EQ-N3-005) vs 2-Param Linear (EQ-N3-006),EQ-N3-005 vs EQ-N3-006,0.08397675874829633,0.10017467047900235,0.01619791173070602,0.023423592761745826,0.13961644797487227,1_param_EQ005_outperforms_2_param_EQ006_out_of_sample_avoiding_extrapolation_overfitting
+Out-of-Sample LOSO Rubbery Network Modulus E'_180C(alpha) (EQ-N3-009),EQ-N3-009: E'_180C(alpha) = 0.3333*alpha - 7.4578,0.929568,3.174832861941435,2.37104034335514,0.3705426356589179,5.814232902033272,strong_out_of_sample_generalization_across_direct_powder_grades

@@ -1,0 +1,6 @@
+﻿check_id,passed,observed,expected,description
+Q001,True,5,5,all five MWCNT curves included in joint comparison
+Q002,True,checked,True,all individual curve packages passed quality checks
+Q003,True,checked,True,zero missing-data imputations across all five curves
+Q004,True,checked,True,finite log10 RMSE for all five reproduced fits
+Q005,True,checked,True,explicit Phase 4 promotion decision recorded per curve

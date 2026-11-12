@@ -1,0 +1,14 @@
+﻿check_id,passed,observed,expected,description
+Q001,True,36,36,all 36 samples preserved in Phase 4 modeling dataset
+Q002,True,5,5,all 5 MWCNT variants enriched with Castillo PDF tables and TEM quantiles
+Q003,True,5,5,5% and 10% RMSE profile uncertainty intervals computed for all 5 variants
+Q004,True,checked,True,Continental Carbon 5% RMSE band encloses published 0.49 wt.%
+Q005,True,checked,True,physically constrained fit (1.3<=t<=2.3) recovers Hyperion pc ~ 0.495 wt.%
+Q006,True,5,5,"homogeneous volume fraction percolation fits completed (rho_PC=1.20, rho_MWNT=1.75 g/cm3)"
+Q007,True,10,10,formal candidate equation registry populated per Master Prompt Section 21
+Q008,True,checked,True,structure-property scaling laws validated (R2 > 0.80)
+Q009,True,checked,True,high-temperature DMA storage modulus vs AR correlation validated (R2 > 0.98)
+Q010,True,checked,True,SINDy formally excluded per Master Prompt Section 33 (static corpus)
+Q011,True,checked,True,zero missing-data imputations applied
+Q012,True,checked,True,all figures generated in English
+Q013,True,checked,True,canonical Phase 2 and frozen Phase 3 releases untouched

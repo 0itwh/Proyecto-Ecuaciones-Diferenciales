@@ -1,0 +1,7 @@
+﻿check_id,passed,observed,expected,description
+Q001,True,6,6,all six project phases completed with zero failed checks
+Q002,True,checked,True,complete equation registry and final selection table verified
+Q003,True,checked,True,"all five MWCNT variants integrated across mass, volume, and uncertainty tables"
+Q004,True,checked,True,25-section scientific manuscript generated in Markdown and TXT
+Q005,True,checked,True,4-panel executive synthesis figure generated in English
+Q006,True,checked,True,canonical data_processed/l254_corpus untouched
