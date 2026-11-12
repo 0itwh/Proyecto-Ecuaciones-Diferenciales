@@ -1,0 +1,6 @@
+﻿composition_id,sample_id,study_id,material_system_id,basis,value_original,unit_original,value_numeric,canonical_value,canonical_unit,transformation,source_status,source_row_index
+comp-0001,l172-s13-huo-2015,study-l172-huo-2015,ms-l172-01,volume_fraction,0.036e0,1,0.036,0.036,1,numeric_parse_only,observed_in_deduplicated_measurement_response,0
+comp-0002,l172-s15-huo-2015,study-l172-huo-2015,ms-l172-01,volume_fraction,0.078e0,1,0.078,0.078,1,numeric_parse_only,observed_in_deduplicated_measurement_response,52
+comp-0003,l172-s16-huo-2015,study-l172-huo-2015,ms-l172-01,volume_fraction,0.128e0,1,0.128,0.128,1,numeric_parse_only,observed_in_deduplicated_measurement_response,94
+comp-0004,l172-s17-huo-2015,study-l172-huo-2015,ms-l172-01,volume_fraction,0.186e0,1,0.186,0.186,1,numeric_parse_only,observed_in_deduplicated_measurement_response,130
+comp-0005,l172-s18-huo-2015,study-l172-huo-2015,ms-l172-01,volume_fraction,0.254e0,1,0.254,0.254,1,numeric_parse_only,observed_in_deduplicated_measurement_response,183

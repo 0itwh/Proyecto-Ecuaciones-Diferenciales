@@ -1,0 +1,6 @@
+﻿filler_variant_id,commercial_name,aspect_ratio,sample_count,mass_fraction_count,volume_fraction_count,conductivity_count,complete_mass_pair_count,complete_volume_pair_count,conductivity_min_s_per_cm,conductivity_max_s_per_cm,conductivity_dynamic_range_decades,strict_decrease_count,non_increase_count,monotonic_non_decreasing,largest_abs_log10_jump_from_wt_percent,largest_abs_log10_jump_to_wt_percent,largest_log10_jump_decades,exploratory_status
+l254-mwcnt-v1-ar134,Nanocyl NC7000,134.0,7,7,7,7,7,7,2.81e-13,0.2523142,11.953235372975174,0,0,True,0.25,0.375,9.961002500852263,complete_curve
+l254-mwcnt-v2-ar94,SWeNT SMW-100,94.0,7,7,7,6,6,6,1.95e-17,0.05926735,15.482780897855475,0,0,True,0.25,0.375,11.74297475823644,incomplete_curve
+l254-mwcnt-v3-ar55,Hyperion Masterbatch (15 wt.%),55.0,7,7,7,5,5,5,1e-15,0.05468448,13.737864086722027,0,0,True,0.375,0.5,6.990015779093398,incomplete_curve
+l254-mwcnt-v4-ar73,Baytubes C150P,73.0,7,7,7,5,5,5,4.35e-17,0.05692982,15.116850553712165,0,0,True,0.5,0.625,10.800345687157968,incomplete_curve
+l254-mwcnt-v5-ar69,Continental Carbon MWNT,69.0,7,7,7,5,5,5,1.93e-07,0.0429546,5.347452370163989,0,0,True,0.5,0.625,2.7260934737517015,incomplete_curve

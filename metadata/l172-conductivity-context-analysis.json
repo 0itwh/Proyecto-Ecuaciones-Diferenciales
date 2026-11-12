@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-11-04T01:02:29-05:00",
+  "input_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_raw\\explorer\\l172-huo-2015-search-response.json",
+  "input_sha256": "8759879f74b09201864f84a908b52b6e39c2464e34b47ba7d6c69aec5005aaa0",
+  "search_hits_total": 107,
+  "textually_relevant_candidates": 1,
+  "valid_sparql_queries": 0,
+  "rejected_candidates": 1,
+  "binding_rows": 0,
+  "classification_counts": {},
+  "archived_previous_files": [],
+  "valid_queries": [],
+  "rejected_candidates_detail": [
+    {
+      "search_position": 101,
+      "index": "charts",
+      "hit_id": "Id6llYcB9tZWhu3C0Bqw",
+      "source_date": null,
+      "conductivity_in_query": "",
+      "conductivity_in_hit": "conductivity",
+      "relation_terms": "",
+      "frequency_terms": "",
+      "temperature_terms": "temperature",
+      "unit_terms": "",
+      "value_terms": "",
+      "measurement_terms": "electrical",
+      "sample_ids": "",
+      "response_variables": "",
+      "binding_count": 0,
+      "query_characters": 71,
+      "query_lines": 1,
+      "contains_select": false,
+      "contains_where": false,
+      "balanced_braces": true,
+      "response_is_object": false,
+      "query_valid": false,
+      "rejection_reasons": "contains_select|contains_where|contains_open_brace|contains_close_brace|response_is_object",
+      "label_preview": "Highlighting Target Properties Using Sequence Generators and Area Marks",
+      "archived_as_evidence": "not_written_as_sparql"
+    }
+  ],
+  "scientific_interpretation": {
+    "conductivity_context_query_found": false,
+    "explicit_inRelationTo_found": false,
+    "frequency_context_found": false,
+    "temperature_context_found": false,
+    "unit_context_found": false
+  },
+  "notes": [
+    "Invalid labels and chart descriptions were not written as SPARQL.",
+    "Zero valid queries is accepted as a reproducible negative result.",
+    "No units were assumed.",
+    "No averaging or modeling was performed."
+  ]
+}

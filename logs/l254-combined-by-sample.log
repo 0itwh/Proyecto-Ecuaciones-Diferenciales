@@ -1,0 +1,41 @@
+FASE 2 - TABLA COMBINADA POR MUESTRA L254
+
+Fecha: 2026-11-04T01:35:05-05:00
+Salida: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\l254-combined-by-sample.csv
+
+CONTEOS
+- samples: 36
+- composition_available: 35
+- conductivity_available: 29
+- complete_pairs: 28
+- frequency_documented: 4
+- strictly_usable_for_modeling: 3
+
+RESUMEN POR BLOQUE INFERIDO
+- block_1_s2_s8: muestras=7, pares_completos=7, conductividad=7, composicion=7, frecuencia_documentada=3
+- block_2_s9_s15: muestras=7, pares_completos=6, conductividad=6, composicion=7, frecuencia_documentada=0
+- block_3_s16_s22: muestras=7, pares_completos=5, conductividad=5, composicion=7, frecuencia_documentada=0
+- block_4_s23_s29: muestras=7, pares_completos=5, conductividad=5, composicion=7, frecuencia_documentada=0
+- block_5_s30_s36: muestras=7, pares_completos=5, conductividad=5, composicion=7, frecuencia_documentada=0
+- control_or_unassigned: muestras=1, pares_completos=0, conductividad=1, composicion=0, frecuencia_documentada=1
+
+CONTROLES
+- Q001 | PASS | 36 unique samples | observado=36 | esperado=36
+- Q002 | PASS | 35 samples with composition | observado=35 | esperado=35
+- Q003 | PASS | 29 samples with conductivity | observado=29 | esperado=29
+- Q004 | PASS | 28 complete composition-conductivity pairs | observado=28 | esperado=28
+- Q005 | PASS | 4 samples with documented frequency | observado=4 | esperado=4
+- Q006 | PASS | All fractions are within 0 to 1 | observado=checked | esperado=all true
+- Q007 | PASS | All conductivity values are positive | observado=checked | esperado=all true
+- Q008 | PASS | Five inferred seven-sample composition blocks | observado=checked | esperado=7 samples in each block
+
+INTERPRETACION
+- La tabla combina inventario de muestras, composicion, conductividad y frecuencia por sample_id.
+- Los bloques son inferidos y no deben tratarse como condiciones experimentales confirmadas.
+- Solo las muestras con frecuencia explicitamente documentada reciben frequency_hz=1.
+- Los pares completos sin frecuencia permanecen candidatos para analisis de bloque, no aptos aun para modelado definitivo.
+- No se ejecutaron conversiones, promedios ni modelos.
+
+Tabla: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\l254-combined-by-sample.csv
+Calidad: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-combined-by-sample-quality.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-combined-by-sample-manifest.json

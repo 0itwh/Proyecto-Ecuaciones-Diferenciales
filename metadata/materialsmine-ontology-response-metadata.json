@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-11-03T23:29:48-05:00",
+  "method": "GET",
+  "requested_url": "https://materialsmine.org/api/mn/ontology",
+  "final_url": "https://materialsmine.org/api/mn/ontology",
+  "status_code": 200,
+  "reason": "OK",
+  "content_type": "application/json; charset=utf-8",
+  "content_disposition": null,
+  "response_bytes": 222515,
+  "sha256": "87a427079d43792d146acc7587524b7525052d4d82a7a8a18ff6ee7c7c1fa7f9",
+  "redirects": [],
+  "json_status": "parsed",
+  "top_level_type": "dict",
+  "top_level_count": 7,
+  "top_level_keys": [
+    "appName",
+    "data",
+    "details",
+    "lastUpdateDate",
+    "metrics",
+    "properties",
+    "submissions"
+  ],
+  "sample_item_types": [
+    "dict",
+    "list",
+    "str"
+  ],
+  "authentication_used": false,
+  "request_parameters": {},
+  "openapi_security_status": "not_declared",
+  "follow_up_requests_executed": 0
+}

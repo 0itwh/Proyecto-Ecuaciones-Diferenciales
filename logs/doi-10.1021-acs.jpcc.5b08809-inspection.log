@@ -1,0 +1,262 @@
+FASE 2 - INSPECCION DE RESPUESTA DEL DOI
+
+Fecha: 2026-11-04T00:18:25-05:00
+DOI: 10.1021/acs.jpcc.5b08809
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\explorer\doi-10.1021-acs.jpcc.5b08809-search-response.json
+SHA256: 7c53a17f0d46f79e9ab86de0db9b350ad2989cde47d8d8ce03eaa1fa74e0f4f3
+Hits totales: 27
+Hits relevantes: 27
+Muestras l172 encontradas: 0
+
+MUESTRAS ENCONTRADAS
+Ninguna
+
+CONTEOS POR TERMINO
+- 10.1021/acs.jpcc.5b08809: 0
+- l172-: 0
+- huo: 0
+- conductivity: 1
+- electricconductivity: 0
+- unitofmeasure: 0
+- frequency: 3
+- temperature: 15
+- volumefraction: 0
+- matrix: 13
+- filler: 10
+- poly(vinylidene fluoride): 1
+- barium titanate: 0
+- iron oxide: 0
+- fe3o4: 0
+- batio3: 0
+- doi: 27
+- article: 1
+
+RESUMEN DE HITS RELEVANTES
+
+Hit 1
+Posicion: 0
+Indice: knowledge
+ID: lzpeqZQBmMY0PwEJi09z
+Terminos: frequency, temperature, matrix, filler, doi
+Muestras: ninguna
+Campos prioritarios: 18873
+
+Hit 2
+Posicion: 1
+Indice: knowledge
+ID: LWave5MBHUVTiMqP2C6l
+Terminos: temperature, matrix, filler, doi
+Muestras: ninguna
+Campos prioritarios: 88
+
+Hit 3
+Posicion: 2
+Indice: knowledge
+ID: V6qGj50BqIvEHa8FFQ03
+Terminos: temperature, matrix, filler, doi
+Muestras: ninguna
+Campos prioritarios: 88
+
+Hit 4
+Posicion: 3
+Indice: knowledge
+ID: eKqKj50BqIvEHa8F8A0n
+Terminos: temperature, matrix, filler, doi
+Muestras: ninguna
+Campos prioritarios: 88
+
+Hit 5
+Posicion: 4
+Indice: knowledge
+ID: 0RQ6T5sBC3--jtB9VCM3
+Terminos: temperature, matrix, filler, doi
+Muestras: ninguna
+Campos prioritarios: 88
+
+Hit 6
+Posicion: 5
+Indice: charts
+ID: Sd6llYcB9tZWhu3C0Rq2
+Terminos: temperature, doi
+Muestras: ninguna
+Campos prioritarios: 2
+
+Hit 7
+Posicion: 6
+Indice: charts
+ID: Nd6llYcB9tZWhu3C0Ro8
+Terminos: temperature, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 8
+Posicion: 7
+Indice: charts
+ID: at6llYcB9tZWhu3C0hp-
+Terminos: doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 9
+Posicion: 8
+Indice: charts
+ID: MN6llYcB9tZWhu3C0RoY
+Terminos: doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 10
+Posicion: 9
+Indice: charts
+ID: 6d6llYcB9tZWhu3CzxlP
+Terminos: temperature, matrix, filler, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 11
+Posicion: 10
+Indice: charts
+ID: _d6llYcB9tZWhu3CzxnM
+Terminos: matrix, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 12
+Posicion: 11
+Indice: charts
+ID: yt6llYcB9tZWhu3CzhmC
+Terminos: doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 13
+Posicion: 12
+Indice: charts
+ID: Id6llYcB9tZWhu3C0Bqw
+Terminos: conductivity, temperature, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 14
+Posicion: 13
+Indice: charts
+ID: TN6llYcB9tZWhu3C0RrI
+Terminos: frequency, temperature, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 15
+Posicion: 14
+Indice: charts
+ID: Pd6llYcB9tZWhu3C0Rpv
+Terminos: temperature, matrix, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 16
+Posicion: 15
+Indice: charts
+ID: 5N6llYcB9tZWhu3Czxku
+Terminos: temperature, matrix, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 17
+Posicion: 16
+Indice: charts
+ID: 196llYcB9tZWhu3CzhnW
+Terminos: matrix, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 18
+Posicion: 17
+Indice: charts
+ID: Dt6llYcB9tZWhu3C0Bo9
+Terminos: doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 19
+Posicion: 18
+Indice: charts
+ID: UN6llYcB9tZWhu3C0Rrg
+Terminos: matrix, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 20
+Posicion: 19
+Indice: charts
+ID: 7N6llYcB9tZWhu3Czxlj
+Terminos: filler, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 21
+Posicion: 20
+Indice: charts
+ID: a96llYcB9tZWhu3C0hqC
+Terminos: temperature, filler, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 22
+Posicion: 21
+Indice: charts
+ID: bN6llYcB9tZWhu3C0hqH
+Terminos: temperature, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 23
+Posicion: 22
+Indice: charts
+ID: 1d6llYcB9tZWhu3CzhnH
+Terminos: matrix, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 24
+Posicion: 23
+Indice: charts
+ID: V96llYcB9tZWhu3C0hoN
+Terminos: matrix, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 25
+Posicion: 24
+Indice: charts
+ID: 9N6llYcB9tZWhu3CzxmX
+Terminos: filler, doi, article
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 26
+Posicion: 25
+Indice: charts
+ID: Tt6llYcB9tZWhu3C0RrT
+Terminos: frequency, filler, poly(vinylidene fluoride), doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+Hit 27
+Posicion: 26
+Indice: charts
+ID: G96llYcB9tZWhu3C0BqI
+Terminos: temperature, doi
+Muestras: ninguna
+Campos prioritarios: 1
+
+CLASIFICACION
+- DOI en MaterialsMine: no localizado
+- Vinculo con muestras l172: no localizado
+- Unidad, frecuencia y temperatura requieren revisión de rutas concretas.
+
+ADVERTENCIAS
+- Una coincidencia textual no prueba por si sola una relación experimental.
+- No se asumieron unidades.
+- No se aplicaron transformaciones ni modelos.
+
+JSON detallado: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\doi-10.1021-acs.jpcc.5b08809-relevant-hits.json

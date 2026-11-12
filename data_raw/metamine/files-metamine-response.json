@@ -1,0 +1,16 @@
+{
+  "fetchedNames": [
+    {
+      "key": 0,
+      "bucket_name": "metamine",
+      "name": "chubby_tick_madeline-2024-01-23T17:47:06.141Z-freeform_2d_sample.csv",
+      "color": "#FFB347"
+    },
+    {
+      "key": 1,
+      "bucket_name": "metamine",
+      "name": "chubby_tick_madeline-2024-01-23T17:47:06.153Z-lattice_2d_sample.csv",
+      "color": "#8A8BD0"
+    }
+  ]
+}

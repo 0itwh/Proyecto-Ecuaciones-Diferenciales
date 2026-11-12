@@ -1,0 +1,25 @@
+{
+  "release": "l254-article-validation-v1",
+  "generated_at": "2026-11-04T20:59:42-05:00",
+  "source_corpus": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus",
+  "source_files": {
+    "samples.csv": "877a7dff29e5b60c12923b18ec30a294cab4002ffb111af1c1fce085bad55c42",
+    "sample_composition.csv": "dcacb200520c698f0754e96ad946dba96932a081e428f646ff4d0f6d8d2d1719",
+    "electrical_measurements.csv": "6751c74a218f59d2d12469d00272f7c09c259b9377a55aa367b47ea25dec694e",
+    "measurement_conditions.csv": "766aaad092338d3ff99c6ae0dd9fde8e07d8fe1c6e8db75a8ca205676f279054",
+    "filler_variants.csv": "6d5556ff1d8912175a2a200241d82c80f58b12fa8d489413c73d7eb996b66c09",
+    "curve_inclusion_status.csv": "c23e48192dee95d8a26265fead645b1361f05226db79f8ca5a4dbc821ae95aa6",
+    "exclusions.csv": "894d3b86638ad5afbb60caf8b632a4730cd638589106d3cae6438bbff96ab856"
+  },
+  "source_pdf": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\49-doi10.1016j.polymer.2011.06.018_Castillo.pdf",
+  "source_pdf_sha256": "a9fc5beeb72ae6756869123facd368c932bae379c9110c62d043123e6a5cc1c2",
+  "decisions": [
+    "1 Hz is documented for DMA only and is not an electrical-conductivity condition.",
+    "Electrical frequency and current type are not explicitly stated in the article.",
+    "Two resistivity methods are documented and assigned by strict conductivity ranges.",
+    "Pure-PC zero composition is proposed but not applied automatically.",
+    "Published B, pc, and t are benchmarks, not project-generated fits.",
+    "Canonical corpus was not overwritten."
+  ],
+  "quality_passed": true
+}

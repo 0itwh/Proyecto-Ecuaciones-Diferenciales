@@ -1,0 +1,46 @@
+FASE 2 - CONTEXTO HISTORICO DE CONDUCTIVIDAD L172
+
+Fecha: 2026-11-04T01:02:29-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\explorer\l172-huo-2015-search-response.json
+SHA256 entrada: 8759879f74b09201864f84a908b52b6e39c2464e34b47ba7d6c69aec5005aaa0
+Hits totales: 107
+Candidatos textuales: 1
+Consultas SPARQL validas: 0
+Candidatos rechazados: 1
+Bindings recuperados: 0
+Consultas con inRelationTo: 0
+Consultas con frecuencia: 0
+Consultas con temperatura: 0
+Consultas con unidad: 0
+Consultas validas con fallo de integridad: 0
+
+CANDIDATOS RECHAZADOS
+
+Posicion: 101
+Hit: Id6llYcB9tZWhu3C0Bqw
+Motivos: contains_select|contains_where|contains_open_brace|contains_close_brace|response_is_object
+Caracteres: 71
+Lineas: 1
+Bindings: 0
+Vista previa: Highlighting Target Properties Using Sequence Generators and Area Marks
+
+CONSULTAS SPARQL VALIDAS
+- Ninguna
+
+CONCLUSION AUTOMATICA
+- No se localizaron consultas SPARQL historicas validas que vinculen conductividad con frecuencia, temperatura o unidad.
+- Los candidatos encontrados eran etiquetas o descripciones de graficos.
+- Los 235 valores de conductividad conservan unidad y condiciones no verificadas.
+
+ADVERTENCIAS
+- Cero consultas validas es un resultado negativo aceptable.
+- No se ejecutaron consultas contra el grafo actual.
+- No se asumieron unidades.
+- No se calcularon medias.
+- No se ejecutaron modelos.
+
+Inventario valido: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-conductivity-context-query-inventory.csv
+Rechazados: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-conductivity-context-rejected-candidates.csv
+Bindings: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\conductivity_context\l172-conductivity-context-bindings.csv
+JSON detallado: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-conductivity-context-analysis.json
+Consultas anteriores archivadas: 0

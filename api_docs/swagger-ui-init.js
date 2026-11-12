@@ -1,0 +1,4837 @@
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "MaterialsMine Project API Docs",
+      "description": "As MaterialsMine continues to expand, we are committed to facilitating materials research development and\nwelcome feedback and suggestions for further improvements to help you benchmark and visualize your data, explore your \nresearch hypotheses, perform simulations and analysis using our available tools, and more.",
+      "version": "1.0.0",
+      "termsOfService": "https://security.duke.edu/node/82",
+      "contact": {
+        "name": "Marc Palmeri, Ph.D.",
+        "email": "marc.j.palmeri@duke.edu"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://localhost/api"
+      },
+      {
+        "url": "https://qa.materialsmine.org/api",
+        "description": "Staging server"
+      },
+      {
+        "url": "https://materialsmine.org/api",
+        "description": "Production server"
+      }
+    ],
+    "paths": {
+      "/admin/es": {
+        "get": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Check the status of elastic search service",
+          "tags": [
+            "Admin"
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns true if ES service is up or false if ES service is down",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "response": {
+                        "type": "boolean",
+                        "example": true
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "User not authorized for this service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "If user is forbidden from using the service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Forbidden-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Elastic search upstream server response error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Automatically configures & initializes elastic search service",
+          "tags": [
+            "Admin"
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns a successfully configure message",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "string",
+                            "example": "Successfully configured schemas!"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "User not authorized for this service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "If user is forbidden from using the service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Forbidden-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Elastic search upstream server response error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "Admin"
+          ],
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Add new resource into search service. Examples of a resource item are charts, samples or articles",
+          "requestBody": {
+            "description": "New resource document payload to index in json",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "samples",
+                        "charts",
+                        "articles"
+                      ]
+                    },
+                    "doc": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "example": "Glass Transition Temperature"
+                        },
+                        "identifier": {
+                          "type": "string",
+                          "example": "http://matmine.org/sample/l333-s5-salami-1000"
+                        },
+                        "thumbnail": {
+                          "type": "string",
+                          "example": "https://localhost/explorer/blob?=1441449bdf0cb480"
+                        },
+                        "description": {
+                          "type": "string",
+                          "example": "This chart of curated articles per year published is compact..."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Returns an object similar to the example below if successful",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "response": {
+                        "type": "object",
+                        "properties": {
+                          "_index": {
+                            "type": "string",
+                            "example": "samples"
+                          },
+                          "_type": {
+                            "type": "string",
+                            "example": "_doc"
+                          },
+                          "_id": {
+                            "type": "string",
+                            "example": "VeMK7LYgBMY-vG6TxJk_N"
+                          },
+                          "_version": {
+                            "type": "number",
+                            "example": 2
+                          },
+                          "_shards": {
+                            "type": "object",
+                            "properties": {
+                              "total": {
+                                "type": "number",
+                                "example": 1000000
+                              },
+                              "successful": {
+                                "type": "number",
+                                "example": 1
+                              },
+                              "failed": {
+                                "type": "number",
+                                "example": 0
+                              }
+                            }
+                          },
+                          "_seq_no": {
+                            "type": "number",
+                            "example": 99999
+                          },
+                          "_primary_term": {
+                            "type": "number",
+                            "example": 36
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "User not authorized for this service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Missing required input",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Missing-Input-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Elastic search upstream server response error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "delete": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Removes resource item from search service. Examples of a resource item are charts, samples or articles",
+          "tags": [
+            "Admin"
+          ],
+          "requestBody": {
+            "description": "Details of resource document to remove from search service",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "samples",
+                        "charts",
+                        "articles"
+                      ]
+                    },
+                    "doc": {
+                      "type": "string",
+                      "example": "http://matmine.org/sample/l333-s5-salami-1000"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Returns an object response if deletion is successful",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "response": {
+                        "type": "object",
+                        "properties": {
+                          "took": {
+                            "type": "number",
+                            "example": 36
+                          },
+                          "timed_out": {
+                            "type": "string",
+                            "example": false
+                          },
+                          "total": {
+                            "type": "number",
+                            "example": 2
+                          },
+                          "deleted": {
+                            "type": "number",
+                            "example": 2
+                          },
+                          "batches": {
+                            "type": "number",
+                            "example": 1
+                          },
+                          "version_conflicts": {
+                            "type": "number",
+                            "example": 0
+                          },
+                          "noops": {
+                            "type": "number",
+                            "example": 0
+                          },
+                          "retries": {
+                            "type": "object",
+                            "properties": {
+                              "bulk": {
+                                "type": "number",
+                                "example": 0
+                              },
+                              "search": {
+                                "type": "number",
+                                "example": 0
+                              }
+                            }
+                          },
+                          "throttled_millis": {
+                            "type": "number",
+                            "example": 0
+                          },
+                          "requests_per_second": {
+                            "type": "number",
+                            "example": -1
+                          },
+                          "throttled_until_millis": {
+                            "type": "number",
+                            "example": 0
+                          },
+                          "failures": {
+                            "type": "array",
+                            "example": []
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "User not authorized for this service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "If user is forbidden from using the service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Forbidden-Error"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Missing required input",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Missing-Input-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Elastic search upstream server response error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/admin/es/delete-index/{type}": {
+        "delete": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Delete an ElasticSearch index",
+          "description": "Deletes a specified ElasticSearch index.",
+          "operationId": "deleteElasticSearchIndex",
+          "tags": [
+            "Admin"
+          ],
+          "parameters": [
+            {
+              "name": "type",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              },
+              "description": "The type of index to delete."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "response": {
+                        "type": "object",
+                        "description": "The response from the ElasticSearch delete operation.",
+                        "properties": {
+                          "acknowledged": {
+                            "type": "boolean",
+                            "description": "Acknowledgement of the delete operation.",
+                            "example": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "User not authorized for this service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "If user is forbidden from using the service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Forbidden-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/knowledge/charts/favorites": {
+        "get": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Retrieve favorite charts",
+          "description": "Retrieves the favorite charts for the authenticated user.",
+          "operationId": "getFavoriteCharts",
+          "tags": [
+            "Knowledge"
+          ],
+          "parameters": [
+            {
+              "name": "page",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "example": 1
+              },
+              "description": "Page number for pagination."
+            },
+            {
+              "name": "pageSize",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "example": 10
+              },
+              "description": "Number of items per page."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful retrieval of favorite charts",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "description": "Favorite chart data."
+                        }
+                      },
+                      "total": {
+                        "type": "integer",
+                        "description": "Total number of favorite charts.",
+                        "example": 10
+                      },
+                      "missingCharts": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "List of missing chart IDs.",
+                        "example": [
+                          "chart456",
+                          "chart789"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "User not authorized for this service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Add a favorite chart",
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "description": "Adds a favorite chart for the authenticated user.",
+          "operationId": "addFavoriteChart",
+          "tags": [
+            "Knowledge"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "chartId": {
+                      "type": "string",
+                      "description": "The ID of the chart to add.",
+                      "example": "chart123"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Chart added successfully",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "This chart is now added to your favourite list successfully."
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "delete": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Remove a favorite chart",
+          "description": "Removes a favorite chart for the authenticated user.",
+          "operationId": "removeFavoriteChart",
+          "tags": [
+            "Knowledge"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "chartId": {
+                      "type": "string",
+                      "description": "The ID of the chart to remove.",
+                      "example": "chart123"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Chart removed successfully",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "This chart is now removed from your favourite list successfully."
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/curate": {
+        "get": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Gets curation Base Object",
+          "description": "This route provides access to the Curation Schema Base Object, either by querying based on the sheetName or by retrieving the entire Schema.",
+          "tags": [
+            "Curation"
+          ],
+          "parameters": [
+            {
+              "in": "query",
+              "name": "sheetName",
+              "schema": {
+                "type": "string"
+              },
+              "description": "The sheetName parameter specifies a subset of the schema to be retrieved. This parameter is optional."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "It returns either a partial or the entire base object schema.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "data origin": {
+                        "type": "object"
+                      },
+                      "material types": {
+                        "type": "object"
+                      },
+                      "synthesis and processing": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Creates a new curation",
+          "description": "Creates a new curation by parsing a submitted spreadsheet & other files. A new curation can also be created by submitting filled a valid Base schema object.",
+          "tags": [
+            "Curation"
+          ],
+          "parameters": [
+            {
+              "in": "query",
+              "name": "dataset",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Dataset ID"
+            },
+            {
+              "in": "query",
+              "name": "isBaseObject",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Set to **true** when curating with the Base schema object."
+            }
+          ],
+          "requestBody": {
+            "description": "A payload containing either the master_template xlsx file and other required files for curation creation, or the Base schema object.",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "curatedjsonObject": {
+                      "$ref": "#/components/schemas/Sample-BaseObject"
+                    }
+                  }
+                }
+              },
+              "multipart/form-data": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "uploadfile": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "format": "binary"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Returns the newly created curation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Successful-Curation"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "Missing dataset ID in query",
+                          "Material template files not uploaded",
+                          "Master template xlsx file not uploaded"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "If user is forbidden from accessing this service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Forbidden-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Dataset not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "message": "A sample must belong to a dataset. Dataset 583e3d6ae74a1d205f4e3fd3 not found"
+                    }
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict error occurs if the curation already exists.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "message": "This had been curated already"
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "Curation"
+          ],
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Updates existing curated data",
+          "description": "This route updates an existing curation. whether it's newly curated data or an old curation.",
+          "deprecated": false,
+          "parameters": [
+            {
+              "in": "query",
+              "name": "xlsxObjectId",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Curation ID"
+            },
+            {
+              "in": "query",
+              "name": "isBaseUpdate",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Set to **true** when updating with the Base schema object."
+            },
+            {
+              "in": "query",
+              "name": "isNew",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Set to **true** if curation is a new or old curation"
+            }
+          ],
+          "requestBody": {
+            "description": "An updated curation json object or Base schema object.",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/BaseSchemaUpdate"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CurationJsonUpdate"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "If **isBaseUpdate** is set to true, this returns the updated Base schema Object or the updated curated object.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/components/schemas/Sample-Curation"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Sample-BaseObject"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "304": {
+              "description": "No changes have been made to the curation object provided for updating.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "No changes"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Curation not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "Curated sample ID 583e3d6ae74a1d205f4e3fd3 not found"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "delete": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Deletes a curation or list of curations",
+          "description": "A route to delete a  single curation or list of curations with similar dataset ID",
+          "tags": [
+            "Curation"
+          ],
+          "parameters": [
+            {
+              "in": "query",
+              "name": "xlsxObjectId",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Curation ID"
+            },
+            {
+              "in": "query",
+              "name": "dataset",
+              "schema": {
+                "type": "string"
+              },
+              "description": "ID of the dataset to which the curation(s) are associated."
+            },
+            {
+              "in": "query",
+              "name": "isNew",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Set to **true** if curation is a new or old curation"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Provides a success message confirming the deletion of curation(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "Curated sample ID: 6475c82ffbeb8571b77a5991 successfully deleted",
+                          "Curated Samples with Dataset ID: 583e3d6ae74a1d205f4e3fd3 successfully deleted"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "success": false,
+                      "message": "validation error",
+                      "data": [
+                        {
+                          "value": "231543536",
+                          "msg": "invalid xlsx object id",
+                          "param": "dataset",
+                          "location": "query"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Curation not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "Curation sample not found",
+                          "`Dataset ID: 583e3d6ae74a1d205f4e3fd3 not found`"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/curate/get/{curationId}": {
+        "get": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Gets a single curated data or list of curated data",
+          "description": "A route to get a single curation by using the curation ID. This route is utilized to retrieve the curation for updating or editing purposes.",
+          "tags": [
+            "Curation"
+          ],
+          "parameters": [
+            {
+              "in": "path",
+              "required": true,
+              "name": "curationId",
+              "description": "The ID of the curation to be edited.",
+              "schema": {
+                "type": "string",
+                "example": "64394c8032bc6325505af6f9"
+              }
+            },
+            {
+              "in": "query",
+              "name": "isNew",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Set to **true** if curation is a new or old curation"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Retrieve the curation to be edited as base schema object.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Sample-BaseObject"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Curation not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "Curation sample not found",
+                          "Sample xml not found"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/curate/duplicate/{curationId}": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Creates a duplicate of an existing curation",
+          "description": "A route to create duplicate of a curation by using the curation ID. This route is utilized to create duplicate of an existing curation.",
+          "tags": [
+            "Curation"
+          ],
+          "parameters": [
+            {
+              "in": "path",
+              "required": true,
+              "name": "curationId",
+              "description": "The ID of the curation to be edited.",
+              "schema": {
+                "type": "string",
+                "example": "64394c8032bc6325505af6f9"
+              }
+            },
+            {
+              "in": "query",
+              "name": "isNew",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Set to **true** if curation is a new or old curation"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns the duplicate curation object details",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "_id": "64394c8032bc7325505af6f9",
+                      "isNew": true
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Curation not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "Curation sample not found",
+                          "Sample xml not found"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/curate/bulk": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Creates bulk curations",
+          "description": "Creates multiple curations from several master template uploaded in a zip file",
+          "tags": [
+            "Curation"
+          ],
+          "parameters": [
+            {
+              "in": "query",
+              "name": "dataset",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Dataset ID"
+            }
+          ],
+          "requestBody": {
+            "description": "A payload that contains zip file which holds all the neccessary files for separate curation organised into folders.",
+            "required": true,
+            "content": {
+              "multipart/form-data": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "uploadfile": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "format": "binary"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Returns the newly curated objects for both successful curations (bulkCurations) and unsuccessful curations (bulkErrors).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "bulkCurations": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Successful-Curation"
+                        }
+                      },
+                      "bulkErrors": {
+                        "example": [
+                          {
+                            "flename": "mm_files/bulk-curation-1688984487096/master_template (1).xlsx",
+                            "real_permittivity.csv": "file not uploaded",
+                            "loss_permittivity.csv": "file not uploaded",
+                            "tan_delta.csv": "file not uploaded",
+                            "weibull.csv": "file not uploaded"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "Missing dataset ID in query",
+                          "bulk curation zip file not uploaded"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Dataset not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "message": "Dataset ID: 583e3d6ae74a1d205f4e3fd3 not found"
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/curate/publish": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "ETL for Polymer Nanocomposite XML → Nanopublication",
+          "description": "Validates input XML against the PNC XSD, transforms it into a nanopublication (JSON-LD by default; TriG or Turtle optional), and validates the result with SHACL via the internal SHACL validator. Accepts a single XML string/URL (`xml`) or an array (`xmls`). Bulk mode continues processing even if some items fail (partial success).\n",
+          "tags": [
+            "Curation"
+          ],
+          "requestBody": {
+            "$ref": "#/components/requestBodies/CurationEtlRequest"
+          },
+          "responses": {
+            "200": {
+              "$ref": "#/components/schemas/CurationEtl200"
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "message": "Provide \"xml\" (string/URL) or \"xmls\" (array)."
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/curate/publishsdd": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "ETL for SDD Nanopublication",
+          "description": "Accepts a pre-built nanopub skeleton from the frontend containing dataset metadata (distribution, depiction, DOI, title, description, organizations, contact point) and processes it into a nanopublication for the knowledge graph.\n",
+          "tags": [
+            "Curation"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "nanopubSkeleton"
+                  ],
+                  "properties": {
+                    "nanopubSkeleton": {
+                      "type": "object",
+                      "required": true,
+                      "description": "The nanopub skeleton object containing dataset metadata and file references.",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "The nanopub ID (e.g. http://materialsmine.org/np/{uuid})"
+                        },
+                        "doi": {
+                          "type": "string",
+                          "description": "The DOI of the associated publication"
+                        },
+                        "externalSddLink": {
+                          "type": "string",
+                          "description": "Optional external SDD link URL"
+                        },
+                        "title": {
+                          "type": "string",
+                          "description": "Dataset title"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "Dataset description"
+                        },
+                        "datePub": {
+                          "type": "object",
+                          "description": "Publication date object",
+                          "properties": {
+                            "@type": {
+                              "type": "string",
+                              "example": "date"
+                            },
+                            "@value": {
+                              "type": "string",
+                              "example": "2024-01-01"
+                            }
+                          }
+                        },
+                        "organizations": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "@id": {
+                                "type": "string"
+                              },
+                              "@type": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "description": "Associated organizations"
+                        },
+                        "contactPoint": {
+                          "type": "object",
+                          "description": "Contact point information",
+                          "properties": {
+                            "@type": {
+                              "type": "string",
+                              "example": "schemaPerson"
+                            },
+                            "@id": {
+                              "type": "string",
+                              "nullable": true,
+                              "description": "ORCID URI"
+                            },
+                            "firstName": {
+                              "type": "string"
+                            },
+                            "lastName": {
+                              "type": "string"
+                            },
+                            "cpEmail": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "distribution": {
+                          "type": "object",
+                          "nullable": true,
+                          "description": "Distribution LD containing file references"
+                        },
+                        "depiction": {
+                          "type": "object",
+                          "nullable": true,
+                          "description": "Depiction LD containing image reference"
+                        }
+                      }
+                    },
+                    "output": {
+                      "type": "string",
+                      "enum": [
+                        "jsonld",
+                        "trig",
+                        "ttl"
+                      ],
+                      "default": "jsonld",
+                      "description": "Desired output format"
+                    },
+                    "inference": {
+                      "type": "string",
+                      "enum": [
+                        "none",
+                        "rdfs",
+                        "both"
+                      ],
+                      "default": "rdfs",
+                      "description": "Inference mode for SHACL validation"
+                    },
+                    "resolveUrls": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Whether to resolve URLs during SHACL validation"
+                    },
+                    "ontologyLink": {
+                      "type": "string",
+                      "description": "Optional explicit ontology link for SHACL validation"
+                    }
+                  }
+                },
+                "example": {
+                  "nanopubSkeleton": {
+                    "id": "http://materialsmine.org/np/abc123",
+                    "doi": "10.1234/example",
+                    "title": "Example Dataset",
+                    "description": "A sample dataset description",
+                    "datePub": {
+                      "@type": "date",
+                      "@value": "2024-01-01"
+                    },
+                    "organizations": [],
+                    "contactPoint": {
+                      "@type": "schemaPerson",
+                      "@id": "http://orcid.org/0000-0001-2345-6789",
+                      "firstName": "John",
+                      "lastName": "Doe",
+                      "cpEmail": "john@example.com"
+                    },
+                    "distribution": {
+                      "mm:hasDistribution": {
+                        "@id": "http://materialsmine.org/resource/pnc/abc123/attr/distribution",
+                        "dcat:distribution": [
+                          {
+                            "@id": "http://example.com/files/data.xlsx",
+                            "rdfs:label": "data.xlsx"
+                          }
+                        ]
+                      }
+                    },
+                    "depiction": null
+                  },
+                  "output": "jsonld"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successfully processed the SDD nanopub skeleton",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "ok": {
+                        "type": "boolean"
+                      },
+                      "nanopubSkeleton": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "example": {
+                    "message": "Provide \"nanopubSkeleton\" in the request body."
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/curate/schema": {
+        "get": {
+          "summary": "Gets XSD  Schema",
+          "description": "This route provides access to retrieving the XSD Schema. If the isFile query parameter is specified it returns the XSD schema as a downloadable file. Alternatively, if the isJson query parameter is specified, it returns a valid Base JSON Schema. Finally, if the getXSD query parameter is included, it returns the XSD schema as JSON.",
+          "tags": [
+            "Curation"
+          ],
+          "parameters": [
+            {
+              "in": "query",
+              "name": "isFile",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Specify the query parameter as **true** to download the XSD schema as a file."
+            },
+            {
+              "in": "query",
+              "name": "isJson",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Specify query parameter as **true** to get the json schema"
+            },
+            {
+              "in": "query",
+              "name": "getXSD",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Specify query parameter as **true** to get the xsd schema as json"
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "It returns as either a curation JSON schema, or a curation XSD. It can also download the XSD as a file.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/components/schemas/Sample-XSD"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Sample-JsonSchema"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/xml/{controlID}": {
+        "get": {
+          "summary": "Gets Curation XMl",
+          "description": "This route downloads a curation xml",
+          "tags": [
+            "Xml"
+          ],
+          "parameters": [
+            {
+              "in": "path",
+              "required": true,
+              "name": "controlID",
+              "description": "The Control_ID of the xml to be fetched.",
+              "schema": {
+                "type": "string",
+                "example": "L5_S4_Hareesh_2023"
+              }
+            },
+            {
+              "in": "query",
+              "name": "format",
+              "schema": {
+                "type": "string",
+                "example": "xml",
+                "default": "xml"
+              },
+              "description": "Set to xml"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns the curation XML, either rendered directly or as a downloadable file.",
+              "content": {
+                "application/xml": {
+                  "schema": {
+                    "type": "string",
+                    "example": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n  <PolymerNanocomposite >\n    <2D_RVE>\n      <Width>500</Width>\n      <Height>500</Height>\n    </2D_RVE>\n    <3D_RVE>\n      <Width>500</Width>\n      <Height>500</Height>\n    </3D_RVE>\n  </PolymerNanocomposite>\n"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Curation not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "Curation sample not found"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/xml/xml-has-property": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Get properties present in the XML",
+          "description": "This API endpoint checks and filters dynamic properties present in XML files.",
+          "tags": [
+            "Xml"
+          ],
+          "requestBody": {
+            "description": "A payload containing intended properties.",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "has": {
+                      "type": "string",
+                      "enum": [
+                        "temperature",
+                        "strain",
+                        "stress",
+                        "frequency",
+                        "time"
+                      ]
+                    },
+                    "limit": {
+                      "type": "integer",
+                      "example": 2
+                    },
+                    "page": {
+                      "type": "integer",
+                      "example": 1
+                    }
+                  },
+                  "required": [
+                    "has"
+                  ]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "counts": {
+                        "type": "number",
+                        "example": 10
+                      },
+                      "xmls": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string",
+                              "example": "LM_A10.xml"
+                            },
+                            "contains": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "property": {
+                                    "type": "string",
+                                    "example": "AC_Dielectric_Constant"
+                                  },
+                                  "table": {
+                                    "type": "string",
+                                    "example": "Frequency (Hz) vs Tan delta"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "counts",
+                      "xmls"
+                    ]
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Curation not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "has parameter is required."
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/xml/viscoelastic-data": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Get properties present in the XML",
+          "description": "This API endpoint checks and filters dynamic properties present in XML files.",
+          "tags": [
+            "Xml"
+          ],
+          "requestBody": {
+            "description": "A payload containing either page limit and page number.",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "limit": {
+                      "type": "integer",
+                      "example": 2
+                    },
+                    "page": {
+                      "type": "integer",
+                      "example": 1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "counts": {
+                        "type": "number",
+                        "example": 10
+                      },
+                      "xmls": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string",
+                              "example": "LM_A10.xml"
+                            },
+                            "contains": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "property": {
+                                    "type": "string",
+                                    "example": "AC_Dielectric_Constant"
+                                  },
+                                  "table": {
+                                    "type": "string",
+                                    "example": "Frequency (Hz) vs Tan delta"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "counts",
+                      "xmls"
+                    ]
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Curation not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "has parameter is required."
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/files/{fileId}": {
+        "get": {
+          "summary": "Download files from the server",
+          "description": "A route for downloading files from the server, with a query parameter indicating the storage location. Files may be stored in the file store, bucket store, or database.",
+          "tags": [
+            "Files"
+          ],
+          "parameters": [
+            {
+              "in": "query",
+              "name": "isFileStore",
+              "schema": {
+                "type": "boolean",
+                "example": false
+              },
+              "description": "Set to **true** if the file is stored in the file directory on the server."
+            },
+            {
+              "in": "query",
+              "name": "isStore",
+              "schema": {
+                "type": "boolean",
+                "example": false
+              },
+              "description": "Set to **true** if the file is stored in the bucket store"
+            },
+            {
+              "in": "path",
+              "required": true,
+              "name": "fileId",
+              "description": "The ID or name of the file to be downloaded.",
+              "schema": {
+                "type": "string",
+                "example": "mobile (15).png"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns the downloaded file.",
+              "content": {
+                "application/octet-stream": {
+                  "schema": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "success": false,
+                      "message": "validation error",
+                      "data": [
+                        {
+                          "value": true,
+                          "msg": "only boolean value allowed",
+                          "param": "isFileStore",
+                          "location": "query"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "delete": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Deletes a file from the server",
+          "description": "A route for deleting a file by providing the fileId as a path parameter.",
+          "tags": [
+            "Files"
+          ],
+          "parameters": [
+            {
+              "in": "path",
+              "required": true,
+              "name": "fileId",
+              "description": "The ID of the file to be deleted",
+              "schema": {
+                "type": "string",
+                "example": "mobile (15).png"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "success": false,
+                      "message": "validation error",
+                      "data": [
+                        {
+                          "value": "mobile (15).pnge",
+                          "msg": "Unsupported filetype",
+                          "param": "fileId",
+                          "location": "params"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/files/image_migration/{imageType}": {
+        "get": {
+          "summary": "Image migration route",
+          "description": "A route to fetch images of specific types only",
+          "tags": [
+            "Files"
+          ],
+          "parameters": [
+            {
+              "in": "path",
+              "required": true,
+              "name": "imageType",
+              "description": "The type of images to retrieve.",
+              "schema": {
+                "type": "string",
+                "example": "tiff"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns the images of the specified type.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "images": [
+                        {
+                          "fieldname": "uploadfile",
+                          "originalname": "001.tif",
+                          "encoding": "7bit",
+                          "mimetype": "image/tiff",
+                          "destination": "mm_files",
+                          "filename": "exciting_spoonbill_ermentrude-2023-05-05T11:25:53.451Z-001.tif",
+                          "path": "mm_files/exciting_spoonbill_ermentrude-2023-05-05T11:25:53.451Z-001.tif",
+                          "size": 101196
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "success": false,
+                      "message": "validation error",
+                      "data": [
+                        {
+                          "value": "png",
+                          "msg": "only supports tiff & tif migration",
+                          "param": "imageType",
+                          "location": "params"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/files/upload": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "upload files to the server",
+          "description": "A route to upload files to the server",
+          "tags": [
+            "Files"
+          ],
+          "parameters": [
+            {
+              "in": "query",
+              "name": "isVisualizationCSV",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Set as **true** when uploading Metamine Visualization CSV files."
+            },
+            {
+              "in": "query",
+              "name": "isTemp",
+              "schema": {
+                "type": "boolean"
+              },
+              "description": "Set as **true** if file(s) should only be uploaded to the temporary file store."
+            }
+          ],
+          "requestBody": {
+            "description": "An array selection of files to upload",
+            "required": true,
+            "content": {
+              "multipart/form-data": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "uploadfile": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "format": "binary"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Uploads file and provides information about the uploaded files",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Sample-Files"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "Only .png, .jpg, .jpeg, .tiff, .tif, .csv, .zip, .xls and .xlsx format allowed!"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/files/metamine": {
+        "get": {
+          "summary": "fetch metamine dataset files",
+          "description": "Fetch details of uploaded metamine visualization files such as name of the file, bucket which file is stored, key and color.",
+          "tags": [
+            "Files"
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns details of the metamine visualization files.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Sample-Metamine"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/files/metamine/{fileName}": {
+        "get": {
+          "summary": "Download and parse the specified metamine fileName",
+          "description": "Download specified metamine visualization file, parse the file and return in JSON",
+          "tags": [
+            "Files"
+          ],
+          "parameters": [
+            {
+              "in": "path",
+              "required": true,
+              "name": "fileName",
+              "description": "The name of the metamine visualization file",
+              "schema": {
+                "type": "string",
+                "example": "lattice_2d_sample.csv"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns the details of the specified metamine visualization file in JSON format",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Sample-Metamine-Dataset"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/mn/tri-ve": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "A route to call the Tri-VE Managed Service Application",
+          "description": "A route to upload csv and tsv file and returns plotly chart data.",
+          "tags": [
+            "Managed Services"
+          ],
+          "requestBody": {
+            "description": "A payload that contains the information required by the Tri-VE application",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                    "file_name": "left_sloth_evie-2024-01-05T14:05:18.746Z-test.txt",
+                    "number_of_prony": 100,
+                    "model": "Linear",
+                    "fit_settings": false,
+                    "useSample": false,
+                    "domain": "temperature"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Returns processed Tri-VE chart data.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Succesful-Dynamfit-Data"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "File 'left_sloth_evie-2024-01-05T16:40:33.500Z-PMMA_shifted_R10_data.tx' has an invalid extension",
+                          "The number of prony must be between 1 and 100",
+                          "The Model must be one of Linear, LASSO, Ridge",
+                          "Fit settings must be one of True, False",
+                          "No file name provided"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "File Not Found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "message": "File 'left_sloth_evie-2024-01-05T16:40:33.500Z-PMMA_shifted_R10_data.txt' not found"
+                    }
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable entity",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "message": "Tri-ve service not available"
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/mn/chemprops": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "A route to call a Chemprops Managed Service Application",
+          "description": "This route collects polymer and filler info in request and returns their uSmile info.",
+          "tags": [
+            "Managed Services"
+          ],
+          "requestBody": {
+            "description": "A payload that contains the information required by chemprops to process the request.",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                    "polfil": "pol",
+                    "ChemicalName": "Polystyrene",
+                    "Abbreviation": "PS",
+                    "TradeName": "Styrofoam",
+                    "SMILES": "*CC(*)c1ccccc1",
+                    "nmId": "L999_Someone_2020_S2"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Returns a uSmile information related to a polymer or filler request",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Successful-Chemprops-Data"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "Invalid Polymer Name",
+                          "Invalid Request: Ignore if not; it will be added to the database.",
+                          "polfil is required",
+                          "ChemicalName is required",
+                          "polfil must be either pol or fil"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable entity",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "message": "Chemprops service not available"
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/mn/chemprops/init": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "A route to initialize the Chemprops Managed Service Application",
+          "description": "A route to initialize the Chemprops database and seed it with data.",
+          "tags": [
+            "Managed Services"
+          ],
+          "responses": {
+            "200": {
+              "description": "Returns a successful Initialization message",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "message": "nmChemPropsPrepare initialized and database seeded successfully"
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "If user is forbidden from using the service",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Forbidden-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/mn/ontology": {
+        "get": {
+          "summary": "A route to Extract Ontology Information",
+          "description": "This route processes an RDF Turtle file to extract ontology details, compute statistical metrics, and build a hierarchical structure of ontology classes.",
+          "tags": [
+            "Managed Services"
+          ],
+          "responses": {
+            "200": {
+              "description": "Materialsmine Managed Service data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Successful-Materialsmine-Data"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "Failed to download file from GitHub"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "error": "Not Found",
+                      "message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/mn/validate-ontology": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Validate an RDF/OWL ontology (and optional instance data) with SHACL, tailored to the MaterialsMine ontology.",
+          "description": "Fetches an ontology from a URL or inline text (defaults to the MaterialsMine @mm.ttl raw link if not provided), optionally loads an instance data graph, and runs syntax checking plus SHACL validation using shapes aligned to your MM classes (band gaps, binary geometries, matrix/tensor indices, etc.). You can choose reasoning level and enable lightweight ORCID/DOI URL resolvability checks. Returns a structured validation report and timing headers.",
+          "tags": [
+            "Managed Services"
+          ],
+          "requestBody": {
+            "$ref": "#/components/requestBodies/KgValidationRequestBody"
+          },
+          "responses": {
+            "200": {
+              "description": "Materialsmine Managed Service data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Successful-Validation-Data"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid input or RDF parse/validation error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "example": "Failed to download file from GitHub"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {
+                      "error": "Not Found",
+                      "message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            },
+            "502": {
+              "description": "Resource Fetching Network Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/jobs/xml/adjust-status": {
+        "post": {
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "summary": "Bulk-update curation status for XML data and curated samples",
+          "description": "Updates the curateState field in xmldata and curationState field in curatedsamples collections for the provided MongoDB IDs. IDs not found in xmldata are tried against curatedsamples. Provide IDs via comma-separated text or a file.",
+          "tags": [
+            "Jobs"
+          ],
+          "requestBody": {
+            "description": "A payload containing the target status and IDs to update (via text or filename).",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "status"
+                  ],
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "The target curation status to apply",
+                      "example": "Curated"
+                    },
+                    "text": {
+                      "type": "string",
+                      "description": "Comma-separated list of MongoDB ObjectIds. Required if filename is not provided.",
+                      "example": "507f1f77bcf86cd799439011,507f1f77bcf86cd799439012"
+                    },
+                    "filename": {
+                      "type": "string",
+                      "description": "Name of a file in FILES_DIRECTORY containing one ObjectId per line. Required if text is not provided.",
+                      "example": "ids.txt"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Returns update counts and any failed or invalid IDs",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "object",
+                        "properties": {
+                          "xmlDataUpdated": {
+                            "type": "integer",
+                            "description": "Number of xmldata records updated",
+                            "example": 5
+                          },
+                          "curatedSamplesUpdated": {
+                            "type": "integer",
+                            "description": "Number of curatedsamples records updated",
+                            "example": 2
+                          },
+                          "failed": {
+                            "type": "array",
+                            "description": "IDs not found in either collection",
+                            "items": {
+                              "type": "string"
+                            },
+                            "example": [
+                              "507f1f77bcf86cd799439013"
+                            ]
+                          },
+                          "invalidIds": {
+                            "type": "array",
+                            "description": "IDs that are not valid MongoDB ObjectIds",
+                            "items": {
+                              "type": "string"
+                            },
+                            "example": [
+                              "not-a-valid-id"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid Request Payload",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string",
+                        "enum": [
+                          "Status is required",
+                          "Either text or filename is required",
+                          "Provide either text or filename, not both"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized access to this service.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Unauthorized-Error"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Server-Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "securitySchemes": {
+        "BearerAuth": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        }
+      },
+      "schemas": {
+        "Unauthorized-Error": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string",
+              "example": "Not authenticated"
+            }
+          }
+        },
+        "Forbidden-Error": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string",
+              "example": "User is forbidden"
+            }
+          }
+        },
+        "Server-Error": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string",
+              "enum": [
+                "An error occurred",
+                "Internal Server Error",
+                "This response indicates an unexpected server-side issue.",
+                "Error fetching file",
+                "Error deleting files",
+                "Error uploading files",
+                "error listing metamine objects",
+                "error fetching metamine csv object"
+              ]
+            }
+          }
+        },
+        "Missing-Input-Error": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string",
+              "example": "Category type or doc is missing"
+            }
+          }
+        },
+        "CurationJsonUpdate": {
+          "type": "object",
+          "properties": {
+            "payload": {
+              "$ref": "#/components/schemas/Sample-Curation"
+            }
+          }
+        },
+        "BaseSchemaUpdate": {
+          "type": "object",
+          "properties": {
+            "payload": {
+              "$ref": "#/components/schemas/Sample-BaseObject"
+            }
+          }
+        },
+        "Successful-Curation": {
+          "type": "object",
+          "example": {
+            "xml": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n  <PolymerNanocomposite>\n  <ID>S10</ID>\n  <Control_ID>S28</Control_ID>\n  <DATA_SOURCE>\n    <Citation>\n      <CommonFields>\n        <YourName>John Smith</YourName>\n        <YourEmail>jonsmith@nomail.org</YourEmail>\n        <Origin>experiments</Origin>\n        <CitationType>lab-generated</CitationType>\n        <Author>Aditya Shanker Prasad</Author>\n        <Author>John Doe</Author>\n        <URL>https://search.proquest.com/openview/eb63d4d6b84b1252971b3e3eec53b97c/1?pq-origsite=gscholar&cbl=51922&diss=y</URL>\n        <Location>Rensselaer Polytechnic Institute</Location>\n      </CommonFields>\n    </Citation>\n  </DATA_SOURCE>\n   </PolymerNanocomposite>\n",
+            "user": {
+              "_id": "643931cc6f44b02f01380f7a",
+              "displayName": "Test"
+            },
+            "groupId": "583e3d6ae74a1d205f4e3fd3",
+            "sampleID": "64394c8032bc6325505af6f9",
+            "isApproved": "false,",
+            "status": "Editing"
+          }
+        },
+        "Sample-Curation": {
+          "type": "object",
+          "example": {
+            "data origin": {
+              "YourName": "Akash Prasad",
+              "YourEmail": "akash@prasad.com",
+              "ID": "S10",
+              "Control_ID": "S28",
+              "Origin": "experiments",
+              "Citation Type": "lab-generated",
+              "Author": "Aditya Shanker Prasad",
+              "URL": "https://search.proquest.com/openview/eb63d4d6b84b1252971b3e3eec53b97c/1?pq-origsite=gscholar&cbl=51922&diss=y",
+              "Location": "Rensselaer Polytechnic Institute"
+            }
+          }
+        },
+        "Sample-XSD": {
+          "type": "object",
+          "example": {
+            "xsd": "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\r\n    <xs:element name=\"PolymerNanocomposite\">\r\n        <xs:complexType>\r\n            <xs:sequence>\r\n                <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"ID\"/>\r\n                <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"Control_ID\"/>\r\n                <xs:element minOccurs=\"0\" name=\"DATA_SOURCE\">\r\n                    <xs:complexType>\r\n                        <xs:sequence>\r\n                            <xs:element minOccurs=\"0\" name=\"Citation\">\r\n                                <xs:complexType>\r\n                                    <xs:sequence>\r\n                                        <xs:element minOccurs=\"0\" name=\"CommonFields\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"YourName\"/>\r\n                                                    <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"YourEmail\"/>\r\n                                                    <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"Origin\"/>\r\n                                                    <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"CitationType\"/>\r\n                                                    <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"PublicationType\"/>\r\n                                                    <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"DOI\"/>\r\n                                                    <xs:element minOccurs=\"0\" type=\"xs:string\" name=\"Publication\"/>"
+          }
+        },
+        "Sample-BaseObject": {
+          "type": "object",
+          "example": {
+            "ID": {
+              "cellValue": null,
+              "type": "String",
+              "required": false
+            },
+            "Control_ID": {
+              "cellValue": "12",
+              "type": "String",
+              "required": false
+            },
+            "DATA ORIGIN": {
+              "Citation": {
+                "CommonFields": {
+                  "YourName": {
+                    "cellValue": "Heybee",
+                    "type": "String",
+                    "required": false
+                  },
+                  "YourEmail": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "Origin": {
+                    "cellValue": null,
+                    "type": "List",
+                    "required": false,
+                    "validList": "origin"
+                  },
+                  "CitationType": {
+                    "cellValue": null,
+                    "type": "List",
+                    "required": false,
+                    "validList": "citation_type"
+                  },
+                  "PublicationType": {
+                    "cellValue": null,
+                    "type": "List",
+                    "required": false,
+                    "validList": "publication_type"
+                  },
+                  "DOI": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "Publication": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "Title": {
+                    "cellValue": "Test title",
+                    "type": "String",
+                    "required": false
+                  },
+                  "Author": [
+                    "Uzumaki Naruto",
+                    "Uchiha Sasuke",
+                    "Haruno Sakura"
+                  ],
+                  "Keyword": [
+                    "Anime",
+                    "Shounin",
+                    "Naruto"
+                  ],
+                  "PublicationYear": {
+                    "cellValue": "1992",
+                    "type": "String",
+                    "required": false
+                  },
+                  "Volume": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "Issue": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "URL": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "Language": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "Location": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "DateOfCitation": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "LaboratoryDataInfo": {
+                    "DateOfSampleMade": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "DateOfDataMeasurement": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "RelatedDOI": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    }
+                  }
+                }
+              }
+            },
+            "PROPERTIES": {
+              "Electrical": {
+                "ElectricConductivity": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "data": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "CurrentDensity": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "data": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "EnergyDensity": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "data": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "SurfaceResistivity": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "data": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "VolumeResistivity": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "datafile": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "ArcResistance": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "datafile": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "Impedance": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "datafile": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "ElectricPercolationThreshold": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "data": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "DC_DielectricConstant": {
+                  "description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "value": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "unit": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "data": {
+                    "cellValue": null,
+                    "type": "File",
+                    "required": false
+                  }
+                },
+                "AC_DielectricDispersion": {
+                  "Description": {
+                    "cellValue": null,
+                    "type": "String",
+                    "required": false
+                  },
+                  "DielectricDispersionDependence": {
+                    "FrequencyDependence": {
+                      "condition": {
+                        "temperature": {
+                          "description": {
+                            "cellValue": null,
+                            "type": "String",
+                            "required": false
+                          },
+                          "value": {
+                            "cellValue": null,
+                            "type": "String",
+                            "required": false
+                          },
+                          "unit": {
+                            "cellValue": null,
+                            "type": "List",
+                            "required": false,
+                            "validList": "AC_dielectric_dispersion_#::Test_Conditions_-_Temperature::Unit"
+                          },
+                          "data": {
+                            "cellValue": null,
+                            "type": "File",
+                            "required": false
+                          }
+                        }
+                      }
+                    },
+                    "TemperatureDependence": {
+                      "condition": {
+                        "frequency": {
+                          "description": {
+                            "cellValue": null,
+                            "type": "String",
+                            "required": false
+                          },
+                          "value": {
+                            "cellValue": null,
+                            "type": "String",
+                            "required": false
+                          },
+                          "unit": {
+                            "cellValue": null,
+                            "type": "String",
+                            "required": false
+                          },
+                          "data": {
+                            "cellValue": null,
+                            "type": "File",
+                            "required": false
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "Dielectric_Real_Permittivity": {
+                    "description": {
+                      "cellValue": "Real permittivity",
+                      "type": "String",
+                      "required": false
+                    },
+                    "value": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "unit": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "data": {
+                      "cellValue": null,
+                      "type": "File",
+                      "required": false
+                    }
+                  },
+                  "Dielectric_Loss_Permittivity": {
+                    "description": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "value": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "unit": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "data": {
+                      "cellValue": null,
+                      "type": "File",
+                      "required": false
+                    }
+                  },
+                  "Dielectric_Loss_Tangent": {
+                    "description": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "value": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "unit": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "data": {
+                      "cellValue": null,
+                      "type": "File",
+                      "required": false
+                    }
+                  }
+                },
+                "DielectricBreakdownStrength": {
+                  "Condition": {
+                    "cellValue": null,
+                    "type": "List",
+                    "required": false,
+                    "validList": "AC_dielectric_dispersion_#::Dielectric_breakdown_strength::Condition"
+                  },
+                  "Profile": {
+                    "value": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "unit": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "data": {
+                      "cellValue": null,
+                      "type": "File",
+                      "required": false
+                    }
+                  },
+                  "WeibullPlot": {
+                    "description": {
+                      "cellValue": null,
+                      "type": "String",
+                      "required": false
+                    },
+                    "data": {
+                      "cellValue": null,
+                      "type": "File",
+                      "required": false
+                    }
+                  },
+                  "WeibullParameter": {
+                    "type": "multiples",
+                    "values": [
+                      {
+                        "description": {
+                          "cellValue": "Weibull parameter description 1",
+                          "type": "String",
+                          "required": false,
+                          "default": "scale parameter"
+                        },
+                        "value": {
+                          "value": {
+                            "cellValue": "Weibull parameter value 1",
+                            "type": "String",
+                            "required": false
+                          },
+                          "unit": {
+                            "cellValue": "Weibull parameter unit 1",
+                            "type": "String",
+                            "required": false
+                          }
+                        }
+                      },
+                      {
+                        "description": {
+                          "cellValue": "Weibull parameter description 2",
+                          "type": "String",
+                          "required": false,
+                          "default": "shape parameter"
+                        },
+                        "value": {
+                          "value": {
+                            "cellValue": "Weibull parameter value 2",
+                            "type": "String",
+                            "required": false
+                          },
+                          "unit": {
+                            "cellValue": "Weibull parameter unit 2",
+                            "type": "String",
+                            "required": false
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Sample-JsonSchema": {
+          "type": "object",
+          "example": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "properties": {
+              "Polymer": {
+                "type": "object",
+                "properties": {
+                  "ID": {
+                    "type": "string"
+                  },
+                  "Control_ID": {
+                    "type": "string"
+                  },
+                  "DATA ORIGIN": {
+                    "type": "object",
+                    "properties": {
+                      "Citation": {
+                        "type": "object",
+                        "properties": {
+                          "CommonFields": {
+                            "type": "object",
+                            "properties": {
+                              "YourName": {
+                                "type": "string"
+                              },
+                              "YourEmail": {
+                                "type": "string"
+                              },
+                              "Origin": {
+                                "type": "string"
+                              },
+                              "CitationType": {
+                                "type": "string"
+                              },
+                              "PublicationType": {
+                                "type": "string"
+                              },
+                              "DOI": {
+                                "type": "string"
+                              },
+                              "Publication": {
+                                "type": "string"
+                              },
+                              "Title": {
+                                "type": "string"
+                              },
+                              "Author": {
+                                "type": "array",
+                                "items": {}
+                              },
+                              "Keyword": {
+                                "type": "array",
+                                "items": {}
+                              },
+                              "PublicationYear": {
+                                "type": "string"
+                              },
+                              "Volume": {
+                                "type": "string"
+                              },
+                              "Issue": {
+                                "type": "string"
+                              },
+                              "URL": {
+                                "type": "string"
+                              },
+                              "Language": {
+                                "type": "string"
+                              },
+                              "Location": {
+                                "type": "string"
+                              },
+                              "DateOfCitation": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "YourName",
+                              "YourEmail",
+                              "Origin",
+                              "CitationType",
+                              "PublicationType",
+                              "DOI",
+                              "Publication",
+                              "Title",
+                              "Author",
+                              "Keyword",
+                              "PublicationYear",
+                              "Volume",
+                              "Issue",
+                              "URL",
+                              "Language",
+                              "Location",
+                              "DateOfCitation"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "CommonFields"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "Citation"
+                    ]
+                  }
+                },
+                "required": [
+                  "ID",
+                  "Control_ID",
+                  "DATA ORIGIN"
+                ]
+              }
+            },
+            "required": [
+              "Polymer"
+            ]
+          }
+        },
+        "Sample-Metamine": {
+          "type": "object",
+          "example": {
+            "fetchedNames": [
+              {
+                "key": 0,
+                "bucket_name": "metamine",
+                "name": "freeform_2d_sample.csv",
+                "color": "#FFB347"
+              },
+              {
+                "key": 1,
+                "bucket_name": "metamine",
+                "name": "lattice_2d_sample.csv",
+                "color": "#8A8BD0"
+              },
+              {
+                "key": 2,
+                "bucket_name": "metamine",
+                "name": "prickly_lungfish_lesya-2023-10-17T08:35:21.048Z-freeform_2d_sample.csv",
+                "color": "#FFC0CB"
+              },
+              {
+                "key": 3,
+                "bucket_name": "metamine",
+                "name": "prickly_lungfish_lesya-2023-10-17T08:35:21.143Z-lattice_2d_sample.csv",
+                "color": "#6FA8DC"
+              }
+            ]
+          }
+        },
+        "Sample-Metamine-Dataset": {
+          "type": "object",
+          "example": {
+            "fetchedData": [
+              {
+                "field1": "19748",
+                "symmetry": "C2v",
+                "unit_cell_x_pixels": "50",
+                "unit_cell_y_pixels": "50",
+                "geometry_full": "0000000000000000000000111111000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000111111110000000000000000000000000000000000000000001111111100000000000000000000000000000000000000000011111111000000000000000000000000000000000000000011111111111100000000000000000000000000000000000000111111111111000000000000000000000000000000000000001111111111110000000000000000000100000000000000111111111111111111110000000000000011000000000000001111111110011111111100000000000000110000000000000011111111000011111111000000000000001110000000000001111111110000111111111000000000000111111111111111111111111100001111111111111111111111100111111111111111111111000011111111111111111111100000111111111111111111110000111111111111111111110000001111111111111111111100001111111111111111111100000011111111111111111111000011111111111111111111000000000111111111111111110000111111111111111110000000000001111111111111111100001111111111111111100000000000011111111111111111000011111111111111111000000000000111111111111111110000111111111111111110000000000001111111111111111000000111111111111111100000000000011111111111111110000001111111111111111000000000000111111111111111100000011111111111111110000000000000011111111111111000000111111111111110000000000000000111111111111110000001111111111111100000000000000111111111111111100000011111111111111110000000000001111111111111111000000111111111111111100000000000011111111111111110000001111111111111111000000000000111111111111111110000111111111111111110000000000001111111111111111100001111111111111111100000000000011111111111111111000011111111111111111000000000000111111111111111110000111111111111111110000000001111111111111111111100001111111111111111111100000011111111111111111111000011111111111111111111000000111111111111111111110000111111111111111111110000011111111111111111111100001111111111111111111110011111111111111111111111000011111111111111111111111110000000000001111111110000111111111000000000000111000000000000001111111100001111111100000000000000110000000000000011111111100111111111000000000000001100000000000000111111111111111111110000000000000010000000000000000000111111111111000000000000000000000000000000000000001111111111110000000000000000000000000000000000000011111111111100000000000000000000000000000000000000001111111100000000000000000000000000000000000000000011111111000000000000000000000000000000000000000000111111110000000000000000000000000000000000000000000111111000000000000000000000000000000000000000000001111110000000000000000000000",
+                "condition": "Plane Strain",
+                "C11": "160891435.5",
+                "C12": "79440894.92",
+                "C22": "350759734.0",
+                "C16": "0",
+                "C26": "0",
+                "C66": "20637027.15",
+                "CM0_E": "1e-09",
+                "CM0_nu": "",
+                "CM1_E": "2240000000",
+                "CM1_nu": "0.49253731",
+                "youngs": "[1.42899474e+08 1.42007158e+08 1.39346218e+08 1.34968483e+08\\n 1.28973220e+08 1.21527138e+08 1.12893160e+08 1.03467311e+08\\n 9.38202996e+07 8.47351881e+07 7.72246927e+07 7.25028768e+07\\n 7.18819653e+07 7.65757549e+07 8.74258767e+07 1.04621187e+08\\n 1.27522959e+08 1.54694551e+08 1.84149454e+08 2.13724559e+08\\n 2.41433907e+08 2.65693099e+08 2.85386314e+08 2.99815093e+08\\n 3.08592307e+08 3.11535422e+08 3.08592307e+08 2.99815093e+08\\n 2.85386314e+08 2.65693099e+08 2.41433907e+08 2.13724559e+08\\n 1.84149454e+08 1.54694551e+08 1.27522959e+08 1.04621187e+08\\n 8.74258767e+07 7.65757549e+07 7.18819653e+07 7.25028768e+07\\n 7.72246927e+07 8.47351881e+07 9.38202996e+07 1.03467311e+08\\n 1.12893160e+08 1.21527138e+08 1.28973220e+08 1.34968483e+08\\n 1.39346218e+08 1.42007158e+08 1.42899474e+08 1.42007158e+08\\n 1.39346218e+08 1.34968483e+08 1.28973220e+08 1.21527138e+08\\n 1.12893160e+08 1.03467311e+08 9.38202996e+07 8.47351881e+07\\n 7.72246927e+07 7.25028768e+07 7.18819653e+07 7.65757549e+07\\n 8.74258767e+07 1.04621187e+08 1.27522959e+08 1.54694551e+08\\n 1.84149454e+08 2.13724559e+08 2.41433907e+08 2.65693099e+08\\n 2.85386314e+08 2.99815093e+08 3.08592307e+08 3.11535422e+08\\n 3.08592307e+08 2.99815093e+08 2.85386314e+08 2.65693099e+08\\n 2.41433907e+08 2.13724559e+08 1.84149454e+08 1.54694551e+08\\n 1.27522959e+08 1.04621187e+08 8.74258767e+07 7.65757549e+07\\n 7.18819653e+07 7.25028768e+07 7.72246927e+07 8.47351881e+07\\n 9.38202996e+07 1.03467311e+08 1.12893160e+08 1.21527138e+08\\n 1.28973220e+08 1.34968483e+08 1.39346218e+08 1.42007158e+08\\n 1.42899474e+08]",
+                "poisson": "[0.49375465 0.50132437 0.52361374 0.55930485 0.60602907 0.66019438\\n 0.71692164 0.77025618 0.81378917 0.8416765  0.84980674 0.83668736\\n 0.80366613 0.75440459 0.69387054 0.62727317 0.55926884 0.4935529\\n 0.43278073 0.37869092 0.33231262 0.29417972 0.26451348 0.24336198\\n 0.23069807 0.22648237 0.23069807 0.24336198 0.26451348 0.29417972\\n 0.33231262 0.37869092 0.43278073 0.4935529  0.55926884 0.62727317\\n 0.69387054 0.75440459 0.80366613 0.83668736 0.84980674 0.8416765\\n 0.81378917 0.77025618 0.71692164 0.66019438 0.60602907 0.55930485\\n 0.52361374 0.50132437 0.49375465 0.50132437 0.52361374 0.55930485\\n 0.60602907 0.66019438 0.71692164 0.77025618 0.81378917 0.8416765\\n 0.84980674 0.83668736 0.80366613 0.75440459 0.69387054 0.62727317\\n 0.55926884 0.4935529  0.43278073 0.37869092 0.33231262 0.29417972\\n 0.26451348 0.24336198 0.23069807 0.22648237 0.23069807 0.24336198\\n 0.26451348 0.29417972 0.33231262 0.37869092 0.43278073 0.4935529\\n 0.55926884 0.62727317 0.69387054 0.75440459 0.80366613 0.83668736\\n 0.84980674 0.8416765  0.81378917 0.77025618 0.71692164 0.66019438\\n 0.60602907 0.55930485 0.52361374 0.50132437 0.49375465]"
+              },
+              {
+                "field1": "27024",
+                "symmetry": "C2v",
+                "unit_cell_x_pixels": "50",
+                "unit_cell_y_pixels": "50",
+                "geometry_full": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000011111111111111111111111111111111111111110000000000111111111111111111111111111111111111111100000000000000000000000111111111111110000000000000000000000000000000000001111111111111100000000000000000000000000000000000011111111111111000000000000000000000000000000000000111111111111110000000000000000000000011111111111111111111111111111111111111110000000000111111111111111111111111111111111111111100000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+                "condition": "Plane Strain",
+                "C11": "1909080999.0",
+                "C12": "326350900.7",
+                "C22": "945550413.6",
+                "C16": "0",
+                "C26": "0",
+                "C66": "404657511.3",
+                "CM0_E": "1e-09",
+                "CM0_nu": "",
+                "CM1_E": "2240000000",
+                "CM1_nu": "0.49253731",
+                "youngs": "[1.79644300e+09 1.78894858e+09 1.76674163e+09 1.73065354e+09\\n 1.68207157e+09 1.62292023e+09 1.55560097e+09 1.48287302e+09\\n 1.40767285e+09 1.33289010e+09 1.26113555e+09 1.19454410e+09\\n 1.13464819e+09 1.08233847e+09 1.03790637e+09 1.00114630e+09\\n 9.71488309e+08 9.48134158e+08 9.30177967e+08 9.16701631e+08\\n 9.06843125e+08 8.99840689e+08 8.95058209e+08 8.91997572e+08\\n 8.90303069e+08 8.89761838e+08 8.90303069e+08 8.91997572e+08\\n 8.95058209e+08 8.99840689e+08 9.06843125e+08 9.16701631e+08\\n 9.30177967e+08 9.48134158e+08 9.71488309e+08 1.00114630e+09\\n 1.03790637e+09 1.08233847e+09 1.13464819e+09 1.19454410e+09\\n 1.26113555e+09 1.33289010e+09 1.40767285e+09 1.48287302e+09\\n 1.55560097e+09 1.62292023e+09 1.68207157e+09 1.73065354e+09\\n 1.76674163e+09 1.78894858e+09 1.79644300e+09 1.78894858e+09\\n 1.76674163e+09 1.73065354e+09 1.68207157e+09 1.62292023e+09\\n 1.55560097e+09 1.48287302e+09 1.40767285e+09 1.33289010e+09\\n 1.26113555e+09 1.19454410e+09 1.13464819e+09 1.08233847e+09\\n 1.03790637e+09 1.00114630e+09 9.71488309e+08 9.48134158e+08\\n 9.30177967e+08 9.16701631e+08 9.06843125e+08 8.99840689e+08\\n 8.95058209e+08 8.91997572e+08 8.90303069e+08 8.89761838e+08\\n 8.90303069e+08 8.91997572e+08 8.95058209e+08 8.99840689e+08\\n 9.06843125e+08 9.16701631e+08 9.30177967e+08 9.48134158e+08\\n 9.71488309e+08 1.00114630e+09 1.03790637e+09 1.08233847e+09\\n 1.13464819e+09 1.19454410e+09 1.26113555e+09 1.33289010e+09\\n 1.40767285e+09 1.48287302e+09 1.55560097e+09 1.62292023e+09\\n 1.68207157e+09 1.73065354e+09 1.76674163e+09 1.78894858e+09\\n 1.79644300e+09]",
+                "poisson": "[0.1709466  0.17269735 0.17792187 0.18653445 0.1983839  0.21324171\\n 0.23078664 0.25058767 0.27208825 0.29459612 0.31728455 0.33921184\\n 0.35936531 0.37673353 0.39040468 0.39968067 0.40418835 0.40396314\\n 0.39948237 0.39163443 0.38162531 0.37083889 0.36067654 0.35240228\\n 0.34701293 0.34514384 0.34701293 0.35240228 0.36067654 0.37083889\\n 0.38162531 0.39163443 0.39948237 0.40396314 0.40418835 0.39968067\\n 0.39040468 0.37673353 0.35936531 0.33921184 0.31728455 0.29459612\\n 0.27208825 0.25058767 0.23078664 0.21324171 0.1983839  0.18653445\\n 0.17792187 0.17269735 0.1709466  0.17269735 0.17792187 0.18653445\\n 0.1983839  0.21324171 0.23078664 0.25058767 0.27208825 0.29459612\\n 0.31728455 0.33921184 0.35936531 0.37673353 0.39040468 0.39968067\\n 0.40418835 0.40396314 0.39948237 0.39163443 0.38162531 0.37083889\\n 0.36067654 0.35240228 0.34701293 0.34514384 0.34701293 0.35240228\\n 0.36067654 0.37083889 0.38162531 0.39163443 0.39948237 0.40396314\\n 0.40418835 0.39968067 0.39040468 0.37673353 0.35936531 0.33921184\\n 0.31728455 0.29459612 0.27208825 0.25058767 0.23078664 0.21324171\\n 0.1983839  0.18653445 0.17792187 0.17269735 0.1709466 ]"
+              }
+            ]
+          }
+        },
+        "Succesful-Dynamfit-Data": {
+          "type": "object",
+          "example": {
+            "appName": "tri-ve",
+            "data": {
+              "multi": true,
+              "response": {
+                "complex-chart": null,
+                "complex-tand-chart": null,
+                "mytable": null,
+                "relaxation-chart": null,
+                "relaxation-spectrum-chart": null,
+                "upload-data": null
+              }
+            }
+          }
+        },
+        "Successful-Chemprops-Data": {
+          "type": "object",
+          "example": {
+            "appName": "chemprops",
+            "data": {
+              "StandardName": "Polystyrene",
+              "density": "1.04",
+              "uSMILES": "C(C(C1=CC=CC=C1)[*])[*]"
+            }
+          }
+        },
+        "Successful-Validation-Data": {
+          "type": "object",
+          "required": [
+            "multi",
+            "response"
+          ],
+          "properties": {
+            "multi": {
+              "type": "boolean",
+              "description": "Indicates multi-part response (true for ontology+data)."
+            },
+            "response": {
+              "$ref": "#/components/schemas/KgValidationPayload"
+            }
+          }
+        },
+        "KgValidationPayload": {
+          "type": "object",
+          "required": [
+            "mode",
+            "ontology_report"
+          ],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": [
+                "ontology-only",
+                "ontology+data"
+              ]
+            },
+            "ontology_report": {
+              "$ref": "#/components/schemas/OntologyReport"
+            },
+            "data_report": {
+              "$ref": "#/components/schemas/DataReport",
+              "nullable": true
+            },
+            "shacl": {
+              "$ref": "#/components/schemas/ShaclReport",
+              "nullable": true
+            },
+            "resolvability": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ResolvabilityCheck"
+              },
+              "nullable": true
+            },
+            "config": {
+              "$ref": "#/components/schemas/KgValidationConfig"
+            }
+          }
+        },
+        "OntologyReport": {
+          "type": "object",
+          "required": [
+            "syntax_ok",
+            "triples",
+            "source"
+          ],
+          "properties": {
+            "syntax_ok": {
+              "type": "boolean"
+            },
+            "mm_base_iri": {
+              "type": "string",
+              "nullable": true
+            },
+            "triples": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "source": {
+              "type": "string",
+              "enum": [
+                "text",
+                "link"
+              ]
+            }
+          }
+        },
+        "DataReport": {
+          "type": "object",
+          "required": [
+            "triples",
+            "source"
+          ],
+          "properties": {
+            "triples": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "source": {
+              "type": "string",
+              "enum": [
+                "text",
+                "link"
+              ]
+            }
+          }
+        },
+        "ShaclReport": {
+          "type": "object",
+          "required": [
+            "conforms",
+            "violation_count",
+            "violations",
+            "text"
+          ],
+          "properties": {
+            "conforms": {
+              "type": "boolean"
+            },
+            "violation_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "violations": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ShaclViolation"
+              }
+            },
+            "text": {
+              "type": "string",
+              "description": "Human-readable report from pySHACL."
+            },
+            "shapes_warning": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        },
+        "ShaclViolation": {
+          "type": "object",
+          "properties": {
+            "focusNode": {
+              "description": "Node being validated.",
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "resultPath": {
+              "description": "Path/property that failed.",
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "severity": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "message": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "value": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "sourceConstraint": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "sourceShape": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ResolvabilityCheck": {
+          "type": "object",
+          "required": [
+            "url",
+            "status",
+            "ok"
+          ],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "status": {
+              "description": "HTTP status code or error string.",
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "ok": {
+              "type": "boolean"
+            }
+          }
+        },
+        "KgValidationConfig": {
+          "type": "object",
+          "required": [
+            "inference",
+            "allowed_frequency_units"
+          ],
+          "properties": {
+            "inference": {
+              "type": "string",
+              "enum": [
+                "none",
+                "rdfs",
+                "both"
+              ]
+            },
+            "allowed_frequency_units": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        },
+        "FailedItem": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "nullable": true,
+              "description": "May be null if ID couldn’t be parsed before failure."
+            },
+            "stage": {
+              "type": "string",
+              "description": "Stage at which the item failed.",
+              "enum": [
+                "xsd",
+                "shacl",
+                "unexpected"
+              ]
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "EtlReport": {
+          "type": "object",
+          "properties": {
+            "count": {
+              "type": "integer",
+              "description": "Number of input items received."
+            },
+            "ok": {
+              "type": "boolean",
+              "description": "True if all items succeeded (no failures)."
+            },
+            "processedCount": {
+              "type": "integer"
+            },
+            "failedCount": {
+              "type": "integer"
+            },
+            "processed": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ProcessedItem"
+              }
+            },
+            "failed": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/FailedItem"
+              }
+            }
+          }
+        },
+        "ProcessedItem": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID extracted from the XML (<ID> value)."
+            },
+            "nanopub": {
+              "type": "string",
+              "format": "uri",
+              "description": "Trusty URI base plus the ID."
+            },
+            "format": {
+              "type": "string",
+              "description": "MIME type of the serialized output.",
+              "enum": [
+                "application/trig",
+                "application/ld+json",
+                "text/turtle"
+              ]
+            },
+            "extension": {
+              "type": "string",
+              "enum": [
+                ".trig",
+                ".jsonld",
+                ".ttl"
+              ]
+            },
+            "content": {
+              "type": "string",
+              "description": "Serialized nanopublication (TriG/JSON-LD/Turtle)."
+            },
+            "shacl": {
+              "$ref": "#/components/schemas/ShaclReport"
+            }
+          }
+        },
+        "CurationEtl200": {
+          "description": "ETL run report (partial success supported).",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EtlReport"
+              },
+              "examples": {
+                "ok-partial": {
+                  "summary": "Mixed results (1 processed, 1 failed)",
+                  "value": {
+                    "count": 2,
+                    "ok": false,
+                    "processedCount": 1,
+                    "failedCount": 1,
+                    "processed": [
+                      {
+                        "id": "L134_S16_Tomer_2010",
+                        "nanopub": "http://materialsmine.org/np/L134_S16_Tomer_2010",
+                        "format": "application/trig",
+                        "extension": ".trig",
+                        "content": "@prefix np: <http://www.nanopub.org/nschema#> .\n{ ... }",
+                        "shacl": {
+                          "conforms": true,
+                          "violation_count": 0
+                        }
+                      }
+                    ],
+                    "failed": [
+                      {
+                        "id": "L251_S6_Wang_2011",
+                        "stage": "xsd",
+                        "errors": [
+                          "Element 'Matrix': Missing child element(s). Expected: MatrixComponent."
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Successful-Materialsmine-Data": {
+          "type": "object",
+          "example": {
+            "appName": "materialsmine",
+            "data": {
+              "details": {
+                "Acronyms": "MATERIALSMINE",
+                "Visibility": "Public",
+                "Description": "A materials ontology to support data publication involving nanomaterials and metamaterials.",
+                "Status": "Alpha",
+                "Format": "OWL",
+                "Contact": "Sabbir Rashid, rashidsabbir@gmail.com",
+                "Categories": "Chemical, Development, Physicochemical",
+                "OntologyVersion": "http://materialsmine.org/ns/1.0"
+              },
+              "metrics": {
+                "classes": 543,
+                "individuals": 224,
+                "properties": 0,
+                "maximum_depth": 5,
+                "maximum_number_of_children": 21,
+                "average_number_of_children": 1,
+                "classes_with_a_single_child": 216,
+                "classes_with_more_than_25_children": 0,
+                "classes_with_no_definition": 248
+              },
+              "data": [
+                {
+                  "ID": "http://www.w3.org/2002/07/owl#Thing",
+                  "Preferred Name": "Thing",
+                  "prefixIRI": "owl:Thing",
+                  "prefLabel": "Thing",
+                  "subClasses": [
+                    {
+                      "ID": "obo:ID_0000061",
+                      "subClasses": [
+                        {
+                          "subClasses": [
+                            {
+                              "subClasses": [],
+                              "ID": "http://materialsmine.org/ns/TemperatureSweep",
+                              "prefixIRI": "materialsmine:TemperatureSweep",
+                              "prefLabel": "Temperature Sweep",
+                              "Label": "Temperature Sweep",
+                              "Preferred Name": "Temperature Sweep",
+                              "subClassOf": "http://materialsmine.org/ns/DMA_Mode",
+                              "Definitions": "A continuous variation of temperature within a pre-defined range."
+                            }
+                          ],
+                          "ID": "http://materialsmine.org/ns/DMA_Mode",
+                          "prefixIRI": "materialsmine:DMA_Mode",
+                          "subClassOf": "http://materialsmine.org/ns/DynamicProperties",
+                          "prefLabel": "Dynamic Mechanical Analysis",
+                          "Label": "Dynamic Mechanical Analysis",
+                          "Preferred Name": "Dynamic Mechanical Analysis",
+                          "Definitions": "The type of condition (e.g., temperature sweep or frequency sweep) under which a material's dynamic mechanical response is measured."
+                        }
+                      ],
+                      "Preferred Name": "obo:ID_0000061",
+                      "prefLabel": "obo:ID_0000061",
+                      "prefixIRI": "ns2:ID_0000061",
+                      "subClassOf": "http://www.w3.org/2002/07/owl#Thing"
+                    }
+                  ],
+                  "subClassOf": "http://www.w3.org/2002/07/owl#Thing"
+                },
+                {
+                  "subClasses": [
+                    {
+                      "subClasses": [],
+                      "ID": "http://materialsmine.org/ns/Beam",
+                      "prefixIRI": "materialsmine:Beam",
+                      "subClassOf": "http://materialsmine.org/ns/1DSolidMechanicsModel",
+                      "Definitions": "A slender 1d structural element that primarily bears lateral loads.",
+                      "prefLabel": "Beam",
+                      "Label": "Beam",
+                      "Preferred Name": "Beam"
+                    }
+                  ],
+                  "ID": "http://materialsmine.org/ns/1DSolidMechanicsModel",
+                  "prefixIRI": "materialsmine:1DSolidMechanicsModel",
+                  "Definitions": "A one-dimensional model of a solid relating stress with strain.",
+                  "prefLabel": "1D Solid Mechanics Model",
+                  "Label": "1D Solid Mechanics Model",
+                  "Preferred Name": "1D Solid Mechanics Model",
+                  "subClassOf": "http://www.w3.org/2002/07/owl#Thing"
+                }
+              ]
+            }
+          }
+        },
+        "Sample-Files": {
+          "type": "object",
+          "example": {
+            "files": [
+              {
+                "filename": "/api/files/prickly_lungfish_lesya-2023-10-17T08:35:21.048Z-freeform_2d_sample.csv?isStore=true",
+                "swaggerFilename": "prickly_lungfish_lesya-2023-10-17T08:35:21.048Z-freeform_2d_sample.csv",
+                "isStore": true
+              },
+              {
+                "filename": "/api/files/prickly_lungfish_lesya-2023-10-17T08:35:21.143Z-lattice_2d_sample.csv?isStore=true",
+                "swaggerFilename": "prickly_lungfish_lesya-2023-10-17T08:35:21.143Z-lattice_2d_sample.csv",
+                "isStore": true
+              }
+            ]
+          }
+        },
+        "KgValidationRequest": {
+          "type": "object",
+          "description": "Input for `/mn/ontology/validate/`. Supply the ontology via URL (`ontology_link`) or inline Turtle (`ontology_text`). For ontology+data validation, also provide a data graph via `data_link` or `data_text`.\n",
+          "properties": {
+            "ontology_link": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL to the ontology file. If omitted, defaults to the MaterialsMine `@mm.ttl` raw link.\n"
+            },
+            "ontology_text": {
+              "type": "string",
+              "description": "Inline ontology content (typically Turtle)."
+            },
+            "ontology_format": {
+              "type": "string",
+              "description": "RDF format hint for the ontology (rdflib will still try to guess from URL).",
+              "enum": [
+                "turtle",
+                "xml",
+                "n3",
+                "nt",
+                "nquads",
+                "trig",
+                "json-ld"
+              ],
+              "default": "turtle"
+            },
+            "validation_type": {
+              "type": "string",
+              "description": "Choose ontology-only or ontology+data validation.",
+              "enum": [
+                "ontology",
+                "ontology+data"
+              ],
+              "default": "ontology"
+            },
+            "data_link": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL to the instance data graph (required when `validation_type` is `ontology+data` unless `data_text` is provided)."
+            },
+            "data_text": {
+              "type": "string",
+              "description": "Inline data graph content."
+            },
+            "data_format": {
+              "type": "string",
+              "description": "RDF format hint for the data graph.",
+              "enum": [
+                "turtle",
+                "xml",
+                "n3",
+                "nt",
+                "nquads",
+                "trig",
+                "json-ld"
+              ],
+              "default": "turtle"
+            },
+            "inference": {
+              "type": "string",
+              "description": "Pre-reasoning to apply before SHACL: `none` (explicit triples only), `rdfs` (RDFS reasoning), or `both` (RDFS + OWL RL).\n",
+              "enum": [
+                "none",
+                "rdfs",
+                "both"
+              ],
+              "default": "rdfs"
+            },
+            "resolve_urls": {
+              "type": "boolean",
+              "description": "If true, perform HEAD requests to verify ORCID/DOI links found in data.\n",
+              "default": true
+            },
+            "allowed_frequency_units": {
+              "type": "array",
+              "description": "Whitelist of unit IRIs (e.g., QUDT) used in band-gap shapes.",
+              "items": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "requestBodies": {
+        "CurationEtlRequest": {
+          "description": "ETL input for single or bulk XML(s).",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "oneOf": [
+                  {
+                    "required": [
+                      "xml"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "xmls"
+                    ]
+                  }
+                ],
+                "properties": {
+                  "xml": {
+                    "description": "XML content as a string OR a URL to fetch.",
+                    "type": "string"
+                  },
+                  "xmls": {
+                    "description": "Array of XML strings and/or URLs (bulk mode).",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "output": {
+                    "description": "Output format (default is jsonld).",
+                    "type": "string",
+                    "enum": [
+                      "jsonld",
+                      "trig",
+                      "ttl"
+                    ],
+                    "default": "jsonld"
+                  },
+                  "xsdUrl": {
+                    "description": "Override PNC XSD URL.",
+                    "type": "string",
+                    "format": "uri",
+                    "example": "https://raw.githubusercontent.com/Duke-MatSci/nanomine-schema/refs/heads/master/xml/PNC_schema_031822.xsd"
+                  },
+                  "inference": {
+                    "description": "Inference level used during SHACL validation.",
+                    "type": "string",
+                    "enum": [
+                      "none",
+                      "rdfs",
+                      "both"
+                    ],
+                    "default": "rdfs"
+                  },
+                  "resolveUrls": {
+                    "description": "Enable external resolvability checks (ORCID/DOI/etc).",
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "ontologyLink": {
+                    "description": "Explicit ontology link to validate against (defaults to server setting).",
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "xsdMode": {
+                    "description": "XSD validation behavior: `strict` fails on any XSD error, `best-effort` logs errors but continues, `off` skips XSD validation.\n",
+                    "type": "string",
+                    "enum": [
+                      "strict",
+                      "best-effort",
+                      "off"
+                    ],
+                    "default": "strict"
+                  }
+                }
+              },
+              "examples": {
+                "single-jsonld": {
+                  "summary": "Single XML → JSON-LD (default)",
+                  "value": {
+                    "xml": "https://materialsmine.org/explorer/xmlvisualizer/5a1deb62e74a1d03cd1e6039?isNewCuration=false",
+                    "inference": "rdfs",
+                    "resolveUrls": true
+                  }
+                },
+                "bulk-trig": {
+                  "summary": "Bulk XMLs → full nanopubs as TriG",
+                  "value": {
+                    "xmls": [
+                      "https://materialsmine.org/explorer/xmlvisualizer/5a1deb62e74a1d03cd1e6039?isNewCuration=false",
+                      "https://example.org/pnc/L251_S6_Wang_2011.xml"
+                    ],
+                    "output": "trig",
+                    "xsdMode": "best-effort"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "KgValidationRequestBody": {
+          "description": "Request body for MaterialsMine ontology/data SHACL validation.",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KgValidationRequest"
+              },
+              "examples": {
+                "OntologyOnly_Default": {
+                  "summary": "Ontology-only using default @mm.ttl",
+                  "value": {
+                    "validation_type": "ontology"
+                  }
+                },
+                "OntologyAndData_ByLink": {
+                  "summary": "Ontology + data (data by URL) with URL checks",
+                  "value": {
+                    "validation_type": "ontology+data",
+                    "data_link": "https://example.org/mm-data.ttl",
+                    "inference": "rdfs",
+                    "resolve_urls": true
+                  }
+                },
+                "OntologyAndData_Inline_CustomUnits": {
+                  "summary": "Ontology + data (inline) with custom unit whitelist",
+                  "value": {
+                    "validation_type": "ontology+data",
+                    "data_text": "@prefix ex: <https://ex/> .\n@prefix schema: <http://schema.org/> .\n",
+                    "allowed_frequency_units": [
+                      "http://qudt.org/vocab/unit/HZ",
+                      "http://qudt.org/vocab/unit/KiloHZ"
+                    ],
+                    "inference": "both"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "customOptions": {}
+};
+  url = options.swaggerUrl || url
+  var urls = options.swaggerUrls
+  var customOptions = options.customOptions
+  var spec1 = options.swaggerDoc
+  var swaggerOptions = {
+    spec: spec1,
+    url: url,
+    urls: urls,
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    presets: [
+      SwaggerUIBundle.presets.apis,
+      SwaggerUIStandalonePreset
+    ],
+    plugins: [
+      SwaggerUIBundle.plugins.DownloadUrl
+    ],
+    layout: "StandaloneLayout"
+  }
+  for (var attrname in customOptions) {
+    swaggerOptions[attrname] = customOptions[attrname];
+  }
+  var ui = SwaggerUIBundle(swaggerOptions)
+
+  if (customOptions.oauth) {
+    ui.initOAuth(customOptions.oauth)
+  }
+
+  if (customOptions.preauthorizeApiKey) {
+    const key = customOptions.preauthorizeApiKey.authDefinitionKey;
+    const value = customOptions.preauthorizeApiKey.apiKeyValue;
+    if (!!key && !!value) {
+      const pid = setInterval(() => {
+        const authorized = ui.preauthorizeApiKey(key, value);
+        if(!!authorized) clearInterval(pid);
+      }, 500)
+
+    }
+  }
+
+  if (customOptions.authAction) {
+    ui.authActions.authorize(customOptions.authAction)
+  }
+
+  window.ui = ui
+}

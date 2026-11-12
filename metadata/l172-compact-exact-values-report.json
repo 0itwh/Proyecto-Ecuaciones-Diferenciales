@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-11-04T00:35:53-05:00",
+  "sources": {
+    "provenance": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-study-provenance.csv",
+    "components": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-material-components.csv",
+    "processing": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-processing-steps.csv",
+    "attributes": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-observed-attributes.csv",
+    "unclassified": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-unclassified-bindings.csv"
+  },
+  "row_counts": {
+    "provenance": 2,
+    "components": 14,
+    "processing": 15,
+    "attributes": 16,
+    "unclassified": 18
+  },
+  "exact_values": {
+    "DOI/recursos": [
+      "10.1021/acs.jpcc.5b08809"
+    ],
+    "Muestras en procedencia": [],
+    "Nombres de componentes": [
+      "Iron oxide - barium titanate core-shell nanoparticles",
+      "Iron(II,III) oxide",
+      "Poly(vinylidene fluoride)"
+    ],
+    "Roles de componentes": [
+      "Filler",
+      "Matrix"
+    ],
+    "Tipos de atributo de componentes": [
+      "http://materialsmine.org/ns/Abbreviation",
+      "http://materialsmine.org/ns/Density",
+      "http://materialsmine.org/ns/ManufacturerOrSourceName",
+      "http://materialsmine.org/ns/MassFraction",
+      "http://materialsmine.org/ns/VolumeFraction",
+      "http://semanticscience.org/resource/Width"
+    ],
+    "Unidades de componentes": [
+      "Gram per Cubic Centimeter",
+      "Nanometer"
+    ],
+    "Etiquetas de proceso": [
+      "Solution Processing"
+    ],
+    "Pasos de procesamiento": [
+      "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_0",
+      "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_1",
+      "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_2",
+      "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_3",
+      "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_4",
+      "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_5",
+      "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_0",
+      "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_1",
+      "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_2",
+      "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_3",
+      "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_4",
+      "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_5",
+      "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_6"
+    ],
+    "Parametros de procesamiento": [
+      "Additive",
+      "Drying Evaporation",
+      "Heating",
+      "Mixing",
+      "Molding",
+      "Solvent"
+    ],
+    "Tipos de atributos observados": [
+      "file:///apps/whyis/nan",
+      "http://materialsmine.org/ns/Abbreviation",
+      "http://materialsmine.org/ns/Density",
+      "http://materialsmine.org/ns/ManufacturerOrSourceName",
+      "http://materialsmine.org/ns/MassFraction",
+      "http://materialsmine.org/ns/VolumeFraction",
+      "http://semanticscience.org/resource/Width",
+      "obo:PATO_0000146"
+    ],
+    "Unidades observadas": [
+      "Celsius",
+      "Gram per Cubic Centimeter",
+      "Nanometer"
+    ]
+  },
+  "duplicate_groups": {
+    "provenance": [
+      {
+        "count": 2,
+        "values": {
+          "sample_id": "",
+          "doi_or_resource": "10.1021/acs.jpcc.5b08809",
+          "process_label": "Solution Processing"
+        }
+      }
+    ],
+    "components": [
+      {
+        "count": 2,
+        "values": {
+          "sample_id": "",
+          "standard_name": "Poly(vinylidene fluoride)",
+          "component_role": "Matrix",
+          "attribute_type": "http://materialsmine.org/ns/Abbreviation",
+          "attribute_value_original": "PVDF",
+          "attribute_unit_original": ""
+        }
+      },
+      {
+        "count": 2,
+        "values": {
+          "sample_id": "",
+          "standard_name": "Poly(vinylidene fluoride)",
+          "component_role": "Matrix",
+          "attribute_type": "http://materialsmine.org/ns/Density",
+          "attribute_value_original": "1.68e0",
+          "attribute_unit_original": "Gram per Cubic Centimeter"
+        }
+      },
+      {
+        "count": 2,
+        "values": {
+          "sample_id": "",
+          "standard_name": "Poly(vinylidene fluoride)",
+          "component_role": "Matrix",
+          "attribute_type": "http://materialsmine.org/ns/ManufacturerOrSourceName",
+          "attribute_value_original": "3F Corporation",
+          "attribute_unit_original": ""
+        }
+      }
+    ],
+    "processing": [
+      {
+        "count": 2,
+        "values": {
+          "sample_id": "",
+          "processing_step": "",
+          "parameter_label": "",
+          "description_original": ""
+        }
+      }
+    ],
+    "attributes": [
+      {
+        "count": 2,
+        "values": {
+          "sample_id": "",
+          "attribute_type": "http://materialsmine.org/ns/Abbreviation",
+          "value_original": "PVDF",
+          "unit_original": "",
+          "standard_name": "Poly(vinylidene fluoride)",
+          "component_role": "Matrix"
+        }
+      },
+      {
+        "count": 2,
+        "values": {
+          "sample_id": "",
+          "attribute_type": "http://materialsmine.org/ns/Density",
+          "value_original": "1.68e0",
+          "unit_original": "Gram per Cubic Centimeter",
+          "standard_name": "Poly(vinylidene fluoride)",
+          "component_role": "Matrix"
+        }
+      },
+      {
+        "count": 2,
+        "values": {
+          "sample_id": "",
+          "attribute_type": "http://materialsmine.org/ns/ManufacturerOrSourceName",
+          "value_original": "3F Corporation",
+          "unit_original": "",
+          "standard_name": "Poly(vinylidene fluoride)",
+          "component_role": "Matrix"
+        }
+      }
+    ]
+  }
+}

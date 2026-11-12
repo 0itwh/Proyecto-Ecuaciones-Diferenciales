@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-11-04T01:50:57-05:00",
+  "decision_rule": {
+    "present_in_target_block": ">=6 of 7 samples",
+    "absent_in_other_blocks": "all 4 other blocks",
+    "scientifically_interpretable": true,
+    "not_composition_derived": true,
+    "not_identifier_derived": true,
+    "block_confirmation": ">=2 coherent qualifying features"
+  },
+  "counts": {
+    "normalized_features_reviewed": 5,
+    "feature_block_evaluations": 25,
+    "qualifying_feature_block_pairs": 0,
+    "blocks_confirmed": 0,
+    "blocks_not_confirmed": 5
+  },
+  "missing_processing_samples": [
+    "l254-s1-castillo-2011",
+    "l254-s33-castillo-2011"
+  ],
+  "scientific_conclusion": "No normalized feature satisfies the strict block-definition rule. The two component features separate density unit representation, while the three processing features are common to all blocks and are missing only for s33 in block 5.",
+  "outputs": [
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-block-definition-decisions.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-block-definition-status.csv"
+  ]
+}

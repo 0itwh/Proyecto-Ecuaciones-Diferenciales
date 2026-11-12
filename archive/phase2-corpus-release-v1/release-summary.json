@@ -1,0 +1,12 @@
+{
+  "release_id": "phase2-corpus-release-v1",
+  "generated_at": "2026-11-04T02:15:57-05:00",
+  "stage_directory": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\archive\\phase2-corpus-release-v1",
+  "zip_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\archive\\phase2-corpus-release-v1.zip",
+  "zip_bytes": 105772,
+  "zip_sha256": "082f2ac4f57bd23b1b7f25343925c4c8ced396e83920b8d6cf554259f42a32c0",
+  "inventory_entries": 41,
+  "zip_members": 42,
+  "required_files_missing": 0,
+  "phase_status": "closed"
+}

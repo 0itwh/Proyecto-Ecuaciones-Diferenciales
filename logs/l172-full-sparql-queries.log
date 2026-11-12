@@ -1,0 +1,67 @@
+FASE 2 - CONSULTAS SPARQL COMPLETAS L172
+
+Fecha: 2026-11-04T00:44:46-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\explorer\l172-huo-2015-search-response.json
+SHA256 entrada: 8759879f74b09201864f84a908b52b6e39c2464e34b47ba7d6c69aec5005aaa0
+Hits totales: 107
+Hits objetivo encontrados: 2
+
+========================================================================
+HIT: IKTKTZIBGO0wWaevBNFi
+========================================================================
+Nombre: attribute-19_5
+Valor esperado: 19.5
+Unidad esperada: None
+Tipo esperado: file:///apps/whyis/nan
+Fecha de la fuente: 2024-10-02
+Variables de respuesta: AttrType, value, Units
+Bindings: 1
+Caracteres de consulta: 771
+Lineas de consulta: 16
+SHA256 consulta: 6167c474346fc422555a35ee0c17b8d8a90ffad3dc899a6a366aa66274a14be7
+SHA256 archivo: 6167c474346fc422555a35ee0c17b8d8a90ffad3dc899a6a366aa66274a14be7
+Hash coincide: SI
+SELECT presente: SI
+WHERE presente: SI
+PREFIX presente: SI
+Llaves equilibradas: SI
+Sin marcador truncado: SI
+Validacion completa: SI
+Archivo: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\sparql_queries\attribute-19_5-IKTKTZIBGO0wWaevBNFi.sparql
+
+========================================================================
+HIT: eIs225cBqjuXg29aIbPm
+========================================================================
+Nombre: temperature-25C
+Valor esperado: 25.0
+Unidad esperada: Celsius
+Tipo esperado: obo:PATO_0000146
+Fecha de la fuente: 2025-07-05
+Variables de respuesta: AttrType, value, Units
+Bindings: 1
+Caracteres de consulta: 772
+Lineas de consulta: 16
+SHA256 consulta: cdef3057c99f3c2ef385e24161892d33a7ad8b8dbb20cb92bc05c5c541fb09fb
+SHA256 archivo: cdef3057c99f3c2ef385e24161892d33a7ad8b8dbb20cb92bc05c5c541fb09fb
+Hash coincide: SI
+SELECT presente: SI
+WHERE presente: SI
+PREFIX presente: SI
+Llaves equilibradas: SI
+Sin marcador truncado: SI
+Validacion completa: SI
+Archivo: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\sparql_queries\temperature-25C-eIs225cBqjuXg29aIbPm.sparql
+
+VALIDACION GLOBAL
+Consultas completas guardadas: SI
+Cantidad esperada: 2
+Cantidad guardada: 2
+
+ADVERTENCIAS
+- La integridad sintactica minima no confirma que el grafo actual reproduzca los resultados.
+- Los archivos .sparql conservan el texto histórico indexado.
+- No se modificaron URI, variables ni filtros.
+- No se ejecutaron conversiones, medias ni modelos.
+
+Metadatos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-full-sparql-queries.json
+Directorio SPARQL: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\sparql_queries

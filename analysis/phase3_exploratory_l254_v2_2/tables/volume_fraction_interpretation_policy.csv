@@ -1,0 +1,2 @@
+﻿variable,allowed_use,blocked_use,reason,evidence_status
+volume_fraction,descriptive_within_curve_only,cross_variant_threshold_or_loading_comparison,MWCNT density semantic status is not homogeneous across variants,confirmed_from_corpus_metadata_and_article_validation

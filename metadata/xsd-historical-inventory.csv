@@ -1,0 +1,14 @@
+﻿file_name,relative_path,size_bytes,sha256,evidence_status
+FEA_schema.xsd,schemas/nanomine-schema-master/xml/FEA_schema.xsd,53948,2ed082ef3b437b080620cc0131ebe11b133498828484064ee68ade5512c40061,Historical repository copy; production status not verified
+MD_schema.xsd,schemas/nanomine-schema-master/xml/MD_schema.xsd,46797,d884ee3bbabd01715664f0e464f3b812b92726d0ec514a40dab66dfa2903e73c,Historical repository copy; production status not verified
+PNC_schema_010720.xsd,schemas/nanomine-schema-master/xml/PNC_schema_010720.xsd,89241,dd8d5a378a98e99737cb97cf17ba4cdec20155ae7054aedec9f6ea49a96349fa,Historical repository copy; production status not verified
+PNC_schema_031822.xsd,schemas/nanomine-schema-master/xml/PNC_schema_031822.xsd,141355,46837ebfdd215eb1853082d13eedf6394dd7057743d6e17bc6518dbabeadf951,Historical repository copy; production status not verified
+PNC_schema_033018.xsd,schemas/nanomine-schema-master/xml/PNC_schema_033018.xsd,80070,d419b3b2f7bea3c44435924d4d4c42e6d3bd9ee4b478e54451cc6d9a66a3f039,Historical repository copy; production status not verified
+PNC_schema_041220.xsd,schemas/nanomine-schema-master/xml/PNC_schema_041220.xsd,89296,5e8d9f212080ebecddf0c38cfa7574fa68451dd69f0ca9fcd3d609deba1f7cf3,Historical repository copy; production status not verified
+PNC_schema_042917.xsd,schemas/nanomine-schema-master/xml/PNC_schema_042917.xsd,77180,b7f7882b005c051fabcef54eef3d5424b6c37466557d7561ad6208c4e870f55e,Historical repository copy; production status not verified
+PNC_schema_060718.xsd,schemas/nanomine-schema-master/xml/PNC_schema_060718.xsd,81410,1afdce2785050e383697bf2d468f64626d4c6b21696c530689960bc0f4af5a48,Historical repository copy; production status not verified
+PNC_schema_062022.xsd,schemas/nanomine-schema-master/xml/PNC_schema_062022.xsd,89215,321d0060059c74b97a3dfc335d24191fbc725d3b80ed1854d474f090ea3fd4e8,Historical repository copy; production status not verified
+PNC_schema_062722.xsd,schemas/nanomine-schema-master/xml/PNC_schema_062722.xsd,149089,16445847a10dfb400e26474d59323b35ab095025551bf3dbe6200f745d424a14,Historical repository copy; production status not verified
+PNC_schema_072618.xsd,schemas/nanomine-schema-master/xml/PNC_schema_072618.xsd,84355,346b566bd60450e64960822ee5e37dd698a403d8f5c32b95e4fee0b17d798c73,Historical repository copy; production status not verified
+PNC_schema_081218.xsd,schemas/nanomine-schema-master/xml/PNC_schema_081218.xsd,84624,52a9ad1e3fc269551ad9842063ddd64b297101b4d5333634ffbeea78fd64a133,Historical repository copy; production status not verified
+PNC_schema_081319.xsd,schemas/nanomine-schema-master/xml/PNC_schema_081319.xsd,87068,2578b7c0d8678ebf0e61e580b81ee0b1a330c445176002b1dd9cf8c304adaea9,Historical repository copy; production status not verified

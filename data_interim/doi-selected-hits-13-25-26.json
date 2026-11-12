@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-11-04T00:21:44-05:00",
+  "input_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\doi-10.1021-acs.jpcc.5b08809-relevant-hits.json",
+  "selected_hit_numbers": [
+    13,
+    25,
+    26
+  ],
+  "selected_hit_count": 3,
+  "hits": [
+    {
+      "human_hit_number": 13,
+      "array_index": 12,
+      "search_position": 12,
+      "index_name": "charts",
+      "hit_id": "Id6llYcB9tZWhu3C0Bqw",
+      "matched_terms_from_previous_scan": [
+        "conductivity",
+        "temperature",
+        "doi"
+      ],
+      "source_keys": [
+        "description",
+        "identifier",
+        "label",
+        "thumbnail"
+      ],
+      "title": "",
+      "label": "Highlighting Target Properties Using Sequence Generators and Area Marks",
+      "description": "Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples with a combination of high electrical conductivity and low thermal conductivity. This chart also makes use of joinaggregate transforms to calculate means and quartile boundaries for the error bars. These example data were curated from Chandrasekaran et al. (2013, doi: 10.1016/j.eurpolymj.2013.10.008).",
+      "date": null,
+      "priority_matches": [
+        {
+          "json_path": "$._source.description",
+          "value": "Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples with a combination of high electrical conductivity and low thermal conductivity. This chart also makes use of joinaggregate transforms to calculate means and quartile boundaries for the error bars. These example data were curated from Chandrasekaran et al. (2013, doi: 10.1016/j.eurpolymj.2013.10.008).",
+          "value_type": "str",
+          "matched_terms": [
+            "doi",
+            "sample",
+            "conductivity",
+            "temperature",
+            "description"
+          ]
+        },
+        {
+          "json_path": "$._source.label",
+          "value": "Highlighting Target Properties Using Sequence Generators and Area Marks",
+          "value_type": "str",
+          "matched_terms": [
+            "label"
+          ]
+        }
+      ],
+      "doi_values": [
+        "Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples with a combination of high electrical conductivity and low thermal conductivity. This chart also makes use of joinaggregate transforms to calculate means and quartile boundaries for the error bars. These example data were curated from Chandrasekaran et al. (2013, doi: 10.1016/j.eurpolymj.2013.10.008)."
+      ],
+      "sample_values": [
+        "Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples with a combination of high electrical conductivity and low thermal conductivity. This chart also makes use of joinaggregate transforms to calculate means and quartile boundaries for the error bars. These example data were curated from Chandrasekaran et al. (2013, doi: 10.1016/j.eurpolymj.2013.10.008)."
+      ],
+      "conductivity_values": [
+        "Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples with a combination of high electrical conductivity and low thermal conductivity. This chart also makes use of joinaggregate transforms to calculate means and quartile boundaries for the error bars. These example data were curated from Chandrasekaran et al. (2013, doi: 10.1016/j.eurpolymj.2013.10.008)."
+      ],
+      "unit_values": [],
+      "frequency_values": [],
+      "temperature_values": [
+        "Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples with a combination of high electrical conductivity and low thermal conductivity. This chart also makes use of joinaggregate transforms to calculate means and quartile boundaries for the error bars. These example data were curated from Chandrasekaran et al. (2013, doi: 10.1016/j.eurpolymj.2013.10.008)."
+      ],
+      "matrix_values": [],
+      "filler_values": [],
+      "original_hit": {
+        "_index": "charts",
+        "_type": "_doc",
+        "_id": "Id6llYcB9tZWhu3C0Bqw",
+        "_score": 3.6560757,
+        "_source": {
+          "description": "Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples with a combination of high electrical conductivity and low thermal conductivity. This chart also makes use of joinaggregate transforms to calculate means and quartile boundaries for the error bars. These example data were curated from Chandrasekaran et al. (2013, doi: 10.1016/j.eurpolymj.2013.10.008).",
+          "identifier": "http://nanomine.org/viz/09b62f7d8435b906",
+          "label": "Highlighting Target Properties Using Sequence Generators and Area Marks",
+          "thumbnail": "http://nanomine.org/viz/09b62f7d8435b906_depiction"
+        }
+      }
+    },
+    {
+      "human_hit_number": 25,
+      "array_index": 24,
+      "search_position": 24,
+      "index_name": "charts",
+      "hit_id": "9N6llYcB9tZWhu3CzxmX",
+      "matched_terms_from_previous_scan": [
+        "filler",
+        "doi",
+        "article"
+      ],
+      "source_keys": [
+        "description",
+        "identifier",
+        "label",
+        "thumbnail"
+      ],
+      "title": "",
+      "label": "Stress-Strain Plot with Dynamic Highlighting",
+      "description": "Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined by the slope of the linear elastic region of a stress-strain plot, a line segment with a slope corresponding to the tensile modulus is also displayed.",
+      "date": null,
+      "priority_matches": [
+        {
+          "json_path": "$._source.description",
+          "value": "Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined by the slope of the linear elastic region of a stress-strain plot, a line segment with a slope corresponding to the tensile modulus is also displayed.",
+          "value_type": "str",
+          "matched_terms": [
+            "doi",
+            "article",
+            "sample",
+            "unit",
+            "filler",
+            "description"
+          ]
+        },
+        {
+          "json_path": "$._source.label",
+          "value": "Stress-Strain Plot with Dynamic Highlighting",
+          "value_type": "str",
+          "matched_terms": [
+            "label"
+          ]
+        }
+      ],
+      "doi_values": [
+        "Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined by the slope of the linear elastic region of a stress-strain plot, a line segment with a slope corresponding to the tensile modulus is also displayed."
+      ],
+      "sample_values": [
+        "Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined by the slope of the linear elastic region of a stress-strain plot, a line segment with a slope corresponding to the tensile modulus is also displayed."
+      ],
+      "conductivity_values": [],
+      "unit_values": [],
+      "frequency_values": [],
+      "temperature_values": [],
+      "matrix_values": [],
+      "filler_values": [
+        "Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined by the slope of the linear elastic region of a stress-strain plot, a line segment with a slope corresponding to the tensile modulus is also displayed."
+      ],
+      "original_hit": {
+        "_index": "charts",
+        "_type": "_doc",
+        "_id": "9N6llYcB9tZWhu3CzxmX",
+        "_score": 2.8185563,
+        "_source": {
+          "description": "Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined by the slope of the linear elastic region of a stress-strain plot, a line segment with a slope corresponding to the tensile modulus is also displayed.",
+          "identifier": "http://nanomine.org/viz/6b6eda345d672a73",
+          "label": "Stress-Strain Plot with Dynamic Highlighting",
+          "thumbnail": "http://nanomine.org/viz/6b6eda345d672a73_depiction"
+        }
+      }
+    },
+    {
+      "human_hit_number": 26,
+      "array_index": 25,
+      "search_position": 25,
+      "index_name": "charts",
+      "hit_id": "Tt6llYcB9tZWhu3C0RrT",
+      "matched_terms_from_previous_scan": [
+        "frequency",
+        "filler",
+        "poly(vinylidene fluoride)",
+        "doi"
+      ],
+      "source_keys": [
+        "description",
+        "identifier",
+        "label",
+        "thumbnail"
+      ],
+      "title": "",
+      "label": "Interactive Dielectric Spectra",
+      "description": "Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with graphite nanoplates (GnP) as a filler.",
+      "date": null,
+      "priority_matches": [
+        {
+          "json_path": "$._source.description",
+          "value": "Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with graphite nanoplates (GnP) as a filler.",
+          "value_type": "str",
+          "matched_terms": [
+            "doi",
+            "sample",
+            "frequency",
+            "filler",
+            "poly(vinylidene fluoride)",
+            "description"
+          ]
+        },
+        {
+          "json_path": "$._source.label",
+          "value": "Interactive Dielectric Spectra",
+          "value_type": "str",
+          "matched_terms": [
+            "label"
+          ]
+        }
+      ],
+      "doi_values": [
+        "Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with graphite nanoplates (GnP) as a filler."
+      ],
+      "sample_values": [
+        "Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with graphite nanoplates (GnP) as a filler."
+      ],
+      "conductivity_values": [],
+      "unit_values": [],
+      "frequency_values": [
+        "Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with graphite nanoplates (GnP) as a filler."
+      ],
+      "temperature_values": [],
+      "matrix_values": [],
+      "filler_values": [
+        "Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with graphite nanoplates (GnP) as a filler."
+      ],
+      "original_hit": {
+        "_index": "charts",
+        "_type": "_doc",
+        "_id": "Tt6llYcB9tZWhu3C0RrT",
+        "_score": 2.8103986,
+        "_source": {
+          "description": "Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with graphite nanoplates (GnP) as a filler.",
+          "identifier": "http://nanomine.org/viz/52f9656e62586dc9",
+          "label": "Interactive Dielectric Spectra",
+          "thumbnail": "http://nanomine.org/viz/52f9656e62586dc9_depiction"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "Las coincidencias de texto no confirman una relación con la serie l172.",
+    "Los valores doi pueden incluir nombres de variables y no DOI literales.",
+    "No se asumieron unidades ni condiciones.",
+    "No se realizaron conversiones, promedios ni modelos."
+  ]
+}

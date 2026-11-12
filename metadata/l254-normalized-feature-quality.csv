@@ -1,0 +1,7 @@
+﻿check_id,description,passed,observed,expected
+Q001,All 36 samples preserved,True,36,36
+Q002,Exactly five inferred blocks compared,True,5,5
+Q003,Block 5 missing-processing sample identified,True,l254-s33-castillo-2011,l254-s33-castillo-2011
+Q004,Composition features excluded from distinction,True,70,>0
+Q005,No sample identifier remains in normalized distinguishing features,True,checked,True
+Q006,No HTTP URI remains in normalized distinguishing features,True,checked,True

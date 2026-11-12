@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-11-04T00:32:27-05:00",
+  "input_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\l172-family-bindings-deduplicated.json",
+  "input_sha256": "8ef76b28b227d53669bd1acd94868b5e39879268d25ec7bc9d3672030ab9d8a4",
+  "classification_counts": {
+    "provenance": 2,
+    "components": 14,
+    "processing": 15,
+    "attributes": 16,
+    "unclassified": 18
+  },
+  "validation": {
+    "input_bindings": 49,
+    "provenance_rows": 2,
+    "component_rows": 14,
+    "processing_rows": 15,
+    "attribute_rows": 16,
+    "unclassified_rows": 18,
+    "doi_values_present": 2,
+    "component_names_present": 14,
+    "processing_steps_present": 13,
+    "attribute_values_present": 16,
+    "attribute_units_present": 7,
+    "duplicate_provenance_rows": 2,
+    "duplicate_component_rows": 6,
+    "duplicate_processing_rows": 2,
+    "duplicate_attribute_rows": 6
+  },
+  "outputs": [
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-study-provenance.csv",
+      "bytes": 959,
+      "sha256": "88a234bfb53e863e5ce1e9b79e5f0547595db61c039283f2e4b2741b98a25bc2"
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-material-components.csv",
+      "bytes": 5769,
+      "sha256": "b0c979b82a8d8b07f0724f62194100caa1c329f747bad4e0a1290e4df6649aad"
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-processing-steps.csv",
+      "bytes": 5806,
+      "sha256": "147eb63f71bb91cce7c73101918f88c593a17a05e4269df63f132b7a976bc862"
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-observed-attributes.csv",
+      "bytes": 6733,
+      "sha256": "c83416897e016689a7f753751ea52f99fc0ba70efcba0935e607f25e52dbdfce"
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-unclassified-bindings.csv",
+      "bytes": 13178,
+      "sha256": "93a00e4709e5fad193d58b494bc9fc93fb6f04e4c563a904bc609fe2faa3ccbc"
+    }
+  ],
+  "methodological_notes": [
+    "Los bindings pueden alimentar más de una tabla cuando contienen campos de varias categorías.",
+    "Los valores originales y unidades se conservaron sin conversión.",
+    "Las columnas canónicas permanecen vacías hasta definir transformaciones.",
+    "Los DOI o recursos se conservan exactamente como aparecen.",
+    "No se calcularon medias ni modelos."
+  ]
+}

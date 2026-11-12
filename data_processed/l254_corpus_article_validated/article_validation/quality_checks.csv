@@ -1,0 +1,11 @@
+﻿check_id,passed,description,observed,expected
+Q001,True,sample count preserved,36,36
+Q002,True,measurement count preserved,29,29
+Q003,True,five unique commercial mappings,5,5
+Q004,True,aspect ratios preserved,"[55, 69, 73, 94, 134]","55,69,73,94,134"
+Q005,True,ten method fields per measurement,290,290
+Q006,True,electrical frequency not fabricated,29,29
+Q007,True,five published benchmarks,5,5
+Q008,True,no composition imputed,70,70
+Q009,True,historical exclusions retained with disposition,32,32
+Q010,True,no automatic final-model release,checked,True

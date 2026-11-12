@@ -1,0 +1,961 @@
+FASE 2 - INFORME COMPACTO DE VALORES EXACTOS L172
+
+Fecha: 2026-11-04T00:35:53-05:00
+Directorio fuente: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family
+
+RESUMEN
+- Procedencia: 2 filas
+- Componentes: 14 filas
+- Procesamiento: 15 filas
+- Atributos: 16 filas
+- No clasificados: 18 filas
+
+1. PROCEDENCIA Y DOI/RECURSOS
+
+PROCEDENCIA 1
+  binding_index: 2
+  sample_id: [VACIO]
+  doi_or_resource: 10.1021/acs.jpcc.5b08809
+  sample_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  process_label: Solution Processing
+  source_date: 2024-10-02
+  source_hit_id: H6TKTZIBGO0wWaevBNFM
+  query_sha256: b8931a19fe40860a15164716e6398116b396ec8fe7f83246aa9f7590d3f55048
+  response_sha256: a0fcd110c0b7a874d1afaff12b6de080931024cd2b1d7eea45b4a6aa26d5289c
+  source_occurrence_count: 1
+
+PROCEDENCIA 2
+  binding_index: 3
+  sample_id: [VACIO]
+  doi_or_resource: 10.1021/acs.jpcc.5b08809
+  sample_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  process_label: Solution Processing
+  source_date: 2025-07-05
+  source_hit_id: eYs225cBqjuXg29aIbPw
+  query_sha256: 55828f86d8e6fe42ab2bb1b568c57a3ca6b80a69bb029dc5013b58b721ff4097
+  response_sha256: d435fcf962f25bec3cc107db4c0c4694350d89ea1a52caabfe14796279e15334
+  source_occurrence_count: 1
+
+2. COMPONENTES MATERIALES
+
+COMPONENTE 1
+  binding_index: 17
+  sample_id: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  attribute_type: http://materialsmine.org/ns/Abbreviation
+  attribute_value_original: PVDF
+  attribute_unit_original: [VACIO]
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+COMPONENTE 2
+  binding_index: 18
+  sample_id: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  attribute_type: http://materialsmine.org/ns/Abbreviation
+  attribute_value_original: PVDF
+  attribute_unit_original: [VACIO]
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+COMPONENTE 3
+  binding_index: 19
+  sample_id: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  attribute_type: http://materialsmine.org/ns/Density
+  attribute_value_original: 1.68e0
+  attribute_unit_original: Gram per Cubic Centimeter
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+COMPONENTE 4
+  binding_index: 20
+  sample_id: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  attribute_type: http://materialsmine.org/ns/Density
+  attribute_value_original: 1.68e0
+  attribute_unit_original: Gram per Cubic Centimeter
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+COMPONENTE 5
+  binding_index: 21
+  sample_id: [VACIO]
+  standard_name: Iron(II,III) oxide
+  component_role: Filler
+  attribute_type: http://materialsmine.org/ns/Density
+  attribute_value_original: 5.17e0
+  attribute_unit_original: Gram per Cubic Centimeter
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+COMPONENTE 6
+  binding_index: 22
+  sample_id: [VACIO]
+  standard_name: Iron oxide - barium titanate core-shell nanoparticles
+  component_role: Filler
+  attribute_type: http://materialsmine.org/ns/Density
+  attribute_value_original: 5.63e0
+  attribute_unit_original: Gram per Cubic Centimeter
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+COMPONENTE 7
+  binding_index: 23
+  sample_id: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  attribute_type: http://materialsmine.org/ns/ManufacturerOrSourceName
+  attribute_value_original: 3F Corporation
+  attribute_unit_original: [VACIO]
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+COMPONENTE 8
+  binding_index: 24
+  sample_id: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  attribute_type: http://materialsmine.org/ns/ManufacturerOrSourceName
+  attribute_value_original: 3F Corporation
+  attribute_unit_original: [VACIO]
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+COMPONENTE 9
+  binding_index: 25
+  sample_id: [VACIO]
+  standard_name: Iron(II,III) oxide
+  component_role: Filler
+  attribute_type: http://materialsmine.org/ns/MassFraction
+  attribute_value_original: 0.1393907e0
+  attribute_unit_original: [VACIO]
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+COMPONENTE 10
+  binding_index: 26
+  sample_id: [VACIO]
+  standard_name: Iron oxide - barium titanate core-shell nanoparticles
+  component_role: Filler
+  attribute_type: http://materialsmine.org/ns/MassFraction
+  attribute_value_original: 0.4336688e0
+  attribute_unit_original: [VACIO]
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+COMPONENTE 11
+  binding_index: 27
+  sample_id: [VACIO]
+  standard_name: Iron(II,III) oxide
+  component_role: Filler
+  attribute_type: http://materialsmine.org/ns/VolumeFraction
+  attribute_value_original: 0.05e0
+  attribute_unit_original: [VACIO]
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+COMPONENTE 12
+  binding_index: 28
+  sample_id: [VACIO]
+  standard_name: Iron oxide - barium titanate core-shell nanoparticles
+  component_role: Filler
+  attribute_type: http://materialsmine.org/ns/VolumeFraction
+  attribute_value_original: 0.186e0
+  attribute_unit_original: [VACIO]
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+COMPONENTE 13
+  binding_index: 29
+  sample_id: [VACIO]
+  standard_name: Iron(II,III) oxide
+  component_role: Filler
+  attribute_type: http://semanticscience.org/resource/Width
+  attribute_value_original: 10.0e0
+  attribute_unit_original: Nanometer
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+COMPONENTE 14
+  binding_index: 30
+  sample_id: [VACIO]
+  standard_name: Iron oxide - barium titanate core-shell nanoparticles
+  component_role: Filler
+  attribute_type: http://semanticscience.org/resource/Width
+  attribute_value_original: 100.0e0
+  attribute_unit_original: Nanometer
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+3. PROCESAMIENTO
+
+PROCESO 1
+  binding_index: 2
+  sample_id: [VACIO]
+  process_label: Solution Processing
+  processing_step: [VACIO]
+  parameter_label: [VACIO]
+  description_original: [VACIO]
+  source_date: 2024-10-02
+  source_hit_id: H6TKTZIBGO0wWaevBNFM
+  query_sha256: b8931a19fe40860a15164716e6398116b396ec8fe7f83246aa9f7590d3f55048
+  response_sha256: a0fcd110c0b7a874d1afaff12b6de080931024cd2b1d7eea45b4a6aa26d5289c
+  source_occurrence_count: 1
+
+PROCESO 2
+  binding_index: 3
+  sample_id: [VACIO]
+  process_label: Solution Processing
+  processing_step: [VACIO]
+  parameter_label: [VACIO]
+  description_original: [VACIO]
+  source_date: 2025-07-05
+  source_hit_id: eYs225cBqjuXg29aIbPw
+  query_sha256: 55828f86d8e6fe42ab2bb1b568c57a3ca6b80a69bb029dc5013b58b721ff4097
+  response_sha256: d435fcf962f25bec3cc107db4c0c4694350d89ea1a52caabfe14796279e15334
+  source_occurrence_count: 1
+
+PROCESO 3
+  binding_index: 4
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_1
+  parameter_label: Additive
+  description_original: Additive: Fe3O4@BaTiO3; Amount: 18.6; Description: Add required Fe3O4@BaTiO3 nanoparticles
+  source_date: 2025-07-05
+  source_hit_id: fIs225cBqjuXg29aLLMj
+  query_sha256: 77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0
+  response_sha256: d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0
+  source_occurrence_count: 1
+
+PROCESO 4
+  binding_index: 5
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_3
+  parameter_label: Additive
+  description_original: Additive: Iron (II,III) Oxide; Amount: 5; Description: Add in required amount of Iron (II,III) Oxide
+  source_date: 2024-10-02
+  source_hit_id: I6TKTZIBGO0wWaevFNEo
+  query_sha256: 6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5
+  response_sha256: 7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b
+  source_occurrence_count: 1
+
+PROCESO 5
+  binding_index: 6
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_1
+  parameter_label: Additive
+  description_original: Additive: Polyvinylidene Fluoride; Description: Add PVDF
+  source_date: 2024-10-02
+  source_hit_id: I6TKTZIBGO0wWaevFNEo
+  query_sha256: 6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5
+  response_sha256: 7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b
+  source_occurrence_count: 1
+
+PROCESO 6
+  binding_index: 7
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_5
+  parameter_label: Molding
+  description_original: Ambient Condition: vacuum; Description: Cast onto glass sheet and dry; Temperature: 120 Celsius; Time: 5 Hour
+  source_date: 2024-10-02
+  source_hit_id: I6TKTZIBGO0wWaevFNEo
+  query_sha256: 6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5
+  response_sha256: 7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b
+  source_occurrence_count: 1
+
+PROCESO 7
+  binding_index: 8
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_4
+  parameter_label: Drying Evaporation
+  description_original: Ambient Condition: vacuum; Description: Dry film under vacuum; Temperature: 120 Celsius; Time: 5 Hour
+  source_date: 2025-07-05
+  source_hit_id: fIs225cBqjuXg29aLLMj
+  query_sha256: 77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0
+  response_sha256: d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0
+  source_occurrence_count: 1
+
+PROCESO 8
+  binding_index: 9
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_5
+  parameter_label: Heating
+  description_original: Description: Anneal Films; Temperature: 135 Celsius; Time: 2 Hour
+  source_date: 2025-07-05
+  source_hit_id: fIs225cBqjuXg29aLLMj
+  query_sha256: 77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0
+  response_sha256: d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0
+  source_occurrence_count: 1
+
+PROCESO 9
+  binding_index: 10
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_6
+  parameter_label: Heating
+  description_original: Description: Anneal cast films; Temperature: 135 Celsius; Time: 2 Hour
+  source_date: 2024-10-02
+  source_hit_id: I6TKTZIBGO0wWaevFNEo
+  query_sha256: 6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5
+  response_sha256: 7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b
+  source_occurrence_count: 1
+
+PROCESO 10
+  binding_index: 11
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_3
+  parameter_label: Molding
+  description_original: Description: Cast onto a glass sheet
+  source_date: 2025-07-05
+  source_hit_id: fIs225cBqjuXg29aLLMj
+  query_sha256: 77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0
+  response_sha256: d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0
+  source_occurrence_count: 1
+
+PROCESO 11
+  binding_index: 12
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_2
+  parameter_label: Mixing
+  description_original: Description: Dissolve PVDF into DMF; Mixing Method: dissolving
+  source_date: 2024-10-02
+  source_hit_id: I6TKTZIBGO0wWaevFNEo
+  query_sha256: 6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5
+  response_sha256: 7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b
+  source_occurrence_count: 1
+
+PROCESO 12
+  binding_index: 13
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_2
+  parameter_label: Mixing
+  description_original: Description: Sonicate PVDF-NP Solution; Mixing Method: ultra-sonication; Time: 30 Minute
+  source_date: 2025-07-05
+  source_hit_id: fIs225cBqjuXg29aLLMj
+  query_sha256: 77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0
+  response_sha256: d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0
+  source_occurrence_count: 1
+
+PROCESO 13
+  binding_index: 14
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_4
+  parameter_label: Mixing
+  description_original: Description: Ultra-sonicate suspension; Mixing Method: ultra-sonication; Time: 30 Minute
+  source_date: 2024-10-02
+  source_hit_id: I6TKTZIBGO0wWaevFNEo
+  query_sha256: 6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5
+  response_sha256: 7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b
+  source_occurrence_count: 1
+
+PROCESO 14
+  binding_index: 15
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_0
+  parameter_label: Solvent
+  description_original: Solvent Name: N,N-dimethylformamide
+  source_date: 2025-07-05
+  source_hit_id: fIs225cBqjuXg29aLLMj
+  query_sha256: 77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0
+  response_sha256: d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0
+  source_occurrence_count: 1
+
+PROCESO 15
+  binding_index: 16
+  sample_id: [VACIO]
+  process_label: [VACIO]
+  processing_step: http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_0
+  parameter_label: Solvent
+  description_original: Solvent Name: N,N-dimethylformamide
+  source_date: 2024-10-02
+  source_hit_id: I6TKTZIBGO0wWaevFNEo
+  query_sha256: 6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5
+  response_sha256: 7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b
+  source_occurrence_count: 1
+
+4. ATRIBUTOS OBSERVADOS
+
+ATRIBUTO 1
+  binding_index: 0
+  sample_id: [VACIO]
+  attribute_schema: AttrType_value_Units
+  attribute_type: file:///apps/whyis/nan
+  value_original: 19.5e0
+  unit_original: [VACIO]
+  standard_name: [VACIO]
+  component_role: [VACIO]
+  full_label: [VACIO]
+  source_date: 2024-10-02
+  source_hit_id: IKTKTZIBGO0wWaevBNFi
+  query_sha256: e9c8a16e3d3110d1297a63ba6f3879a1b5e7c84e788289551f684e8a25fefd84
+  response_sha256: 280d669259c09e6b49e0a1692b10ec294f43ed2fe3b06f1ee5373730a2ab71b4
+  source_occurrence_count: 1
+
+ATRIBUTO 2
+  binding_index: 1
+  sample_id: [VACIO]
+  attribute_schema: AttrType_value_Units
+  attribute_type: obo:PATO_0000146
+  value_original: 25.0e0
+  unit_original: Celsius
+  standard_name: [VACIO]
+  component_role: [VACIO]
+  full_label: [VACIO]
+  source_date: 2025-07-05
+  source_hit_id: eIs225cBqjuXg29aIbPm
+  query_sha256: 89d881b9ee9b23da9711b8836fa053939716e710cd88a8150420e329088dfe88
+  response_sha256: 51dfa2a1d6c810121c4dbc8d53dc3de5f3c0bf968a5f4d1a742512067290b485
+  source_occurrence_count: 1
+
+ATRIBUTO 3
+  binding_index: 17
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/Abbreviation
+  value_original: PVDF
+  unit_original: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+ATRIBUTO 4
+  binding_index: 18
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/Abbreviation
+  value_original: PVDF
+  unit_original: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+ATRIBUTO 5
+  binding_index: 19
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/Density
+  value_original: 1.68e0
+  unit_original: Gram per Cubic Centimeter
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+ATRIBUTO 6
+  binding_index: 20
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/Density
+  value_original: 1.68e0
+  unit_original: Gram per Cubic Centimeter
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+ATRIBUTO 7
+  binding_index: 21
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/Density
+  value_original: 5.17e0
+  unit_original: Gram per Cubic Centimeter
+  standard_name: Iron(II,III) oxide
+  component_role: Filler
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+ATRIBUTO 8
+  binding_index: 22
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/Density
+  value_original: 5.63e0
+  unit_original: Gram per Cubic Centimeter
+  standard_name: Iron oxide - barium titanate core-shell nanoparticles
+  component_role: Filler
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+ATRIBUTO 9
+  binding_index: 23
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/ManufacturerOrSourceName
+  value_original: 3F Corporation
+  unit_original: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+ATRIBUTO 10
+  binding_index: 24
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/ManufacturerOrSourceName
+  value_original: 3F Corporation
+  unit_original: [VACIO]
+  standard_name: Poly(vinylidene fluoride)
+  component_role: Matrix
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+ATRIBUTO 11
+  binding_index: 25
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/MassFraction
+  value_original: 0.1393907e0
+  unit_original: [VACIO]
+  standard_name: Iron(II,III) oxide
+  component_role: Filler
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+ATRIBUTO 12
+  binding_index: 26
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/MassFraction
+  value_original: 0.4336688e0
+  unit_original: [VACIO]
+  standard_name: Iron oxide - barium titanate core-shell nanoparticles
+  component_role: Filler
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+ATRIBUTO 13
+  binding_index: 27
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/VolumeFraction
+  value_original: 0.05e0
+  unit_original: [VACIO]
+  standard_name: Iron(II,III) oxide
+  component_role: Filler
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+ATRIBUTO 14
+  binding_index: 28
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://materialsmine.org/ns/VolumeFraction
+  value_original: 0.186e0
+  unit_original: [VACIO]
+  standard_name: Iron oxide - barium titanate core-shell nanoparticles
+  component_role: Filler
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+ATRIBUTO 15
+  binding_index: 29
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://semanticscience.org/resource/Width
+  value_original: 10.0e0
+  unit_original: Nanometer
+  standard_name: Iron(II,III) oxide
+  component_role: Filler
+  full_label: Iron (II,III) Oxide in Polyvinylidene Fluoride
+  source_date: 2024-10-02
+  source_hit_id: IqTKTZIBGO0wWaevCtEr
+  query_sha256: 6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6
+  response_sha256: ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb
+  source_occurrence_count: 1
+
+ATRIBUTO 16
+  binding_index: 30
+  sample_id: [VACIO]
+  attribute_schema: attrType_attrValue_attrUnits
+  attribute_type: http://semanticscience.org/resource/Width
+  value_original: 100.0e0
+  unit_original: Nanometer
+  standard_name: Iron oxide - barium titanate core-shell nanoparticles
+  component_role: Filler
+  full_label: Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride
+  source_date: 2025-07-05
+  source_hit_id: e4s225cBqjuXg29aJLO1
+  query_sha256: 400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab
+  response_sha256: 40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4
+  source_occurrence_count: 1
+
+5. VALORES UNICOS PRINCIPALES
+
+DOI/recursos: 1
+- 10.1021/acs.jpcc.5b08809
+
+Muestras en procedencia: 0
+- Ninguno
+
+Nombres de componentes: 3
+- Iron oxide - barium titanate core-shell nanoparticles
+- Iron(II,III) oxide
+- Poly(vinylidene fluoride)
+
+Roles de componentes: 2
+- Filler
+- Matrix
+
+Tipos de atributo de componentes: 6
+- http://materialsmine.org/ns/Abbreviation
+- http://materialsmine.org/ns/Density
+- http://materialsmine.org/ns/ManufacturerOrSourceName
+- http://materialsmine.org/ns/MassFraction
+- http://materialsmine.org/ns/VolumeFraction
+- http://semanticscience.org/resource/Width
+
+Unidades de componentes: 2
+- Gram per Cubic Centimeter
+- Nanometer
+
+Etiquetas de proceso: 1
+- Solution Processing
+
+Pasos de procesamiento: 13
+- http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_0
+- http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_1
+- http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_2
+- http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_3
+- http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_4
+- http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_5
+- http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_0
+- http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_1
+- http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_2
+- http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_3
+- http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_4
+- http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_5
+- http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_6
+
+Parametros de procesamiento: 6
+- Additive
+- Drying Evaporation
+- Heating
+- Mixing
+- Molding
+- Solvent
+
+Tipos de atributos observados: 8
+- file:///apps/whyis/nan
+- http://materialsmine.org/ns/Abbreviation
+- http://materialsmine.org/ns/Density
+- http://materialsmine.org/ns/ManufacturerOrSourceName
+- http://materialsmine.org/ns/MassFraction
+- http://materialsmine.org/ns/VolumeFraction
+- http://semanticscience.org/resource/Width
+- obo:PATO_0000146
+
+Unidades observadas: 3
+- Celsius
+- Gram per Cubic Centimeter
+- Nanometer
+
+6. GRUPOS DE DUPLICADOS EXACTOS POTENCIALES
+
+Tabla: provenance
+Grupos: 1
+- Grupo 1, filas: 2
+    sample_id: [VACIO]
+    doi_or_resource: 10.1021/acs.jpcc.5b08809
+    process_label: Solution Processing
+
+Tabla: components
+Grupos: 3
+- Grupo 1, filas: 2
+    sample_id: [VACIO]
+    standard_name: Poly(vinylidene fluoride)
+    component_role: Matrix
+    attribute_type: http://materialsmine.org/ns/Abbreviation
+    attribute_value_original: PVDF
+    attribute_unit_original: [VACIO]
+- Grupo 2, filas: 2
+    sample_id: [VACIO]
+    standard_name: Poly(vinylidene fluoride)
+    component_role: Matrix
+    attribute_type: http://materialsmine.org/ns/Density
+    attribute_value_original: 1.68e0
+    attribute_unit_original: Gram per Cubic Centimeter
+- Grupo 3, filas: 2
+    sample_id: [VACIO]
+    standard_name: Poly(vinylidene fluoride)
+    component_role: Matrix
+    attribute_type: http://materialsmine.org/ns/ManufacturerOrSourceName
+    attribute_value_original: 3F Corporation
+    attribute_unit_original: [VACIO]
+
+Tabla: processing
+Grupos: 1
+- Grupo 1, filas: 2
+    sample_id: [VACIO]
+    processing_step: [VACIO]
+    parameter_label: [VACIO]
+    description_original: [VACIO]
+
+Tabla: attributes
+Grupos: 3
+- Grupo 1, filas: 2
+    sample_id: [VACIO]
+    attribute_type: http://materialsmine.org/ns/Abbreviation
+    value_original: PVDF
+    unit_original: [VACIO]
+    standard_name: Poly(vinylidene fluoride)
+    component_role: Matrix
+- Grupo 2, filas: 2
+    sample_id: [VACIO]
+    attribute_type: http://materialsmine.org/ns/Density
+    value_original: 1.68e0
+    unit_original: Gram per Cubic Centimeter
+    standard_name: Poly(vinylidene fluoride)
+    component_role: Matrix
+- Grupo 3, filas: 2
+    sample_id: [VACIO]
+    attribute_type: http://materialsmine.org/ns/ManufacturerOrSourceName
+    value_original: 3F Corporation
+    unit_original: [VACIO]
+    standard_name: Poly(vinylidene fluoride)
+    component_role: Matrix
+
+7. FILAS NO CLASIFICADAS
+
+NO CLASIFICADO 1
+  binding_index: 31
+  sample_id: l172-s1-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s1-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 2, "sample_id": "l172-s1-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 2
+  binding_index: 32
+  sample_id: l172-s10-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s10-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 5, "sample_id": "l172-s10-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 3
+  binding_index: 33
+  sample_id: l172-s11-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s11-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 6, "sample_id": "l172-s11-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 4
+  binding_index: 34
+  sample_id: l172-s12-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s12-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 0, "sample_id": "l172-s12-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 5
+  binding_index: 35
+  sample_id: l172-s13-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s13-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 10, "sample_id": "l172-s13-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 6
+  binding_index: 36
+  sample_id: l172-s14-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s14-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 12, "sample_id": "l172-s14-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 7
+  binding_index: 37
+  sample_id: l172-s15-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s15-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 7, "sample_id": "l172-s15-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 8
+  binding_index: 38
+  sample_id: l172-s16-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s16-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 16, "sample_id": "l172-s16-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 9
+  binding_index: 39
+  sample_id: l172-s17-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s17-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "IaTKTZIBGO0wWaevBdGP", "_source_index": "knowledge", "_source_date": "2024-10-02", "_query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a", "_response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0", "_binding_position": 6, "sample_id": "l172-s17-huo-2015", "source_occurrence_count": 1}
+
+NO CLASIFICADO 10
+  binding_index: 40
+  sample_id: l172-s18-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s18-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 1, "sample_id": "l172-s18-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 11
+  binding_index: 41
+  sample_id: l172-s2-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s2-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 8, "sample_id": "l172-s2-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 12
+  binding_index: 42
+  sample_id: l172-s3-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s3-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 13, "sample_id": "l172-s3-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 13
+  binding_index: 43
+  sample_id: l172-s4-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s4-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 4, "sample_id": "l172-s4-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 14
+  binding_index: 44
+  sample_id: l172-s5-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s5-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 14, "sample_id": "l172-s5-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 15
+  binding_index: 45
+  sample_id: l172-s6-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s6-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 3, "sample_id": "l172-s6-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 16
+  binding_index: 46
+  sample_id: l172-s7-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s7-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 11, "sample_id": "l172-s7-huo-2015", "source_occurrence_count": 2}
+
+NO CLASIFICADO 17
+  binding_index: 47
+  sample_id: l172-s8-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s8-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 15, "sample_id": "l172-s8-huo-2015", "source_occurrence_count": 1}
+
+NO CLASIFICADO 18
+  binding_index: 48
+  sample_id: l172-s9-huo-2015
+  available_fields: _binding_position|_query_sha256|_response_sha256|_source_date|_source_hit_id|_source_index|sample|sample__type|sample_id|source_occurrence_count|source_occurrences
+  binding_json: {"sample": "http://materialsmine.org/sample/l172-s9-huo-2015", "sample__type": "uri", "sample__datatype": null, "sample__xml_lang": null, "_source_hit_id": "eos225cBqjuXg29aIrM4", "_source_index": "knowledge", "_source_date": "2025-07-05", "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93", "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc", "_binding_position": 9, "sample_id": "l172-s9-huo-2015", "source_occurrence_count": 2}
+
+ADVERTENCIAS METODOLOGICAS
+- Los valores se reproducen exactamente como aparecen en los CSV curados.
+- [VACIO] significa ausencia en la fuente, no cero.
+- Los duplicados potenciales se informan, pero no se eliminan.
+- Una coincidencia exacta puede corresponder a muestras o fechas distintas.
+- No se normalizaron unidades.
+- No se calcularon medias.
+- No se ejecutaron modelos.
+
+Informe: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\logs\l172-compact-exact-values-report.txt
+Resumen JSON: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-compact-exact-values-report.json

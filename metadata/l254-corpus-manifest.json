@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-11-04T02:11:42-05:00",
+  "corpus_id": "l254-corpus-v1",
+  "phase": "2_acquisition_and_curation",
+  "corpus_status": "primary_candidate_under_measurement_condition_validation",
+  "counts": {
+    "studies": 1,
+    "material_systems": 1,
+    "filler_variants": 5,
+    "samples": 36,
+    "sample_composition": 70,
+    "processing_steps": 102,
+    "electrical_measurements": 29,
+    "measurement_conditions": 29,
+    "provenance": 632,
+    "exclusions": 40,
+    "curves": 5
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\l254-combined-by-sample.csv",
+      "sha256": "97ec5a6fe5283dbbebbbc0828188407f5c2138d1e176e5df6207a30a664cb7f9",
+      "bytes": 16140
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-matrix-mwcnt-block-signatures.csv",
+      "sha256": "e805746df74079acb8ebdd20a6a40af759cb1fb8e5d1100f1db7292fb829ecd9",
+      "bytes": 2260
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-material-components.csv",
+      "sha256": "1a83e11db25f7a1bb413c588815468989f8ea5d308dc0a0e82a8e2009f2dcf9a",
+      "bytes": 281138
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-processing-steps.csv",
+      "sha256": "5abb3b02b28977dda66de9f8536839d7233ca90004a449d1d1a72c10cadedc9a",
+      "bytes": 122762
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-study-provenance.csv",
+      "sha256": "8ff16098eff26b0291749bc3ff4f6321752f3a4cb73a6c2c585198aa5fe52127",
+      "bytes": 33302
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-sample-attributes.csv",
+      "sha256": "1d1063e07679e0514b36e57fc135ada7c0d26ec602264a4376c6a82879bc5ac5",
+      "bytes": 164250
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-block-definition-status.csv",
+      "sha256": "5c1997c8cff47e4502d0ffcb6c73d49c85ef43850e051d12a39b8dd8e61b1d93",
+      "bytes": 794
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-samples-missing-processing.csv",
+      "sha256": "f73416c99174279ce1c9bb1005620e6c81710cf2e302b9e9faa31574628b6652",
+      "bytes": 394
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\studies.csv",
+      "sha256": "096a05c06c9187256a0cedbd8503b785ea8e6df0a227f5722c2386815411c2c8",
+      "bytes": 394
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\material_systems.csv",
+      "sha256": "a7471cf2be5b0ddbeee3266cc3e233033d4d50999f05b7077cde671093ac767c",
+      "bytes": 390
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\filler_variants.csv",
+      "sha256": "6d5556ff1d8912175a2a200241d82c80f58b12fa8d489413c73d7eb996b66c09",
+      "bytes": 1676
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\samples.csv",
+      "sha256": "877a7dff29e5b60c12923b18ec30a294cab4002ffb111af1c1fce085bad55c42",
+      "bytes": 11146
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\sample_composition.csv",
+      "sha256": "dcacb200520c698f0754e96ad946dba96932a081e428f646ff4d0f6d8d2d1719",
+      "bytes": 13698
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\processing_steps.csv",
+      "sha256": "732d3d691c3ca23774156ec84d3928b6c9a4b11bd6af78d73c6f552277806a06",
+      "bytes": 134392
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\electrical_measurements.csv",
+      "sha256": "6751c74a218f59d2d12469d00272f7c09c259b9377a55aa367b47ea25dec694e",
+      "bytes": 11280
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\measurement_conditions.csv",
+      "sha256": "766aaad092338d3ff99c6ae0dd9fde8e07d8fe1c6e8db75a8ca205676f279054",
+      "bytes": 3976
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\provenance.csv",
+      "sha256": "7ccc7b2582e13ddacdf5a0f03a652c112ec5f942edf4c37f5ac883138dd1eef4",
+      "bytes": 277613
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\exclusions.csv",
+      "sha256": "894d3b86638ad5afbb60caf8b632a4730cd638589106d3cae6438bbff96ab856",
+      "bytes": 7844
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus\\curve_inclusion_status.csv",
+      "sha256": "c23e48192dee95d8a26265fead645b1361f05226db79f8ca5a4dbc821ae95aa6",
+      "bytes": 1505
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\metadata\\l254-corpus-quality-summary.csv",
+      "sha256": "4b7080d5ae43a943a941ada15253065587dd1b7ea248f61554f1b188156b8690",
+      "bytes": 909
+    }
+  ],
+  "quality": {
+    "checks_total": 15,
+    "checks_passed": 15,
+    "critical_failures": 0
+  },
+  "scientific_decisions": [
+    "The five MWCNT variants are retained as five separate curves.",
+    "Makrolon 2600 and Bayer MaterialScience are matrix metadata only.",
+    "MWCNT commercial identities remain unverified.",
+    "Density values are retained but density semantic kind remains unverified.",
+    "Conductivity unit is S/cm; no numerical unit conversion was performed.",
+    "Frequency is assigned only where explicitly documented.",
+    "No curve is released for final modeling while measurement conditions remain incomplete."
+  ]
+}

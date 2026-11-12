@@ -1,0 +1,12 @@
+﻿method,path,operation_id,summary,parameters,required_parameters,required_parameter_count,security,response_codes,production_url_candidate,execution_status
+GET,/admin/es,,Check the status of elastic search service,,,0,"[{""BearerAuth"": []}]",200;401;403;500,https://materialsmine.org/api/admin/es,not_executed
+GET,/curate,,Gets curation Base Object,sheetName|in=query|required=False|type=string,,0,"[{""BearerAuth"": []}]",200;401;500,https://materialsmine.org/api/curate,not_executed
+GET,/curate/schema,,Gets XSD  Schema,isFile|in=query|required=False|type=boolean; isJson|in=query|required=False|type=boolean; getXSD|in=query|required=False|type=boolean,,0,not_declared,201;500,https://materialsmine.org/api/curate/schema,not_executed
+GET,/files/metamine,,fetch metamine dataset files,,,0,not_declared,200;500,https://materialsmine.org/api/files/metamine,not_executed
+GET,/knowledge/charts/favorites,getFavoriteCharts,Retrieve favorite charts,page|in=query|required=False|type=integer; pageSize|in=query|required=False|type=integer,,0,"[{""BearerAuth"": []}]",200;401;500,https://materialsmine.org/api/knowledge/charts/favorites,not_executed
+GET,/mn/ontology,,A route to Extract Ontology Information,,,0,not_declared,200;400;401;404;500,https://materialsmine.org/api/mn/ontology,not_executed
+GET,/curate/get/{curationId},,Gets a single curated data or list of curated data,curationId|in=path|required=True|type=string; isNew|in=query|required=False|type=boolean,curationId,1,"[{""BearerAuth"": []}]",200;401;404;500,https://materialsmine.org/api/curate/get/{curationId},not_executed
+GET,/files/image_migration/{imageType},,Image migration route,imageType|in=path|required=True|type=string,imageType,1,not_declared,200;400;500,https://materialsmine.org/api/files/image_migration/{imageType},not_executed
+GET,/files/metamine/{fileName},,Download and parse the specified metamine fileName,fileName|in=path|required=True|type=string,fileName,1,not_declared,200;500,https://materialsmine.org/api/files/metamine/{fileName},not_executed
+GET,/files/{fileId},,Download files from the server,isFileStore|in=query|required=False|type=boolean; isStore|in=query|required=False|type=boolean; fileId|in=path|required=True|type=string,fileId,1,not_declared,200;400;500,https://materialsmine.org/api/files/{fileId},not_executed
+GET,/xml/{controlID},,Gets Curation XMl,controlID|in=path|required=True|type=string; format|in=query|required=False|type=string,controlID,1,not_declared,200;404;500,https://materialsmine.org/api/xml/{controlID},not_executed

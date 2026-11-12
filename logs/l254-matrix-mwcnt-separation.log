@@ -1,0 +1,83 @@
+FASE 2 - SEPARACION CORREGIDA V2 DE MATRIZ Y MWCNT L254
+
+Fecha: 2026-11-04T02:07:28-05:00
+
+ESTADO
+- Matriz: Poly(bisphenol A carbonate), producto Makrolon 2600, Bayer MaterialScience.
+- Relleno: Multi-wall carbon nanotubes.
+- Makrolon 2600 y Bayer no se asignan al MWCNT.
+- La identidad comercial de cada MWCNT permanece no verificada salvo evidencia explicita en filas de relleno.
+
+FIRMAS POR BLOQUE
+block_1_s2_s8
+  matriz: Poly(bisphenol A carbonate)
+  producto matriz: Makrolon 2600
+  fabricante matriz: Bayer MaterialScience AG, Leverkusen, Germany
+  MWCNT: Multi-wall carbon nanotubes
+  densidad MWCNT original: 66.0e0 Kilogram per Cubic Meter
+  densidad MWCNT canonica: 66.0 kg/m3
+  estado semantico densidad: documented_value_density_kind_not_verified
+  relacion de aspecto: 134.0
+  nombre comercial MWCNT: [NO VERIFICADO]
+  fabricante MWCNT: [NO VERIFICADO]
+
+block_2_s9_s15
+  matriz: Poly(bisphenol A carbonate)
+  producto matriz: Makrolon 2600
+  fabricante matriz: Bayer MaterialScience AG, Leverkusen, Germany
+  MWCNT: Multi-wall carbon nanotubes
+  densidad MWCNT original: 170.0e0 Kilogram per Cubic Meter
+  densidad MWCNT canonica: 170.0 kg/m3
+  estado semantico densidad: documented_value_density_kind_not_verified
+  relacion de aspecto: 94.0
+  nombre comercial MWCNT: [NO VERIFICADO]
+  fabricante MWCNT: [NO VERIFICADO]
+
+block_3_s16_s22
+  matriz: Poly(bisphenol A carbonate)
+  producto matriz: Makrolon 2600
+  fabricante matriz: Bayer MaterialScience AG, Leverkusen, Germany
+  MWCNT: Multi-wall carbon nanotubes
+  densidad MWCNT original: 2.6e0 Gram per Cubic Centimeter
+  densidad MWCNT canonica: 2600.0 kg/m3
+  estado semantico densidad: documented_value_density_kind_not_verified
+  relacion de aspecto: 55.0
+  nombre comercial MWCNT: [NO VERIFICADO]
+  fabricante MWCNT: [NO VERIFICADO]
+
+block_4_s23_s29
+  matriz: Poly(bisphenol A carbonate)
+  producto matriz: Makrolon 2600
+  fabricante matriz: Bayer MaterialScience AG, Leverkusen, Germany
+  MWCNT: Multi-wall carbon nanotubes
+  densidad MWCNT original: 145.0e0 Kilogram per Cubic Meter
+  densidad MWCNT canonica: 145.0 kg/m3
+  estado semantico densidad: documented_value_density_kind_not_verified
+  relacion de aspecto: 73.0
+  nombre comercial MWCNT: [NO VERIFICADO]
+  fabricante MWCNT: [NO VERIFICADO]
+
+block_5_s30_s36
+  matriz: Poly(bisphenol A carbonate)
+  producto matriz: Makrolon 2600
+  fabricante matriz: Bayer MaterialScience AG, Leverkusen, Germany
+  MWCNT: Multi-wall carbon nanotubes
+  densidad MWCNT original: 2.6e0 Gram per Cubic Centimeter
+  densidad MWCNT canonica: 2600.0 kg/m3
+  estado semantico densidad: documented_value_density_kind_not_verified
+  relacion de aspecto: 69.0
+  nombre comercial MWCNT: [NO VERIFICADO]
+  fabricante MWCNT: [NO VERIFICADO]
+
+DECISION
+- Los cinco bloques se conservan como cinco curvas separadas.
+- La matriz queda identificada como Makrolon 2600 de Bayer MaterialScience.
+- Los nombres comerciales de MWCNT no se completan sin evidencia explicita.
+- No se homogenizan densidades hasta verificar si representan densidad aparente, bulk o solida.
+- No se ejecutaron modelos.
+
+Firmas corregidas: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-matrix-mwcnt-block-signatures.csv
+Mapeo corregido: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-block-material-mapping-corrected.csv
+Atributos separados: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-matrix-mwcnt-attributes-by-sample.csv
+Calidad: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-matrix-mwcnt-separation-quality.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-matrix-mwcnt-separation-manifest.json

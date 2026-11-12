@@ -1,0 +1,4 @@
+﻿exclusion_id,entity_type,entity_id,sample_id,value_original,unit_original,reason,status,usable_for_modeling
+excl-l172-0001,attribute,l172-s8-huo-2015-attribute-19.5,l172-s8-huo-2015,19.5,,unresolved defective attribute type file:///apps/whyis/nan,quarantined,false
+excl-l172-0002,attribute,l172-s17-huo-2015-temperature-25C,l172-s17-huo-2015,25.0,Celsius,general sample temperature not verified as conductivity measurement temperature,context_unresolved,false
+excl-l172-0003,query_candidate,Id6llYcB9tZWhu3C0Bqw,,Highlighting Target Properties Using Sequence Generators and Area Marks,,chart title rejected as invalid SPARQL query,excluded,false

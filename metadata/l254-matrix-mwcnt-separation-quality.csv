@@ -1,0 +1,8 @@
+﻿check_id,description,passed,observed,expected
+Q001,Five blocks generated,True,5,5
+Q002,Matrix product is common across blocks,True,['Makrolon 2600'],Makrolon 2600
+Q003,Matrix manufacturer is common across blocks,True,"['Bayer MaterialScience AG, Leverkusen, Germany']",Bayer MaterialScience
+Q004,Matrix product is not assigned to MWCNT,True,[],Makrolon absent
+Q005,Matrix manufacturer is not assigned to MWCNT,True,[],Bayer absent
+Q006,Five distinct non-empty aspect ratios,True,"['134.0', '94.0', '55.0', '73.0', '69.0']",5 distinct values
+Q007,Aspect-ratio rows belong to MWCNT filler,True,"all=35, filler=35",all aspect-ratio rows classified as mwcnt_filler

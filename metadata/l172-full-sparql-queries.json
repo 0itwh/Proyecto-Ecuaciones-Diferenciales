@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-11-04T00:44:46-05:00",
+  "input_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_raw\\explorer\\l172-huo-2015-search-response.json",
+  "input_sha256": "8759879f74b09201864f84a908b52b6e39c2464e34b47ba7d6c69aec5005aaa0",
+  "search_hits_total": 107,
+  "target_hit_count": 2,
+  "queries": [
+    {
+      "hit_id": "IKTKTZIBGO0wWaevBNFi",
+      "short_name": "attribute-19_5",
+      "expected_value": "19.5",
+      "expected_unit": null,
+      "expected_type": "file:///apps/whyis/nan",
+      "index": "knowledge",
+      "score": 16.899658,
+      "source_date": "2024-10-02",
+      "source_keys": [
+        "date",
+        "label",
+        "response"
+      ],
+      "query_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\sparql_queries\\attribute-19_5-IKTKTZIBGO0wWaevBNFi.sparql",
+      "query_sha256": "6167c474346fc422555a35ee0c17b8d8a90ffad3dc899a6a366aa66274a14be7",
+      "query_file_sha256": "6167c474346fc422555a35ee0c17b8d8a90ffad3dc899a6a366aa66274a14be7",
+      "query_characters": 771,
+      "query_lines": 16,
+      "query_validation": {
+        "not_empty": true,
+        "contains_select": true,
+        "contains_where": true,
+        "contains_prefix": true,
+        "balanced_braces": true,
+        "no_truncation_marker": true,
+        "all_passed": true
+      },
+      "response_variables": [
+        "AttrType",
+        "value",
+        "Units"
+      ],
+      "binding_count": 1,
+      "bindings": [
+        {
+          "AttrType": {
+            "value": "file:///apps/whyis/nan",
+            "type": "uri",
+            "datatype": null,
+            "xml_lang": null
+          },
+          "value": {
+            "value": "19.5e0",
+            "type": "literal",
+            "datatype": "http://www.w3.org/2001/XMLSchema#double",
+            "xml_lang": null
+          }
+        }
+      ]
+    },
+    {
+      "hit_id": "eIs225cBqjuXg29aIbPm",
+      "short_name": "temperature-25C",
+      "expected_value": "25.0",
+      "expected_unit": "Celsius",
+      "expected_type": "obo:PATO_0000146",
+      "index": "knowledge",
+      "score": 17.876804,
+      "source_date": "2025-07-05",
+      "source_keys": [
+        "date",
+        "label",
+        "response"
+      ],
+      "query_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\sparql_queries\\temperature-25C-eIs225cBqjuXg29aIbPm.sparql",
+      "query_sha256": "cdef3057c99f3c2ef385e24161892d33a7ad8b8dbb20cb92bc05c5c541fb09fb",
+      "query_file_sha256": "cdef3057c99f3c2ef385e24161892d33a7ad8b8dbb20cb92bc05c5c541fb09fb",
+      "query_characters": 772,
+      "query_lines": 16,
+      "query_validation": {
+        "not_empty": true,
+        "contains_select": true,
+        "contains_where": true,
+        "contains_prefix": true,
+        "balanced_braces": true,
+        "no_truncation_marker": true,
+        "all_passed": true
+      },
+      "response_variables": [
+        "AttrType",
+        "value",
+        "Units"
+      ],
+      "binding_count": 1,
+      "bindings": [
+        {
+          "AttrType": {
+            "value": "obo:PATO_0000146",
+            "type": "uri",
+            "datatype": null,
+            "xml_lang": null
+          },
+          "value": {
+            "value": "25.0e0",
+            "type": "literal",
+            "datatype": "http://www.w3.org/2001/XMLSchema#double",
+            "xml_lang": null
+          },
+          "Units": {
+            "value": "Celsius",
+            "type": "literal",
+            "datatype": null,
+            "xml_lang": null
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Las consultas se copiaron directamente desde _source.label del JSON bruto.",
+    "Solo se normalizaron los finales de línea.",
+    "Las consultas no se ejecutaron contra el grafo SPARQL actual.",
+    "Los bindings se conservaron sin transformación."
+  ]
+}

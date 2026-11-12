@@ -1,0 +1,9 @@
+﻿check_id,description,passed,observed,expected
+Q001,36 unique samples,True,36,36
+Q002,35 samples with composition,True,35,35
+Q003,29 samples with conductivity,True,29,29
+Q004,28 complete composition-conductivity pairs,True,28,28
+Q005,4 samples with documented frequency,True,4,4
+Q006,All fractions are within 0 to 1,True,checked,all true
+Q007,All conductivity values are positive,True,checked,all true
+Q008,Five inferred seven-sample composition blocks,True,checked,7 samples in each block

@@ -1,0 +1,22 @@
+XSD compilado correctamente
+Errores de compilación: 0
+Declaraciones candidatas: 185
+Nombres únicos candidatos: 103
+Inventario: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-priority-audit.csv
+Resumen: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-priority-summary.csv
+
+RESUMEN POR CATEGORÍA
+              category match_type  declarations
+           composicion      exact             9
+           composicion    keyword            26
+condiciones_electricas      exact            18
+condiciones_electricas    keyword            64
+            materiales      exact            14
+            materiales    keyword            54
+
+NOMBRES CANDIDATOS
+composicion: AbaqusLoading, AgglomerateFraction, FEALoadingConditions, FillerComponentComposition, FillerComponentInComposite, FillerComposition, Fraction, LoadingProfile, MatrixComponentComposition, MonomerMass, NonAgglomerateFraction, PST_Composition, ThermalDecompositionTemperature, Volume, VolumeExpansionCoefficient, VolumeResistivity, Volumetric, XRay_Diffraction_and_Scattering, mass, volume
+condiciones_electricas: AC_DielectricDispersion, AcceleratingVoltage, Amperage, ArcResistance, BarrelTemperature, BrittleTemperature, CrystalizationTemperature, DC_DielectricConstant, DateOfMeasurement, DielectricBreakdownStrength, DielectricDispersionDependence, Dielectric_Loss_Permittivity, Dielectric_Loss_Tangent, Dielectric_Real_Permittivity, Dielectric_and_Impedance_Spectroscopy_Analysis, Direction, ElectricConductivity, ElectricPercolationThreshold, Electrical, ExtrusionTemperature, FrequencyDependence, FrequencySweep, GlassTransitionTemperature, LC_PhaseTransitionTemperature, MDBoundaryConditionDirection, MaxFrequency, MeasurementMethod, MeasurementMode, MeltTemperature, MeltingTemperature, MinFrequency, Orientation, OrientationAngle, SurfaceResistivity, Temperature, TemperatureDependence, TemperatureSweep, ThermalConductivity, ThermalDecompositionTemperature, Voltage, VolumeResistivity, amperage, barrelTemperature, dieTemperature, frequency, temperature, viscosityAtMeltingTemperature, voltage
+materiales: Abbreviation, ChemicalName, ChemicalUsed, DegreeOfPolymerization, Filler, FillerComponent, FillerComponentComposition, FillerComponentInComposite, FillerComposition, FillerProcessing, FillerProperties, In-SituPolymerization, ManufacturerOrSourceName, Matrix, MatrixComponent, MatrixComponentComposition, MatrixProcessing, MatrixProperties, NumberOfCGBeadsForEachMatrixChain, NumberOfMatrixChains, Particle, ParticleAspectRatio, ParticleSurfaceTreatment, ParticleType, ParticleType1, ParticleType2, ParticleTypeSpecifications, PolymerArchitectures, PolymerClass, PolymerNanocomposite, PolymerType, Polymerization, SphericalParticleDiameter, StdChemicalName, SurfaceArea, SurfaceChemistryProcessing, SurfaceResistivity, SurfaceTension, SurfaceTreatment, TradeName, nanoparticles, polymer
+
+Elementos globales: PolymerNanocomposite

@@ -1,0 +1,12 @@
+name: nanomine-n3
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python=3.12
+  - pandas
+  - requests
+  - lxml
+  - pyyaml
+  - openpyxl
+prefix: C:\Users\Alexis\anaconda3\envs\nanomine-n3

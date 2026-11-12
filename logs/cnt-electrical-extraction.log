@@ -1,0 +1,36 @@
+FASE 2 - EXTRACCION ESPECIFICA CNT ELECTRICA
+
+Fecha: 2026-11-04T01:19:14-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\explorer\cnt-electrical-conductivity-search-response.json
+SHA256: ee152465b853d3ca07a8cf540d571f523d9b945e40a17587649d30fea81de7e3
+
+search_hits_downloaded: 400
+search_total_declared: {'value': 663, 'relation': 'eq'}
+sparql_hits_with_bindings: 18
+electrical_sparql_hits: 6
+raw_cnt_electrical_bindings: 0
+unique_cnt_electrical_bindings: 0
+duplicates_removed: 0
+rejected_non_cnt_or_missing_property: 1410
+cnt_sample_hit_candidates: 203
+series_groups: 0
+series_with_5_levels_and_unit: 0
+unique_query_hashes: 9
+unique_response_hashes: 9
+
+SERIES CANDIDATAS
+- Ninguna serie electrica CNT encontrada en bindings SPARQL.
+
+INTERPRETACION
+- La coincidencia CNT se exige en el valor Filler de cada binding.
+- Los 235 bindings de l172 se excluyen si el relleno no es CNT.
+- Cero series es un resultado negativo reproducible, no un error.
+- No se asumieron unidades ni se convirtio resistividad.
+- No se ejecutaron modelos.
+
+Bindings: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\cnt-electrical-bindings-deduplicated.csv
+Series: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\cnt-electrical-series-summary.csv
+Consultas: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\cnt-electrical-query-inventory.csv
+Rechazados: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\cnt-electrical-rejected-bindings.csv
+Candidatos de muestras: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\cnt-sample-hit-candidates.csv
+JSON: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\cnt-electrical-extraction.json

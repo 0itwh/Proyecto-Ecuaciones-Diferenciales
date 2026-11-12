@@ -1,0 +1,6 @@
+﻿block_id,sample_count,samples_with_components,samples_with_processing,normalized_component_feature_count,normalized_processing_feature_count,samples_missing_processing
+block_1_s2_s8,7,7,7,4,3,
+block_2_s9_s15,7,7,7,4,3,
+block_3_s16_s22,7,7,7,4,3,
+block_4_s23_s29,7,7,7,4,3,
+block_5_s30_s36,7,7,6,4,3,l254-s33-castillo-2011

@@ -1,0 +1,8 @@
+Fecha: 2026-11-03
+Endpoint: https://materialsmine.org/api/curate/schema
+Método: GET
+Variantes probadas: sin parámetros, isFile=true, isJson=true, getXSD=true
+Resultado común: HTTP 500
+Tipo: application/json; charset=utf-8
+Mensaje: TypeError: CH.jsonSchemaGenerator is not a function
+Conclusión: endpoint documentado pero no operativo en las variantes probadas; XSD vigente no recuperado.

@@ -1,0 +1,6 @@
+﻿check_id,description,passed,observed,expected
+Q001,Five inferred blocks analysed,True,5,5
+Q002,All 36 samples preserved,True,36,36
+Q003,No component row linked outside sample inventory,True,checked,True
+Q004,No processing row linked outside sample inventory,True,checked,True
+Q005,Block comparison outputs created,True,created,True

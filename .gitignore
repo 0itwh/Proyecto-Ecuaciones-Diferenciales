@@ -1,0 +1,79 @@
+# Python y entornos
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Editores y Windows
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales y respaldos
+*.tmp
+*.temp
+*.bak
+*.pre_article_validation.bak
+~$*
+.~lock.*
+
+# Recuperación forense
+archive/recovery/
+
+# Salidas temporales
+docx_render/
+docx_montage.png
+
+# Paquetes comprimidos
+*.zip
+
+# Artículo con posible restricción de redistribución
+49-doi10.1016j.polymer.2011.06.018_Castillo*.pdf
+
+# Datos brutos grandes y recuperables
+cnt-electrical-conductivity-search-response.json
+cnt-l254-castillo-2011-search-response.json
+electric-conductivity-search-response.json
+data_raw_input.json
+l172-s13-huo-2015-search-response.json
+
+# Versiones exploratorias sustituidas
+analysis/phase3_exploratory_l254_v1/
+analysis/phase3_exploratory_l254_v2/
+analysis/phase3_exploratory_l254_v2_1/
+
+# Script inseguro sustituido por la versión safe
+scripts/apply_l254_article_validation.py
+
+# Datos brutos binarios y respuestas recuperables
+*.bin
+data_raw/explorer/*-search-response.json
+
+# Cachés y temporales adicionales
+*.pyc
+__pycache__/
+
+# Versiones exploratorias sustituidas
+analysis/phase3_exploratory_l254_v1/
+analysis/phase3_exploratory_l254_v2/
+analysis/phase3_exploratory_l254_v2_1/
+
+# Script inseguro sustituido por la versión safe
+scripts/apply_l254_article_validation.py
+
+# Datos brutos binarios y respuestas recuperables
+*.bin
+data_raw/explorer/*-search-response.json
+
+# Respaldo forense local
+archive/recovery/
+
+# Cachés de Python
+__pycache__/
+*.pyc

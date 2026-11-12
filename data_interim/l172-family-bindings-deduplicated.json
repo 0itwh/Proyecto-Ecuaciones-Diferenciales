@@ -1,0 +1,1898 @@
+{
+  "generated_at": "2026-11-04T00:29:08-05:00",
+  "input_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_raw\\explorer\\l172-huo-2015-search-response.json",
+  "input_sha256": "8759879f74b09201864f84a908b52b6e39c2464e34b47ba7d6c69aec5005aaa0",
+  "search_hits_total": 107,
+  "hits_containing_l172": 10,
+  "hits_with_sparql_bindings": 10,
+  "raw_bindings": 65,
+  "unique_bindings": 49,
+  "duplicates_removed": 16,
+  "unique_query_hashes": 10,
+  "unique_response_hashes": 10,
+  "sample_ids": [
+    "l172-s1-huo-2015",
+    "l172-s10-huo-2015",
+    "l172-s11-huo-2015",
+    "l172-s12-huo-2015",
+    "l172-s13-huo-2015",
+    "l172-s14-huo-2015",
+    "l172-s15-huo-2015",
+    "l172-s16-huo-2015",
+    "l172-s17-huo-2015",
+    "l172-s18-huo-2015",
+    "l172-s2-huo-2015",
+    "l172-s3-huo-2015",
+    "l172-s4-huo-2015",
+    "l172-s5-huo-2015",
+    "l172-s6-huo-2015",
+    "l172-s7-huo-2015",
+    "l172-s8-huo-2015",
+    "l172-s9-huo-2015"
+  ],
+  "scientific_variables": [
+    "AttrType",
+    "DOI",
+    "Descr",
+    "Units",
+    "attrType",
+    "attrUnits",
+    "attrValue",
+    "fullLabel",
+    "param_label",
+    "process_label",
+    "role",
+    "sample",
+    "sample_id",
+    "sample_label",
+    "std_name",
+    "step",
+    "value"
+  ],
+  "variable_coverage": {
+    "AttrType": {
+      "present": 2,
+      "total": 49,
+      "coverage_fraction": 0.04081632653061224
+    },
+    "DOI": {
+      "present": 2,
+      "total": 49,
+      "coverage_fraction": 0.04081632653061224
+    },
+    "Descr": {
+      "present": 13,
+      "total": 49,
+      "coverage_fraction": 0.2653061224489796
+    },
+    "Units": {
+      "present": 1,
+      "total": 49,
+      "coverage_fraction": 0.02040816326530612
+    },
+    "attrType": {
+      "present": 14,
+      "total": 49,
+      "coverage_fraction": 0.2857142857142857
+    },
+    "attrUnits": {
+      "present": 6,
+      "total": 49,
+      "coverage_fraction": 0.12244897959183673
+    },
+    "attrValue": {
+      "present": 14,
+      "total": 49,
+      "coverage_fraction": 0.2857142857142857
+    },
+    "fullLabel": {
+      "present": 14,
+      "total": 49,
+      "coverage_fraction": 0.2857142857142857
+    },
+    "param_label": {
+      "present": 13,
+      "total": 49,
+      "coverage_fraction": 0.2653061224489796
+    },
+    "process_label": {
+      "present": 2,
+      "total": 49,
+      "coverage_fraction": 0.04081632653061224
+    },
+    "role": {
+      "present": 14,
+      "total": 49,
+      "coverage_fraction": 0.2857142857142857
+    },
+    "sample": {
+      "present": 18,
+      "total": 49,
+      "coverage_fraction": 0.3673469387755102
+    },
+    "sample_id": {
+      "present": 18,
+      "total": 49,
+      "coverage_fraction": 0.3673469387755102
+    },
+    "sample_label": {
+      "present": 2,
+      "total": 49,
+      "coverage_fraction": 0.04081632653061224
+    },
+    "std_name": {
+      "present": 14,
+      "total": 49,
+      "coverage_fraction": 0.2857142857142857
+    },
+    "step": {
+      "present": 13,
+      "total": 49,
+      "coverage_fraction": 0.2653061224489796
+    },
+    "value": {
+      "present": 2,
+      "total": 49,
+      "coverage_fraction": 0.04081632653061224
+    }
+  },
+  "query_inventory": [
+    {
+      "hit_position": 0,
+      "index": "knowledge",
+      "hit_id": "eos225cBqjuXg29aIrM4",
+      "date": "2025-07-05",
+      "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "variables": "sample",
+      "binding_count": 17,
+      "sample_ids": "l172-s1-huo-2015|l172-s10-huo-2015|l172-s11-huo-2015|l172-s12-huo-2015|l172-s13-huo-2015|l172-s14-huo-2015|l172-s15-huo-2015|l172-s16-huo-2015|l172-s17-huo-2015|l172-s18-huo-2015|l172-s2-huo-2015|l172-s3-huo-2015|l172-s4-huo-2015|l172-s5-huo-2015|l172-s6-huo-2015|l172-s7-huo-2015|l172-s8-huo-2015|l172-s9-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 1,
+      "index": "knowledge",
+      "hit_id": "IaTKTZIBGO0wWaevBdGP",
+      "date": "2024-10-02",
+      "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+      "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+      "variables": "sample",
+      "binding_count": 17,
+      "sample_ids": "l172-s1-huo-2015|l172-s10-huo-2015|l172-s11-huo-2015|l172-s12-huo-2015|l172-s13-huo-2015|l172-s14-huo-2015|l172-s15-huo-2015|l172-s16-huo-2015|l172-s17-huo-2015|l172-s18-huo-2015|l172-s2-huo-2015|l172-s3-huo-2015|l172-s4-huo-2015|l172-s5-huo-2015|l172-s6-huo-2015|l172-s7-huo-2015|l172-s8-huo-2015|l172-s9-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 2,
+      "index": "knowledge",
+      "hit_id": "eYs225cBqjuXg29aIbPw",
+      "date": "2025-07-05",
+      "query_sha256": "55828f86d8e6fe42ab2bb1b568c57a3ca6b80a69bb029dc5013b58b721ff4097",
+      "response_sha256": "d435fcf962f25bec3cc107db4c0c4694350d89ea1a52caabfe14796279e15334",
+      "variables": "DOI|sample_label|process_label",
+      "binding_count": 1,
+      "sample_ids": "l172-s17-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>   SELECT DISTI ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 3,
+      "index": "knowledge",
+      "hit_id": "H6TKTZIBGO0wWaevBNFM",
+      "date": "2024-10-02",
+      "query_sha256": "b8931a19fe40860a15164716e6398116b396ec8fe7f83246aa9f7590d3f55048",
+      "response_sha256": "a0fcd110c0b7a874d1afaff12b6de080931024cd2b1d7eea45b4a6aa26d5289c",
+      "variables": "DOI|sample_label|process_label",
+      "binding_count": 1,
+      "sample_ids": "l172-s8-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>   SELECT DISTI ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 4,
+      "index": "knowledge",
+      "hit_id": "eIs225cBqjuXg29aIbPm",
+      "date": "2025-07-05",
+      "query_sha256": "89d881b9ee9b23da9711b8836fa053939716e710cd88a8150420e329088dfe88",
+      "response_sha256": "51dfa2a1d6c810121c4dbc8d53dc3de5f3c0bf968a5f4d1a742512067290b485",
+      "variables": "AttrType|value|Units",
+      "binding_count": 1,
+      "sample_ids": "l172-s17-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 5,
+      "index": "knowledge",
+      "hit_id": "IKTKTZIBGO0wWaevBNFi",
+      "date": "2024-10-02",
+      "query_sha256": "e9c8a16e3d3110d1297a63ba6f3879a1b5e7c84e788289551f684e8a25fefd84",
+      "response_sha256": "280d669259c09e6b49e0a1692b10ec294f43ed2fe3b06f1ee5373730a2ab71b4",
+      "variables": "AttrType|value|Units",
+      "binding_count": 1,
+      "sample_ids": "l172-s8-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 6,
+      "index": "knowledge",
+      "hit_id": "fIs225cBqjuXg29aLLMj",
+      "date": "2025-07-05",
+      "query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+      "response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+      "variables": "step|param_label|Descr",
+      "binding_count": 6,
+      "sample_ids": "l172-s17-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT ?step ?p ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 7,
+      "index": "knowledge",
+      "hit_id": "IqTKTZIBGO0wWaevCtEr",
+      "date": "2024-10-02",
+      "query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+      "response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+      "variables": "std_name|role|attrType|attrValue|attrUnits|fullLabel",
+      "binding_count": 7,
+      "sample_ids": "l172-s8-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 8,
+      "index": "knowledge",
+      "hit_id": "e4s225cBqjuXg29aJLO1",
+      "date": "2025-07-05",
+      "query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+      "response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+      "variables": "std_name|role|attrType|attrValue|attrUnits|fullLabel",
+      "binding_count": 7,
+      "sample_ids": "l172-s17-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ... [TRUNCADO]"
+    },
+    {
+      "hit_position": 9,
+      "index": "knowledge",
+      "hit_id": "I6TKTZIBGO0wWaevFNEo",
+      "date": "2024-10-02",
+      "query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+      "response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+      "variables": "step|param_label|Descr",
+      "binding_count": 7,
+      "sample_ids": "l172-s8-huo-2015",
+      "has_response": true,
+      "query_preview": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT ?step ?p ... [TRUNCADO]"
+    }
+  ],
+  "bindings": [
+    {
+      "AttrType": "file:///apps/whyis/nan",
+      "AttrType__type": "uri",
+      "AttrType__datatype": null,
+      "AttrType__xml_lang": null,
+      "value": "19.5e0",
+      "value__type": "literal",
+      "value__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "value__xml_lang": null,
+      "_source_hit_id": "IKTKTZIBGO0wWaevBNFi",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "e9c8a16e3d3110d1297a63ba6f3879a1b5e7c84e788289551f684e8a25fefd84",
+      "_response_sha256": "280d669259c09e6b49e0a1692b10ec294f43ed2fe3b06f1ee5373730a2ab71b4",
+      "_binding_position": 0,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IKTKTZIBGO0wWaevBNFi",
+          "date": "2024-10-02",
+          "query_sha256": "e9c8a16e3d3110d1297a63ba6f3879a1b5e7c84e788289551f684e8a25fefd84",
+          "response_sha256": "280d669259c09e6b49e0a1692b10ec294f43ed2fe3b06f1ee5373730a2ab71b4",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "AttrType": "obo:PATO_0000146",
+      "AttrType__type": "uri",
+      "AttrType__datatype": null,
+      "AttrType__xml_lang": null,
+      "value": "25.0e0",
+      "value__type": "literal",
+      "value__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "value__xml_lang": null,
+      "Units": "Celsius",
+      "Units__type": "literal",
+      "Units__datatype": null,
+      "Units__xml_lang": null,
+      "_source_hit_id": "eIs225cBqjuXg29aIbPm",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "89d881b9ee9b23da9711b8836fa053939716e710cd88a8150420e329088dfe88",
+      "_response_sha256": "51dfa2a1d6c810121c4dbc8d53dc3de5f3c0bf968a5f4d1a742512067290b485",
+      "_binding_position": 0,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "eIs225cBqjuXg29aIbPm",
+          "date": "2025-07-05",
+          "query_sha256": "89d881b9ee9b23da9711b8836fa053939716e710cd88a8150420e329088dfe88",
+          "response_sha256": "51dfa2a1d6c810121c4dbc8d53dc3de5f3c0bf968a5f4d1a742512067290b485",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "DOI": "10.1021/acs.jpcc.5b08809",
+      "DOI__type": "literal",
+      "DOI__datatype": null,
+      "DOI__xml_lang": null,
+      "sample_label": "Iron (II,III) Oxide in Polyvinylidene Fluoride",
+      "sample_label__type": "literal",
+      "sample_label__datatype": null,
+      "sample_label__xml_lang": null,
+      "process_label": "Solution Processing",
+      "process_label__type": "literal",
+      "process_label__datatype": null,
+      "process_label__xml_lang": null,
+      "_source_hit_id": "H6TKTZIBGO0wWaevBNFM",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "b8931a19fe40860a15164716e6398116b396ec8fe7f83246aa9f7590d3f55048",
+      "_response_sha256": "a0fcd110c0b7a874d1afaff12b6de080931024cd2b1d7eea45b4a6aa26d5289c",
+      "_binding_position": 0,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "H6TKTZIBGO0wWaevBNFM",
+          "date": "2024-10-02",
+          "query_sha256": "b8931a19fe40860a15164716e6398116b396ec8fe7f83246aa9f7590d3f55048",
+          "response_sha256": "a0fcd110c0b7a874d1afaff12b6de080931024cd2b1d7eea45b4a6aa26d5289c",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "DOI": "10.1021/acs.jpcc.5b08809",
+      "DOI__type": "literal",
+      "DOI__datatype": null,
+      "DOI__xml_lang": null,
+      "sample_label": "Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride",
+      "sample_label__type": "literal",
+      "sample_label__datatype": null,
+      "sample_label__xml_lang": null,
+      "process_label": "Solution Processing",
+      "process_label__type": "literal",
+      "process_label__datatype": null,
+      "process_label__xml_lang": null,
+      "_source_hit_id": "eYs225cBqjuXg29aIbPw",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "55828f86d8e6fe42ab2bb1b568c57a3ca6b80a69bb029dc5013b58b721ff4097",
+      "_response_sha256": "d435fcf962f25bec3cc107db4c0c4694350d89ea1a52caabfe14796279e15334",
+      "_binding_position": 0,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "eYs225cBqjuXg29aIbPw",
+          "date": "2025-07-05",
+          "query_sha256": "55828f86d8e6fe42ab2bb1b568c57a3ca6b80a69bb029dc5013b58b721ff4097",
+          "response_sha256": "d435fcf962f25bec3cc107db4c0c4694350d89ea1a52caabfe14796279e15334",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_1",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Additive",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Additive: Fe3O4@BaTiO3; Amount: 18.6; Description: Add required Fe3O4@BaTiO3 nanoparticles",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "fIs225cBqjuXg29aLLMj",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+      "_response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+      "_binding_position": 1,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "fIs225cBqjuXg29aLLMj",
+          "date": "2025-07-05",
+          "query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+          "response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+          "binding_position": 1
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_3",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Additive",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Additive: Iron (II,III) Oxide; Amount: 5; Description: Add in required amount of Iron (II,III) Oxide",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "I6TKTZIBGO0wWaevFNEo",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+      "_response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+      "_binding_position": 3,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "I6TKTZIBGO0wWaevFNEo",
+          "date": "2024-10-02",
+          "query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+          "response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+          "binding_position": 3
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_1",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Additive",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Additive: Polyvinylidene Fluoride; Description: Add PVDF",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "I6TKTZIBGO0wWaevFNEo",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+      "_response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+      "_binding_position": 1,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "I6TKTZIBGO0wWaevFNEo",
+          "date": "2024-10-02",
+          "query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+          "response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+          "binding_position": 1
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_5",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Molding",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Ambient Condition: vacuum; Description: Cast onto glass sheet and dry; Temperature: 120 Celsius; Time: 5 Hour",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "I6TKTZIBGO0wWaevFNEo",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+      "_response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+      "_binding_position": 5,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "I6TKTZIBGO0wWaevFNEo",
+          "date": "2024-10-02",
+          "query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+          "response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+          "binding_position": 5
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_4",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Drying Evaporation",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Ambient Condition: vacuum; Description: Dry film under vacuum; Temperature: 120 Celsius; Time: 5 Hour",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "fIs225cBqjuXg29aLLMj",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+      "_response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+      "_binding_position": 4,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "fIs225cBqjuXg29aLLMj",
+          "date": "2025-07-05",
+          "query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+          "response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+          "binding_position": 4
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_5",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Heating",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Description: Anneal Films; Temperature: 135 Celsius; Time: 2 Hour",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "fIs225cBqjuXg29aLLMj",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+      "_response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+      "_binding_position": 5,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "fIs225cBqjuXg29aLLMj",
+          "date": "2025-07-05",
+          "query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+          "response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+          "binding_position": 5
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_6",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Heating",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Description: Anneal cast films; Temperature: 135 Celsius; Time: 2 Hour",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "I6TKTZIBGO0wWaevFNEo",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+      "_response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+      "_binding_position": 6,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "I6TKTZIBGO0wWaevFNEo",
+          "date": "2024-10-02",
+          "query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+          "response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+          "binding_position": 6
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_3",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Molding",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Description: Cast onto a glass sheet",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "fIs225cBqjuXg29aLLMj",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+      "_response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+      "_binding_position": 3,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "fIs225cBqjuXg29aLLMj",
+          "date": "2025-07-05",
+          "query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+          "response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+          "binding_position": 3
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_2",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Mixing",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Description: Dissolve PVDF into DMF; Mixing Method: dissolving",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "I6TKTZIBGO0wWaevFNEo",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+      "_response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+      "_binding_position": 2,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "I6TKTZIBGO0wWaevFNEo",
+          "date": "2024-10-02",
+          "query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+          "response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+          "binding_position": 2
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_2",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Mixing",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Description: Sonicate PVDF-NP Solution; Mixing Method: ultra-sonication; Time: 30 Minute",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "fIs225cBqjuXg29aLLMj",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+      "_response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+      "_binding_position": 2,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "fIs225cBqjuXg29aLLMj",
+          "date": "2025-07-05",
+          "query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+          "response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+          "binding_position": 2
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_4",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Mixing",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Description: Ultra-sonicate suspension; Mixing Method: ultra-sonication; Time: 30 Minute",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "I6TKTZIBGO0wWaevFNEo",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+      "_response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+      "_binding_position": 4,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "I6TKTZIBGO0wWaevFNEo",
+          "date": "2024-10-02",
+          "query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+          "response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+          "binding_position": 4
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S17_Huo_2015_solution_processing_step_0",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Solvent",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Solvent Name: N,N-dimethylformamide",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "fIs225cBqjuXg29aLLMj",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+      "_response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+      "_binding_position": 0,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "fIs225cBqjuXg29aLLMj",
+          "date": "2025-07-05",
+          "query_sha256": "77dafc575f34d46691370864243da5590f9acf72ff8ef89be076bd486b5acca0",
+          "response_sha256": "d3be43166bd04d591b1994c1978a72d928c684defefe80ddd042d63ae070a4e0",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "step": "http://materialsmine.org/sample/L172_S8_Huo_2015_solution_processing_step_0",
+      "step__type": "uri",
+      "step__datatype": null,
+      "step__xml_lang": null,
+      "param_label": "Solvent",
+      "param_label__type": "literal",
+      "param_label__datatype": null,
+      "param_label__xml_lang": null,
+      "Descr": "Solvent Name: N,N-dimethylformamide",
+      "Descr__type": "literal",
+      "Descr__datatype": null,
+      "Descr__xml_lang": null,
+      "_source_hit_id": "I6TKTZIBGO0wWaevFNEo",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+      "_response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+      "_binding_position": 0,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "I6TKTZIBGO0wWaevFNEo",
+          "date": "2024-10-02",
+          "query_sha256": "6e5b9b1c5523dc50545ebd534b71f0824a79f263689d2ca45840e2dbcfba9aa5",
+          "response_sha256": "7502b43446bb2b3f838d7b27da4bc31c3e2bfb450e34a7e55881802b0d42877b",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "std_name": "Poly(vinylidene fluoride)",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Matrix",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/Abbreviation",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "PVDF",
+      "attrValue__type": "literal",
+      "attrValue__datatype": null,
+      "attrValue__xml_lang": null,
+      "fullLabel": "Iron (II,III) Oxide in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "IqTKTZIBGO0wWaevCtEr",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+      "_response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+      "_binding_position": 4,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IqTKTZIBGO0wWaevCtEr",
+          "date": "2024-10-02",
+          "query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+          "response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+          "binding_position": 4
+        }
+      ]
+    },
+    {
+      "std_name": "Poly(vinylidene fluoride)",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Matrix",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/Abbreviation",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "PVDF",
+      "attrValue__type": "literal",
+      "attrValue__datatype": null,
+      "attrValue__xml_lang": null,
+      "fullLabel": "Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "e4s225cBqjuXg29aJLO1",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+      "_response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+      "_binding_position": 4,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "e4s225cBqjuXg29aJLO1",
+          "date": "2025-07-05",
+          "query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+          "response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+          "binding_position": 4
+        }
+      ]
+    },
+    {
+      "std_name": "Poly(vinylidene fluoride)",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Matrix",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/Density",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "1.68e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "attrUnits": "Gram per Cubic Centimeter",
+      "attrUnits__type": "literal",
+      "attrUnits__datatype": null,
+      "attrUnits__xml_lang": null,
+      "fullLabel": "Iron (II,III) Oxide in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "IqTKTZIBGO0wWaevCtEr",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+      "_response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+      "_binding_position": 6,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IqTKTZIBGO0wWaevCtEr",
+          "date": "2024-10-02",
+          "query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+          "response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+          "binding_position": 6
+        }
+      ]
+    },
+    {
+      "std_name": "Poly(vinylidene fluoride)",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Matrix",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/Density",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "1.68e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "attrUnits": "Gram per Cubic Centimeter",
+      "attrUnits__type": "literal",
+      "attrUnits__datatype": null,
+      "attrUnits__xml_lang": null,
+      "fullLabel": "Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "e4s225cBqjuXg29aJLO1",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+      "_response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+      "_binding_position": 6,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "e4s225cBqjuXg29aJLO1",
+          "date": "2025-07-05",
+          "query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+          "response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+          "binding_position": 6
+        }
+      ]
+    },
+    {
+      "std_name": "Iron(II,III) oxide",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Filler",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/Density",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "5.17e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "attrUnits": "Gram per Cubic Centimeter",
+      "attrUnits__type": "literal",
+      "attrUnits__datatype": null,
+      "attrUnits__xml_lang": null,
+      "fullLabel": "Iron (II,III) Oxide in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "IqTKTZIBGO0wWaevCtEr",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+      "_response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+      "_binding_position": 2,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IqTKTZIBGO0wWaevCtEr",
+          "date": "2024-10-02",
+          "query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+          "response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+          "binding_position": 2
+        }
+      ]
+    },
+    {
+      "std_name": "Iron oxide - barium titanate core-shell nanoparticles",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Filler",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/Density",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "5.63e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "attrUnits": "Gram per Cubic Centimeter",
+      "attrUnits__type": "literal",
+      "attrUnits__datatype": null,
+      "attrUnits__xml_lang": null,
+      "fullLabel": "Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "e4s225cBqjuXg29aJLO1",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+      "_response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+      "_binding_position": 2,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "e4s225cBqjuXg29aJLO1",
+          "date": "2025-07-05",
+          "query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+          "response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+          "binding_position": 2
+        }
+      ]
+    },
+    {
+      "std_name": "Poly(vinylidene fluoride)",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Matrix",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/ManufacturerOrSourceName",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "3F Corporation",
+      "attrValue__type": "literal",
+      "attrValue__datatype": null,
+      "attrValue__xml_lang": null,
+      "fullLabel": "Iron (II,III) Oxide in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "IqTKTZIBGO0wWaevCtEr",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+      "_response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+      "_binding_position": 5,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IqTKTZIBGO0wWaevCtEr",
+          "date": "2024-10-02",
+          "query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+          "response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+          "binding_position": 5
+        }
+      ]
+    },
+    {
+      "std_name": "Poly(vinylidene fluoride)",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Matrix",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/ManufacturerOrSourceName",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "3F Corporation",
+      "attrValue__type": "literal",
+      "attrValue__datatype": null,
+      "attrValue__xml_lang": null,
+      "fullLabel": "Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "e4s225cBqjuXg29aJLO1",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+      "_response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+      "_binding_position": 5,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "e4s225cBqjuXg29aJLO1",
+          "date": "2025-07-05",
+          "query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+          "response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+          "binding_position": 5
+        }
+      ]
+    },
+    {
+      "std_name": "Iron(II,III) oxide",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Filler",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/MassFraction",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "0.1393907e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "fullLabel": "Iron (II,III) Oxide in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "IqTKTZIBGO0wWaevCtEr",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+      "_response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+      "_binding_position": 0,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IqTKTZIBGO0wWaevCtEr",
+          "date": "2024-10-02",
+          "query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+          "response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "std_name": "Iron oxide - barium titanate core-shell nanoparticles",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Filler",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/MassFraction",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "0.4336688e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "fullLabel": "Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "e4s225cBqjuXg29aJLO1",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+      "_response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+      "_binding_position": 0,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "e4s225cBqjuXg29aJLO1",
+          "date": "2025-07-05",
+          "query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+          "response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "std_name": "Iron(II,III) oxide",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Filler",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/VolumeFraction",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "0.05e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "fullLabel": "Iron (II,III) Oxide in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "IqTKTZIBGO0wWaevCtEr",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+      "_response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+      "_binding_position": 1,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IqTKTZIBGO0wWaevCtEr",
+          "date": "2024-10-02",
+          "query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+          "response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+          "binding_position": 1
+        }
+      ]
+    },
+    {
+      "std_name": "Iron oxide - barium titanate core-shell nanoparticles",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Filler",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://materialsmine.org/ns/VolumeFraction",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "0.186e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "fullLabel": "Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "e4s225cBqjuXg29aJLO1",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+      "_response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+      "_binding_position": 1,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "e4s225cBqjuXg29aJLO1",
+          "date": "2025-07-05",
+          "query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+          "response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+          "binding_position": 1
+        }
+      ]
+    },
+    {
+      "std_name": "Iron(II,III) oxide",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Filler",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://semanticscience.org/resource/Width",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "10.0e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "attrUnits": "Nanometer",
+      "attrUnits__type": "literal",
+      "attrUnits__datatype": null,
+      "attrUnits__xml_lang": null,
+      "fullLabel": "Iron (II,III) Oxide in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "IqTKTZIBGO0wWaevCtEr",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+      "_response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+      "_binding_position": 3,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IqTKTZIBGO0wWaevCtEr",
+          "date": "2024-10-02",
+          "query_sha256": "6a2148e3e8cc65cedcacfb9ee6e59e1e9337b413a5d20575aff85d7944ad94e6",
+          "response_sha256": "ab59487bad50c035f04dd4dd02796569128249ff53865780ab77950771b498fb",
+          "binding_position": 3
+        }
+      ]
+    },
+    {
+      "std_name": "Iron oxide - barium titanate core-shell nanoparticles",
+      "std_name__type": "literal",
+      "std_name__datatype": null,
+      "std_name__xml_lang": null,
+      "role": "Filler",
+      "role__type": "literal",
+      "role__datatype": null,
+      "role__xml_lang": null,
+      "attrType": "http://semanticscience.org/resource/Width",
+      "attrType__type": "uri",
+      "attrType__datatype": null,
+      "attrType__xml_lang": null,
+      "attrValue": "100.0e0",
+      "attrValue__type": "literal",
+      "attrValue__datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "attrValue__xml_lang": null,
+      "attrUnits": "Nanometer",
+      "attrUnits__type": "literal",
+      "attrUnits__datatype": null,
+      "attrUnits__xml_lang": null,
+      "fullLabel": "Iron Oxide - Barium Titanate core-shell nanoparticles in Polyvinylidene Fluoride",
+      "fullLabel__type": "literal",
+      "fullLabel__datatype": null,
+      "fullLabel__xml_lang": null,
+      "_source_hit_id": "e4s225cBqjuXg29aJLO1",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+      "_response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+      "_binding_position": 3,
+      "sample_id": null,
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "e4s225cBqjuXg29aJLO1",
+          "date": "2025-07-05",
+          "query_sha256": "400eb4333c1fe1ec85ff2c342c18c321db26e437fa8928b1579538e5fa0c19ab",
+          "response_sha256": "40ce8cd9f878be8728718c34ea7b4b1c66d18a9eba6b5da20fb1140d5bd918c4",
+          "binding_position": 3
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s1-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 2,
+      "sample_id": "l172-s1-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 2
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 2
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s10-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 5,
+      "sample_id": "l172-s10-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 5
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 5
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s11-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 6,
+      "sample_id": "l172-s11-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 6
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 7
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s12-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 0,
+      "sample_id": "l172-s12-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 0
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 0
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s13-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 10,
+      "sample_id": "l172-s13-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 10
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 11
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s14-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 12,
+      "sample_id": "l172-s14-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 12
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 13
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s15-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 7,
+      "sample_id": "l172-s15-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 7
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 8
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s16-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 16,
+      "sample_id": "l172-s16-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 16
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 16
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s17-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "IaTKTZIBGO0wWaevBdGP",
+      "_source_index": "knowledge",
+      "_source_date": "2024-10-02",
+      "_query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+      "_response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+      "_binding_position": 6,
+      "sample_id": "l172-s17-huo-2015",
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 6
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s18-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 1,
+      "sample_id": "l172-s18-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 1
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 1
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s2-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 8,
+      "sample_id": "l172-s2-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 8
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 9
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s3-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 13,
+      "sample_id": "l172-s3-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 13
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 14
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s4-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 4,
+      "sample_id": "l172-s4-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 4
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 4
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s5-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 14,
+      "sample_id": "l172-s5-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 14
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 15
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s6-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 3,
+      "sample_id": "l172-s6-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 3
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 3
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s7-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 11,
+      "sample_id": "l172-s7-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 11
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 12
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s8-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 15,
+      "sample_id": "l172-s8-huo-2015",
+      "source_occurrence_count": 1,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 15
+        }
+      ]
+    },
+    {
+      "sample": "http://materialsmine.org/sample/l172-s9-huo-2015",
+      "sample__type": "uri",
+      "sample__datatype": null,
+      "sample__xml_lang": null,
+      "_source_hit_id": "eos225cBqjuXg29aIrM4",
+      "_source_index": "knowledge",
+      "_source_date": "2025-07-05",
+      "_query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+      "_response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+      "_binding_position": 9,
+      "sample_id": "l172-s9-huo-2015",
+      "source_occurrence_count": 2,
+      "source_occurrences": [
+        {
+          "hit_id": "eos225cBqjuXg29aIrM4",
+          "date": "2025-07-05",
+          "query_sha256": "ecf50178201781e7c2771ebc9fa907f732919964d10795ba8a07a1f775905b93",
+          "response_sha256": "4650b4fd84245fd0d2f183198f4dc52f2e845ec6e68abb7ea8d7007f14f8a3dc",
+          "binding_position": 9
+        },
+        {
+          "hit_id": "IaTKTZIBGO0wWaevBdGP",
+          "date": "2024-10-02",
+          "query_sha256": "208d57acd727df34c31de14ecf9533149e1c5769cef85bac9142a62a1e6cc99a",
+          "response_sha256": "83d17b2c92a95854c841023d076e7d74f696760dedc3a54dcf24d937112ac8d0",
+          "binding_position": 10
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Solo se procesaron hits que contienen identificadores l172-sN-huo-2015.",
+    "Las copias indexadas se deduplicaron por valores científicos del binding.",
+    "No se asumieron unidades.",
+    "No se calcularon medias ni modelos."
+  ]
+}

@@ -1,0 +1,2 @@
+﻿study_id,study_code,doi,doi_status,publication_year,source_database,current_graph_status,corpus_status,corpus_status_reason,created_at
+study-l172-huo-2015,l172-huo-2015,10.1021/acs.jpcc.5b08809,confirmed_in_historical_indexed_response,2015,MaterialsMine historical indexed response,not_reproduced_in_current_sparql_graph,auxiliary_quarantine,conductivity unit and measurement conditions not verified,2026-11-04T01:08:37-05:00

@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-11-04T20:42:32-05:00",
+  "source_document": "49-doi10.1016j.polymer.2011.06.018_Castillo.pdf",
+  "doi": "10.1016/j.polymer.2011.06.018",
+  "decision": "electrical measurements are volume-resistivity based; 1 Hz applies to DMA, not conductivity",
+  "corpus_updates": {
+    "commercial_mwcnt_identities": 5,
+    "electrical_measurements_with_verified_method": 29,
+    "pure_pc_control_zero_composition_rows_added": 2,
+    "frequency_exclusions_removed": 25,
+    "published_percolation_benchmarks": 5
+  },
+  "phase_status": "phase3_exploratory_and_published_fit_reproduction_authorized",
+  "final_modeling_status": "pending independent reproduction and sensitivity analysis"
+}

@@ -1,0 +1,3 @@
+SHA256 hash de api_docs\materialsmine-openapi.json:
+3d256a82812a2b844baf669bc543047a4fd5771267a17b2e8313ab4ececdb48b
+CertUtil: -hashfile comando completado correctamente.

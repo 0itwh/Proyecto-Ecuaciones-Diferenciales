@@ -1,0 +1,44 @@
+FASE 2 - EXTRACCION DE LA FAMILIA L254-CASTILLO-2011
+
+Fecha: 2026-11-04T01:28:19-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\explorer\cnt-l254-castillo-2011-search-response.json
+SHA256: 26b446107fdf05902fe36cc6bf081b9a4ba390efe60dde9e974be42b6ebba3dc
+
+search_hits_downloaded: 400
+search_total_declared: {'value': 728, 'relation': 'eq'}
+unique_samples: 36
+provenance_rows: 35
+attribute_rows: 170
+component_rows: 284
+processing_rows: 102
+composition_rows_explicitly_classified: 70
+electrical_rows_explicitly_classified: 33
+candidate_series: 2
+doi_values: 1
+
+DOI/RECURSOS LITERALES
+- 10.1016/j.polymer.2011.06.018
+
+FIRMAS DE CONSULTA
+- AttrType|value|Units: 88
+- sample: 87
+- std_name|role|attrType|attrValue|attrUnits|fullLabel: 85
+- DOI|sample_label|process_label: 84
+- step|param_label|Descr: 56
+
+INTERPRETACION
+- Se localizaron atributos explicitamente electricos para revision.
+- Se localizaron atributos de composicion explicitamente etiquetados.
+- Los resultados no se consideran aptos para modelado hasta verificar propiedad, unidad y composicion por muestra.
+- No se ejecutaron conversiones, promedios ni modelos.
+
+Muestras: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\l254_castillo_2011\l254-samples.csv
+Procedencia: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\l254_castillo_2011\l254-study-provenance.csv
+Atributos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\l254_castillo_2011\l254-sample-attributes.csv
+Componentes: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\l254_castillo_2011\l254-material-components.csv
+Procesamiento: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\l254_castillo_2011\l254-processing-steps.csv
+Electricos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\l254_castillo_2011\l254-electrical-attributes.csv
+Composicion: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\l254_castillo_2011\l254-composition.csv
+Series: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\l254_castillo_2011\l254-series-candidates.csv
+Consultas: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-query-inventory.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-extraction-manifest.json

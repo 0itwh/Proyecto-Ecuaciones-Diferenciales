@@ -1,0 +1,24 @@
+# Normalizar texto en el repositorio
+* text=auto
+
+# Código y archivos de configuración
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xsd text eol=lf
+*.sparql text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+
+# Archivos binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.xlsx binary
+*.zip binary
+*.bin binary

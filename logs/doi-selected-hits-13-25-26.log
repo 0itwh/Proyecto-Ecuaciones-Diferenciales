@@ -1,0 +1,127 @@
+FASE 2 - INSPECCION DE HITS 13, 25 Y 26
+
+Fecha: 2026-11-04T00:21:44-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\doi-10.1021-acs.jpcc.5b08809-relevant-hits.json
+Hits seleccionados: 13, 25, 26
+
+========================================================================
+HIT 13
+========================================================================
+Posicion original: 12
+Indice: charts
+ID: Id6llYcB9tZWhu3C0Bqw
+Claves de _source: description, identifier, label, thumbnail
+Titulo: 
+Fecha: None
+Terminos previos: conductivity, temperature, doi
+Coincidencias prioritarias: 2
+
+ETIQUETA O CONSULTA:
+Highlighting Target Properties Using Sequence Generators and Area Marks
+
+DESCRIPCION:
+Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples with a combination of high electrical conductivity and low thermal conductivity. This chart also makes use of joinaggregate transforms to calculate means and quartile boundaries for the error bars. These example data were curated from Chandrasekaran et al. (2013, doi: 10.1016/j.eurpolymj.2013.10.008).
+
+CONTEOS ESPECIFICOS:
+DOI: 1
+Muestras: 1
+Conductividad: 1
+Unidades: 0
+Frecuencia: 0
+Temperatura: 1
+Matriz: 0
+Relleno: 0
+
+VALORES DOI CANDIDATOS:
+- Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples w ... [TRUNCADO]
+
+VALORES DE MUESTRA CANDIDATOS:
+- Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples w ... [TRUNCADO]
+
+PRIMERAS 30 COINCIDENCIAS PRIORITARIAS:
+- $._source.description | Whether you are trying to optimize a single material property or combination of properties, sometimes a visualization can help compare the top result against viable alternatives. This series of plots compares polymer nanocomposite samples whose temperature-dependent thermal conductivity, as well as electrical conductivity, have been curated into MaterialsMine. The green regions represent samples w ... [TRUNCADO] | doi,sample,conductivity,temperature,description
+- $._source.label | Highlighting Target Properties Using Sequence Generators and Area Marks | label
+
+========================================================================
+HIT 25
+========================================================================
+Posicion original: 24
+Indice: charts
+ID: 9N6llYcB9tZWhu3CzxmX
+Claves de _source: description, identifier, label, thumbnail
+Titulo: 
+Fecha: None
+Terminos previos: filler, doi, article
+Coincidencias prioritarias: 2
+
+ETIQUETA O CONSULTA:
+Stress-Strain Plot with Dynamic Highlighting
+
+DESCRIPCION:
+Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined by the slope of the linear elastic region of a stress-strain plot, a line segment with a slope corresponding to the tensile modulus is also displayed.
+
+CONTEOS ESPECIFICOS:
+DOI: 1
+Muestras: 1
+Conductividad: 0
+Unidades: 0
+Frecuencia: 0
+Temperatura: 0
+Matriz: 0
+Relleno: 1
+
+VALORES DOI CANDIDATOS:
+- Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined ... [TRUNCADO]
+
+VALORES DE MUESTRA CANDIDATOS:
+- Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined ... [TRUNCADO]
+
+PRIMERAS 30 COINCIDENCIAS PRIORITARIAS:
+- $._source.description | Stress-strain data from tensile tests are plotted for samples from the published work of Gao et al. (2012, Polymers, DOI: 10.3390/polym4010187), which studied DGEBA epoxy resin nanocomposites with silicon dioxide nanoparticles as a filler. The reported tensile modulus values (units of GPa) are displayed upon highlighting a given sample's stress-strain curve. Since the tensile modulus is determined ... [TRUNCADO] | doi,article,sample,unit,filler,description
+- $._source.label | Stress-Strain Plot with Dynamic Highlighting | label
+
+========================================================================
+HIT 26
+========================================================================
+Posicion original: 25
+Indice: charts
+ID: Tt6llYcB9tZWhu3C0RrT
+Claves de _source: description, identifier, label, thumbnail
+Titulo: 
+Fecha: None
+Terminos previos: frequency, filler, poly(vinylidene fluoride), doi
+Coincidencias prioritarias: 2
+
+ETIQUETA O CONSULTA:
+Interactive Dielectric Spectra
+
+DESCRIPCION:
+Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with graphite nanoplates (GnP) as a filler.
+
+CONTEOS ESPECIFICOS:
+DOI: 1
+Muestras: 1
+Conductividad: 0
+Unidades: 0
+Frecuencia: 1
+Temperatura: 0
+Matriz: 0
+Relleno: 1
+
+VALORES DOI CANDIDATOS:
+- Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with gr ... [TRUNCADO]
+
+VALORES DE MUESTRA CANDIDATOS:
+- Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with gr ... [TRUNCADO]
+
+PRIMERAS 30 COINCIDENCIAS PRIORITARIAS:
+- $._source.description | Dielectric permittivity as a function of frequency and filler loading. Click and drag in the bottom right chart to select a frequency range and filter the data in the scatter plots. These data in the NanoMine knowledge graph were curated from Fig. 6 of He et al. (2009, Adv. Mater., DOI: 10.1002/adma.200801758), which performed dielectric spectroscopy on samples of poly(vinylidene fluoride) with gr ... [TRUNCADO] | doi,sample,frequency,filler,poly(vinylidene fluoride),description
+- $._source.label | Interactive Dielectric Spectra | label
+
+ADVERTENCIAS
+- El nombre doi puede ser una variable SPARQL y no un DOI bibliografico.
+- Una coincidencia de frecuencia o temperatura debe conservar su ruta.
+- No se asumieron unidades.
+- No se ejecutaron modelos.
+
+JSON detallado: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\doi-selected-hits-13-25-26.json

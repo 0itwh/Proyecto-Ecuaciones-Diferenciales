@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-03T23:24:24-05:00",
+  "method": "GET",
+  "requested_url": "https://materialsmine.org/api/files/metamine",
+  "final_url": "https://materialsmine.org/api/files/metamine",
+  "status_code": 200,
+  "reason": "OK",
+  "content_type": "application/json; charset=utf-8",
+  "content_disposition": null,
+  "response_bytes": 279,
+  "sha256": "1c96ef04fab123ec4ea02a91e13bfe8275b111bab3d1da98a9126e40af02e708",
+  "redirects": [],
+  "json_status": "parsed",
+  "json_top_level_type": "dict",
+  "json_item_count": 1,
+  "json_top_level_keys": [
+    "fetchedNames"
+  ],
+  "candidate_file_names": [],
+  "authentication_used": false,
+  "request_parameters": {},
+  "openapi_security_status": "not_declared",
+  "operation_scope": "read_only_catalog_probe",
+  "follow_up_requests_executed": 0
+}

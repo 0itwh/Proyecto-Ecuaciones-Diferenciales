@@ -1,0 +1,12 @@
+﻿article_section,page,field,documented_value,unit,applies_to,evidence_status,corpus_consequence,source_document,doi
+materials,8,matrix_product,Makrolon 2600,,all samples,documented,Confirms matrix identity,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+materials,8,mwcnt_products,SWeNT SMW-100; Nanocyl NC7000; Baytubes C150P; Continental Carbon MWNT; Hyperion Masterbatch,,five curves,documented,Resolves commercial identities,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+processing,9,drying,"80 C, overnight",,all samples,documented,Global processing condition,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+processing,9,mixing,280 C; 200 rpm; 5 min,,all nanocomposites,documented,Global processing condition,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+processing,9,compression_molding,280 C; 6 mm/min; 1 min; up to 100 kN,,all electrical specimens,documented,Global processing condition,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+electrical_method,10,high_resistivity_method,Keithley 6517A + Keithley 8009; rho > 1e7 ohm cm,,sigma < 1e-7 S/cm,documented,No frequency parameter,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+electrical_method,10,low_resistivity_method,4-point gold-wire fixture + Keithley DMM 2000; rho < 1e7 ohm cm,,sigma > 1e-7 S/cm,documented,No frequency parameter,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+electrical_method,10,reported_property,Conductivity calculated from resistivity,S/cm,all conductivity points,documented,Resolves method ambiguity,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+DMA,11,frequency,1,Hz,DMA only,documented,Previously misclassified as electrical condition,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+figure,30,conductivity_figure,Electrical volume conductivity vs MWNT content,S/cm and wt.%,five curves and pure PC,documented,Supports s1 as pure PC control,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018
+table,16,published_fit,"B, pc, t for each MWNT","S/cm, wt.%, dimensionless",five curves,documented,Benchmark only; not newly fitted,49-doi10.1016j.polymer.2011.06.018_Castillo.pdf,10.1016/j.polymer.2011.06.018

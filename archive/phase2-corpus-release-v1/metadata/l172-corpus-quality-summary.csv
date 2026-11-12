@@ -1,0 +1,14 @@
+﻿check_id,description,passed,observed,expected,severity
+Q001,Exactly 18 unique samples,true,"rows=18, unique=18",18 rows and 18 unique,error
+Q002,Exactly 235 unique measurements,true,"rows=235, unique=235",235 rows and 235 unique,error
+Q003,Measurement foreign keys resolve to samples,true,[],empty unresolved set,error
+Q004,Five unique observed volume fractions,true,5,5,error
+Q005,"All fractions within [0,1]",true,"[0.036, 0.078, 0.128, 0.186, 0.254]","all in [0,1]",error
+Q006,All conductivity values finite and positive,true,valid=235/235,235/235,error
+Q007,Conductivity unit absent is explicitly documented,true,235,235,warning
+Q008,All measurements blocked pending unit and conditions,true,235,235,error
+Q009,All measurements unusable for modeling,true,235,235,error
+Q010,No exact scientific-key duplicates in measurements,true,0,0,error
+Q011,Study DOI confirmed,true,10.1021/acs.jpcc.5b08809,10.1021/acs.jpcc.5b08809,error
+Q012,Processing table preserves 15 rows,true,15,15,error
+Q013,At least one material system recovered,true,1,>=1,error

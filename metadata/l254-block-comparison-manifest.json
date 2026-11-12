@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-11-04T01:39:57-05:00",
+  "inputs": [
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\l254-combined-by-sample.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-material-components.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-processing-steps.csv"
+  ],
+  "outputs": [
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-sample-features.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-block-feature-summary.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-block-distinguishing-features.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-block-processing-matrix.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-block-component-matrix.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\metadata\\l254-block-comparison-quality.csv"
+  ],
+  "counts": {
+    "samples": 36,
+    "blocks": 5,
+    "component_rows": 284,
+    "processing_rows": 102,
+    "candidate_distinguishing_features": 143,
+    "component_features": 54,
+    "processing_features": 102
+  },
+  "method": {
+    "block_status": "inferred_not_experimentally_verified",
+    "feature_definition_components": "standard name + role + attribute type + value + unit + full label",
+    "feature_definition_processing": "processing step + parameter label + description",
+    "distinguishing_rule": "feature presence count differs across inferred blocks"
+  },
+  "notes": [
+    "A distinguishing feature is a candidate explanation, not proof of an experimental block definition.",
+    "No missing feature was imputed.",
+    "No statistical model, percolation fit, or regression was performed."
+  ]
+}

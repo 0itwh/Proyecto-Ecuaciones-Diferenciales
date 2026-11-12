@@ -1,0 +1,33 @@
+FASE 1 - EXTRACCION Y DEDUPLICACION DE RESPUESTAS SPARQL
+
+Entrada: electric-conductivity-search-response.json
+SHA256 entrada: b0505f6aa3e919f4dc5db415edfe2566ce53a89ea4bfcc49fa292c72ba73c782
+Hits de busqueda totales: 121
+Hits con respuesta SPARQL: 6
+Bindings brutos acumulados: 1410
+Bindings unicos: 235
+Duplicados eliminados: 1175
+Consultas SPARQL unicas por hash: 1
+Respuestas unicas por hash: 1
+Muestras unicas: 5
+Fracciones volumetricas unicas: 0.036e0, 0.078e0, 0.128e0, 0.186e0, 0.254e0
+Registros con unidad documentada: 0/235
+
+MEDICIONES UNICAS POR MUESTRA
+- l172-s13-huo-2015: 52
+- l172-s15-huo-2015: 42
+- l172-s16-huo-2015: 36
+- l172-s17-huo-2015: 53
+- l172-s18-huo-2015: 52
+
+REGLA DE DEDUPLICACION
+Sample + Filler + VolumeFraction + Matrix + Conductivity + UnitOfMeasure
+
+ADVERTENCIAS
+- No se calcularon medias.
+- No se asumieron unidades.
+- No se interpretaron los multiples valores por muestra como replicas.
+- No se aplicaron transformaciones ni modelos.
+
+Salida JSON: sparql-bindings-deduplicated.json
+Salida CSV: sparql-bindings-deduplicated.csv

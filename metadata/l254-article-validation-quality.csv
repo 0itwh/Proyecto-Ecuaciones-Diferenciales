@@ -1,0 +1,9 @@
+﻿check_id,passed,description
+Q001,True,five commercial MWCNT identities mapped
+Q002,True,aspect ratios preserved
+Q003,True,nine documented method fields per measurement
+Q004,True,one frequency-not-applicable record per electrical measurement
+Q005,True,1 Hz removed from electrical interpretation
+Q006,True,pure PC zero composition added
+Q007,True,frequency exclusions removed
+Q008,True,five published percolation benchmarks recorded

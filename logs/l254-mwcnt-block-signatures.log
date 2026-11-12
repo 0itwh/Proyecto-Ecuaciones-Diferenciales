@@ -1,0 +1,62 @@
+FASE 2 - FIRMAS DE LOS CINCO MWCNT DE L254
+
+Fecha: 2026-11-04T01:56:09-05:00
+DOI: 10.1016/j.polymer.2011.06.018
+
+EVIDENCIA DEL ARTICULO
+- Cinco MWCNT comerciales con caracteristicas diferentes.
+- Matriz de policarbonato.
+- Cargas entre 0.25 y 3.0 por ciento en masa.
+- Mezclado en fundido en microcompounder de doble tornillo.
+
+RESULTADOS
+- Bloques analizados: 5
+- Filas de atributos del relleno: 280
+- Firmas materiales distintas: 5
+- Bloques con identidad comercial: 5
+
+block_1_s2_s8
+  densidad kg/m3: 1200.0 | 66.0
+  diametro/anchura nm: [NO DISPONIBLE]
+  longitud nm: [NO DISPONIBLE]
+  relacion de aspecto: 134.0
+  identidad comercial: Bayer MaterialScience AG, Leverkusen, Germany | Makrolon 2600
+
+block_2_s9_s15
+  densidad kg/m3: 1200.0 | 170.0
+  diametro/anchura nm: [NO DISPONIBLE]
+  longitud nm: [NO DISPONIBLE]
+  relacion de aspecto: 94.0
+  identidad comercial: Bayer MaterialScience AG, Leverkusen, Germany | Makrolon 2600
+
+block_3_s16_s22
+  densidad kg/m3: 1200.0 | 2600.0
+  diametro/anchura nm: [NO DISPONIBLE]
+  longitud nm: [NO DISPONIBLE]
+  relacion de aspecto: 55.0
+  identidad comercial: Bayer MaterialScience AG, Leverkusen, Germany | Makrolon 2600
+
+block_4_s23_s29
+  densidad kg/m3: 1200.0 | 145.0
+  diametro/anchura nm: [NO DISPONIBLE]
+  longitud nm: [NO DISPONIBLE]
+  relacion de aspecto: 73.0
+  identidad comercial: Bayer MaterialScience AG, Leverkusen, Germany | Makrolon 2600
+
+block_5_s30_s36
+  densidad kg/m3: 1200.0 | 2600.0
+  diametro/anchura nm: [NO DISPONIBLE]
+  longitud nm: [NO DISPONIBLE]
+  relacion de aspecto: 69.0
+  identidad comercial: Bayer MaterialScience AG, Leverkusen, Germany | Makrolon 2600
+
+DECISION
+- Los cinco bloques quedan respaldados como cinco tipos comerciales distintos de MWCNT.
+- La correspondencia bloque-producto permanece pendiente de la tabla de materiales del articulo.
+- Los bloques no deben combinarse.
+- No se ejecutaron modelos.
+
+Firmas: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-mwcnt-block-signatures.csv
+Mapeo: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-block-material-mapping-status.csv
+Atributos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-mwcnt-attributes-by-sample.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-mwcnt-block-signatures-manifest.json

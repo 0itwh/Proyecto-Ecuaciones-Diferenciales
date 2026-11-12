@@ -1,0 +1,29 @@
+FASE 1B - REVISION CURADA DEL XSD HISTORICO
+Fecha: 2026-11-03T23:03:51-05:00
+XSD: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\schemas\nanomine-schema-master\xml\PNC_schema_062722.xsd
+SHA256: 16445847a10dfb400e26474d59323b35ab095025551bf3dbe6200f745d424a14
+Compilacion XSD: correcta; errores=0
+Objetivos curados: 42
+Declaraciones encontradas: 59
+Objetivos no encontrados: 0
+
+RESUMEN POR CATEGORIA Y DECISION
+              category  decision  declarations
+           composicion   include            10
+condiciones_electricas ambiguous            15
+condiciones_electricas   exclude             4
+condiciones_electricas   include             3
+            materiales   include            27
+
+NO ENCONTRADOS
+Ninguno
+
+ADVERTENCIAS METODOLOGICAS
+- include significa correspondencia estructural historica, no observabilidad.
+- ambiguous exige revision contextual antes de actualizar el inventario.
+- El XSD de produccion sigue no verificado porque /api/curate/schema devolvio HTTP 500.
+- Observabilidad y cobertura permanecen no verificadas.
+
+Detalle: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-curated-mapping-review.csv
+Resumen: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-curated-mapping-summary.csv
+Ausentes: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-curated-missing.csv

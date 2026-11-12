@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-11-04T02:07:28-05:00",
+  "input_files": [
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-material-components.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\l254-combined-by-sample.csv"
+  ],
+  "outputs": [
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-matrix-mwcnt-attributes-by-sample.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-matrix-mwcnt-block-signatures.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-block-material-mapping-corrected.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\metadata\\l254-matrix-mwcnt-separation-quality.csv"
+  ],
+  "counts": {
+    "blocks": 5,
+    "component_rows": 284,
+    "matrix_rows": 144,
+    "mwcnt_filler_rows": 140,
+    "unclassified_component_rows": 0,
+    "blocks_with_verified_mwcnt_identity": 0
+  },
+  "scientific_status": {
+    "matrix_identity": "documented_as_bayer_makrolon_2600",
+    "mwcnt_commercial_identity": "not_verified",
+    "block_definition": "confirmed_as_five_distinct_mwcnt_variants",
+    "mapping_basis": "aspect_ratio_and_density_metadata",
+    "recommended_action": "retain_five_separate_curves"
+  },
+  "methodological_notes": [
+    "Matrix and filler rows are classified separately before aggregating attributes.",
+    "Makrolon 2600 and Bayer MaterialScience are accepted only from matrix-classified rows.",
+    "MWCNT commercial identity is not inferred from density or aspect ratio.",
+    "Density unit conversion is explicit, but density semantic kind (bulk/apparent/solid) remains unverified.",
+    "No model was fitted."
+  ]
+}

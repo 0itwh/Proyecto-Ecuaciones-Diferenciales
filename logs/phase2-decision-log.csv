@@ -1,0 +1,6 @@
+﻿decision_id,entity,evidence_state,decision,reason
+P2-D001,l172-corpus-v1,confirmed,auxiliary_quarantine,235 conductivity values lack verified unit and measurement conditions
+P2-D002,l254-corpus-v1,confirmed,primary_candidate,"composition, S/cm conductivity, DOI, processing, and five MWCNT variants are linked by sample"
+P2-D003,l254-five-curves,confirmed,retain_separately,five distinct aspect ratios and study design support five distinct MWCNT variants
+P2-D004,l254-measurement-conditions,documented_partial,block_final_modeling,frequency is documented for only four samples; other electrical conditions remain incomplete
+P2-D005,phase3-scope,authorized_next_phase,exploratory_analysis_only,begin visualization and coverage analysis without percolation fitting

@@ -1,0 +1,21 @@
+FASE 1B - INSPECCION DE ERRORES METAMINE
+
+Directorio: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\metamine\downloaded
+Archivos inspeccionados: 2
+
+ARCHIVO: chubby_tick_madeline-2024-01-23T17-47-06.141Z-freeform_2d_sample.csv
+Bytes: 48
+JSON: parsed
+Contenido:
+{
+  "message": "error fetching metamine csv object"
+}
+
+ARCHIVO: chubby_tick_madeline-2024-01-23T17-47-06.153Z-lattice_2d_sample.csv
+Bytes: 48
+JSON: parsed
+Contenido:
+{
+  "message": "error fetching metamine csv object"
+}
+

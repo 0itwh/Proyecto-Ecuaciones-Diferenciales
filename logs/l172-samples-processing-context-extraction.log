@@ -1,0 +1,79 @@
+FASE 2 - MUESTRAS, SAMPLE_ID Y CONTEXTO SPARQL L172
+
+Fecha: 2026-11-04T00:39:55-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\l172-family-bindings-deduplicated.json
+Bindings de entrada: 49
+
+SAMPLES.CSV
+Muestras extraidas: 18
+Muestras esperadas: 18
+Muestras faltantes: 0
+Muestras adicionales: 0
+
+LISTA DE MUESTRAS
+- l172-s1-huo-2015
+- l172-s2-huo-2015
+- l172-s3-huo-2015
+- l172-s4-huo-2015
+- l172-s5-huo-2015
+- l172-s6-huo-2015
+- l172-s7-huo-2015
+- l172-s8-huo-2015
+- l172-s9-huo-2015
+- l172-s10-huo-2015
+- l172-s11-huo-2015
+- l172-s12-huo-2015
+- l172-s13-huo-2015
+- l172-s14-huo-2015
+- l172-s15-huo-2015
+- l172-s16-huo-2015
+- l172-s17-huo-2015
+- l172-s18-huo-2015
+
+PROCESAMIENTO
+Filas de procesamiento: 15
+sample_id derivados desde URI: 13
+sample_id no derivables: 2
+
+CONTEXTO DE 25 C Y 19.5
+Registros encontrados: 2
+Valores: 19.5, 25.0
+
+Valor: 19.5e0
+Tipo: file:///apps/whyis/nan
+Unidad: nan
+Estado: unknown_attribute_type
+Hit: IKTKTZIBGO0wWaevBNFi
+Fecha: 2024-10-02
+Variables de consulta: AttrType|value|Units
+Consulta:
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ... [TRUNCADO]
+
+Valor: 25.0e0
+Tipo: obo:PATO_0000146
+Unidad: Celsius
+Estado: temperature_candidate
+Hit: eIs225cBqjuXg29aIbPm
+Fecha: 2025-07-05
+Variables de consulta: AttrType|value|Units
+Consulta:
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX sio: <http://semanticscience.org/resource/> PREFIX mm: <http://materialsmine.org/ns/> PREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ... [TRUNCADO]
+
+VALIDACION
+samples.csv completo: SI
+25.0 recuperado: SI
+19.5 recuperado: SI
+
+ADVERTENCIAS
+- sample_id se deriva de URI sin modificar la evidencia original.
+- Las filas originales de procesamiento no se sobrescriben.
+- 25 C permanece como candidato hasta revisar su consulta SPARQL.
+- 19.5 permanece sin significado por su tipo defectuoso.
+- No se normalizaron unidades.
+- No se calcularon medias.
+- No se ejecutaron modelos.
+
+Samples: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\samples.csv
+Procesamiento enriquecido: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-processing-steps-with-sample-id.csv
+Contexto CSV: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-attribute-context-25C-19_5.csv
+Contexto JSON: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-attribute-context-25C-19_5.json

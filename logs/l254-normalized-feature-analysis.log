@@ -1,0 +1,31 @@
+FASE 2 - NORMALIZACION DE RASGOS DE BLOQUES L254
+
+Fecha: 2026-11-04T01:44:56-05:00
+
+CONTEOS
+- raw_candidate_features_previous: 143
+- normalized_component_features: 7
+- normalized_processing_features: 3
+- normalized_distinguishing_features: 5
+- excluded_composition_component_rows: 70
+- samples_missing_processing: 2
+
+MUESTRAS SIN PROCESAMIENTO EXTRAIDO
+- l254-s1-castillo-2011 | control_or_unassigned | filas=0
+- l254-s33-castillo-2011 | block_5_s30_s36 | filas=0
+
+RESULTADO DEL BLOQUE 5
+- l254-s33-castillo-2011 es la muestra del bloque 5 sin filas de procesamiento extraidas.
+- Este resultado confirma ausencia de metadatos extraidos, no ausencia real de procesamiento.
+
+INTERPRETACION
+- Se eliminaron identificadores de muestra, URI, identificadores largos y numeros de etapa de las claves comparativas.
+- Se excluyeron fracciones y cargas de composicion de la discriminacion entre bloques.
+- Los rasgos restantes comparan materiales, roles, atributos no composicionales y descripciones de proceso normalizadas.
+- Las diferencias siguen siendo candidatas hasta contrastarlas con el articulo o metadatos completos.
+- No se ejecutaron imputaciones ni modelos.
+
+Rasgos normalizados: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-normalized-distinguishing-features.csv
+Muestras sin procesamiento: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-samples-missing-processing.csv
+Resumen por bloque: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-normalized-block-summary.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-normalized-feature-manifest.json

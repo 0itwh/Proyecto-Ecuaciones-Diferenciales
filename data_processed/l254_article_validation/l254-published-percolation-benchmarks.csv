@@ -1,0 +1,6 @@
+﻿block_id,filler_variant_id,commercial_name,published_B_s_per_cm,published_pc_wt_percent,published_critical_exponent_t,source_page,status
+block_1_s2_s8,l254-mwcnt-v1-ar134,Nanocyl NC7000,0.062,0.28,1.3,16,published_reference_value_not_refitted_in_current_project
+block_2_s9_s15,l254-mwcnt-v2-ar94,SWeNT SMW-100,0.0082,0.33,2.0,16,published_reference_value_not_refitted_in_current_project
+block_3_s16_s22,l254-mwcnt-v3-ar55,Hyperion Masterbatch (15 wt.%),0.014,0.5,1.7,16,published_reference_value_not_refitted_in_current_project
+block_4_s23_s29,l254-mwcnt-v4-ar73,Baytubes C150P,0.0085,0.61,2.0,16,published_reference_value_not_refitted_in_current_project
+block_5_s30_s36,l254-mwcnt-v5-ar69,Continental Carbon MWNT,0.009,0.49,1.8,16,published_reference_value_not_refitted_in_current_project

@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-11-04T01:56:09-05:00",
+  "doi": "10.1016/j.polymer.2011.06.018",
+  "study_evidence": {
+    "documented_material_design": "five commercially available multi-walled carbon nanotubes with different characteristics",
+    "documented_loading_range": "0.25 to 3.0 weight percent",
+    "documented_matrix": "polycarbonate",
+    "documented_processing": "melt mixing in twin-screw micro compounder"
+  },
+  "counts": {
+    "blocks": 5,
+    "filler_attribute_rows": 280,
+    "distinct_material_signatures": 5,
+    "blocks_with_commercial_identity": 5
+  },
+  "interpretation": {
+    "block_definition_status": "supported_as_five_distinct_commercial_mwcnt_types",
+    "exact_block_mapping_status": "pending_article_table_mapping",
+    "blocks_can_be_merged": false
+  },
+  "notes": [
+    "Density conversions are explicit and stored with transformation.",
+    "No commercial name is inferred from density or dimensions.",
+    "The five blocks remain separate.",
+    "No model was fitted."
+  ]
+}

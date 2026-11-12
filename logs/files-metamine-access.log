@@ -1,0 +1,32 @@
+FASE 1B - ACCESO A GET /files/metamine
+
+Fecha: 2026-11-03T23:24:24-05:00
+Metodo: GET
+URL solicitada: https://materialsmine.org/api/files/metamine
+URL final: https://materialsmine.org/api/files/metamine
+HTTP: 200 OK
+Tipo: application/json; charset=utf-8
+Content-Disposition: None
+Bytes: 279
+SHA256: 1c96ef04fab123ec4ea02a91e13bfe8275b111bab3d1da98a9126e40af02e708
+Redirecciones: 0
+JSON: parsed
+Tipo JSON superior: dict
+Elementos JSON: 1
+Claves superiores: fetchedNames
+Nombres candidatos detectados: 0
+
+NOMBRES CANDIDATOS
+Ninguno detectado automaticamente
+
+VISTA PREVIA LIMITADA
+{"fetchedNames":[{"key":0,"bucket_name":"metamine","name":"chubby_tick_madeline-2024-01-23T17:47:06.141Z-freeform_2d_sample.csv","color":"#FFB347"},{"key":1,"bucket_name":"metamine","name":"chubby_tick_madeline-2024-01-23T17:47:06.153Z-lattice_2d_sample.csv","color":"#8A8BD0"}]}
+
+INTERPRETACION AUTOMATICA
+Respuesta recibida correctamente.
+No se ejecutaron consultas posteriores a rutas con fileName.
+La presencia de nombres no demuestra todavia series composicion-propiedad.
+
+Respuesta original: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\metamine\files-metamine-response.bin
+Metadatos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\files-metamine-response-metadata.json
+JSON normalizado: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\metamine\files-metamine-response.json

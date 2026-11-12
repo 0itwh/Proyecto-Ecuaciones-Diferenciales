@@ -1,0 +1,33 @@
+FASE 2 - COMPARACION DE BLOQUES L254
+
+Fecha: 2026-11-04T01:39:57-05:00
+
+CONTEOS
+- samples: 36
+- blocks: 5
+- component_rows: 284
+- processing_rows: 102
+- candidate_distinguishing_features: 143
+- component_features: 54
+- processing_features: 102
+
+COBERTURA POR BLOQUE
+- block_1_s2_s8: muestras=7, con_componentes=7, con_procesamiento=7, rasgos_componentes=20, rasgos_procesamiento=21
+- block_2_s9_s15: muestras=7, con_componentes=7, con_procesamiento=7, rasgos_componentes=20, rasgos_procesamiento=21
+- block_3_s16_s22: muestras=7, con_componentes=7, con_procesamiento=7, rasgos_componentes=20, rasgos_procesamiento=21
+- block_4_s23_s29: muestras=7, con_componentes=7, con_procesamiento=7, rasgos_componentes=20, rasgos_procesamiento=21
+- block_5_s30_s36: muestras=7, con_componentes=7, con_procesamiento=6, rasgos_componentes=20, rasgos_procesamiento=18
+
+RESULTADO
+- Se localizaron 143 rasgos candidatos que varian entre bloques.
+- Deben revisarse sus valores exactos antes de declarar la variable experimental de cada bloque.
+- La ausencia de un rasgo puede reflejar metadatos incompletos, no ausencia experimental.
+- Los bloques siguen siendo inferidos.
+- No se ejecutaron modelos.
+
+Resumen de bloques: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-block-feature-summary.csv
+Rasgos distintivos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-block-distinguishing-features.csv
+Matriz de componentes: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-block-component-matrix.csv
+Matriz de procesamiento: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-block-processing-matrix.csv
+Muestras enriquecidas: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-sample-features.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-block-comparison-manifest.json

@@ -1,0 +1,42 @@
+FASE 2 - EXTRACCION DE TABLAS CURADAS L172
+
+Fecha: 2026-11-04T00:32:27-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\l172-family-bindings-deduplicated.json
+SHA256: 8ef76b28b227d53669bd1acd94868b5e39879268d25ec7bc9d3672030ab9d8a4
+Bindings de entrada: 49
+
+TABLAS GENERADAS
+- Procedencia: 2 filas
+- Componentes: 14 filas
+- Procesamiento: 15 filas
+- Atributos: 16 filas
+- No clasificados: 18 filas
+
+VALORES CLAVE
+- DOI/recursos presentes: 2
+- Nombres de componentes presentes: 14
+- Pasos de procesamiento presentes: 13
+- Valores de atributos presentes: 16
+- Unidades de atributos presentes: 7
+
+DUPLICADOS POTENCIALES
+- Procedencia: 2
+- Componentes: 6
+- Procesamiento: 2
+- Atributos: 6
+
+ADVERTENCIAS
+- Un binding puede aparecer en más de una tabla por diseño.
+- Los duplicados potenciales no se eliminaron automáticamente.
+- Los valores y unidades originales se conservaron sin transformación.
+- Las columnas canónicas permanecen vacías.
+- No se calcularon medias.
+- No se ejecutaron modelos.
+
+Procedencia: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-study-provenance.csv
+Componentes: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-material-components.csv
+Procesamiento: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-processing-steps.csv
+Atributos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-observed-attributes.csv
+No clasificados: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-unclassified-bindings.csv
+Resumen: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-curated-tables-summary.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-curated-tables-manifest.json

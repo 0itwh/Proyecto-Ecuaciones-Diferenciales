@@ -1,0 +1,129 @@
+FASE 2 - AGRUPACION DE CANDIDATOS CNT
+
+Fecha: 2026-11-04T01:22:02-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\explorer\cnt-electrical-conductivity-search-response.json
+SHA256: ee152465b853d3ca07a8cf540d571f523d9b945e40a17587649d30fea81de7e3
+
+search_hits: 400
+cnt_sample_candidates: 203
+unique_sample_ids: 203
+groups: 31
+high_priority_groups_5plus_samples: 17
+article_candidates: 15
+chart_candidates: 1
+
+GRUPOS DE ALTA PRIORIDAD (>=5 MUESTRAS)
+
+cnt-group-018 | l254-castillo-2011 | MWCNT
+Relleno inferido: multi-walled carbon nanotubes
+Matriz inferida: polycarbonate
+Muestras: 35 | Numeros: 2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-024 | l268-chen-2007 | MWCNT
+Relleno inferido: multi-walled carbon nanotubes
+Matriz inferida: poly(vinylidene flouride)
+Muestras: 18 | Numeros: 2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-027 | l274-goh-2003 | CNT_unspecified
+Relleno inferido: multi-wall carbon nanotubes
+Matriz inferida: phenoxy resin
+Muestras: 14 | Numeros: 2|3|4|5|6|7|8|9|10|11|12|13|14|15
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-025 | l270-montazeri-2010 | MWCNT
+Relleno inferido: multi-walled carbon nanotubes
+Matriz inferida: bisphenol-a epoxy resin
+Muestras: 12 | Numeros: 2|3|4|5|6|7|8|9|10|11|12|13
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-017 | l252-ameli-2014 | MWCNT
+Relleno inferido: multi-walled carbon nanotubes
+Matriz inferida: polypropylene
+Muestras: 10 | Numeros: 2|3|4|5|6|7|8|9|10|11
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-014 | l225-ma-2007 | CNT_unspecified
+Relleno inferido: multi-wall carbon nanotubes
+Matriz inferida: bisphenol a diglycidyl ether
+Muestras: 8 | Numeros: 2|3|4|5|6|7|8|9
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-021 | l258-du-2004 | SWCNT
+Relleno inferido: single-walled carbon nanotubes
+Matriz inferida: poly(methyl methacrylate)
+Muestras: 8 | Numeros: 3|4|5|6|7|8|9|10
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-019 | l255-logakis-2009 | MWCNT
+Relleno inferido: multi-walled carbon nanotubes
+Matriz inferida: polyamide 6
+Muestras: 7 | Numeros: 3|4|5|6|7|8|9
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-022 | l260-haggenmueller-2006 | SWCNT
+Relleno inferido: single-walled carbon nanotubes
+Matriz inferida: poly[imino(1,6-dioxo-1,6-hexanediyl)imino-1,6-hexanediyl]
+Muestras: 7 | Numeros: 2|3|4|5|6|7|8
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-005 | l160-wang-2005 | CNT_unspecified
+Relleno inferido: carbon nanotube
+Matriz inferida: poly[chlorofluoroethylene-co-trifluoroethylene-co-(vinylidene fluoride)]
+Muestras: 6 | Numeros: 2|3|4|5|6|7
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-012 | l203-ma-2009 | MWCNT
+Relleno inferido: multi-walled carbon nanotubes
+Matriz inferida: diglycidyl ether of bisphenol a
+Muestras: 6 | Numeros: 2|3|4|5|6|7
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-013 | l222-liao-2004 | SWCNT
+Relleno inferido: single-walled carbon nanotubes
+Matriz inferida: epoxy resin
+Muestras: 6 | Numeros: 2|3|4|5|6|7
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-015 | l230-gojny-2004 | CNT_unspecified
+Relleno inferido: functionalised multi-wall carbon nanotubes
+Matriz inferida: epoxy resin
+Muestras: 6 | Numeros: 6|7|8|9|10|11
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-003 | l119-jin-2001 | MWCNT
+Relleno inferido: multi-walled carbon nanotubes
+Matriz inferida: poly(methyl methacrylate)
+Muestras: 5 | Numeros: 2|3|4|5|6
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-004 | l154-eitan-2005 | MWCNT
+Relleno inferido: multi-walled carbon nanotubes
+Matriz inferida: poly(bisphenol a carbonate)
+Muestras: 5 | Numeros: 2|3|4|5|6
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-030 | l286-salami-2012 | CNT_unspecified
+Relleno inferido: multi-wall carbon nanotubes
+Matriz inferida: methyl methacrylate
+Muestras: 5 | Numeros: 2|3|4|5|6
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+cnt-group-031 | l383-sadeghi-2017 | MWCNT
+Relleno inferido: multiwalled carbon nanotube
+Matriz inferida: poly(vinylidene fluoride)
+Muestras: 5 | Numeros: 2|3|4|5|6
+DOI: not_available_in_sample_hits | Composicion: not_available_in_sample_hits | Propiedad electrica: not_available_in_sample_hits
+
+ADVERTENCIAS
+- La agrupacion usa metadatos de hits de muestras, no mediciones.
+- Filler y matriz son inferidos desde la etiqueta X in Y.
+- No se asignaron DOI, composiciones, unidades ni propiedades electricas.
+- Los grupos de alta prioridad deben buscarse individualmente en MM Explorer.
+
+Muestras enriquecidas: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\cnt-sample-candidates-enriched.csv
+Grupos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\cnt\cnt-sample-groups.csv
+Articulos candidatos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\cnt-article-candidates.csv
+Graficos candidatos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\cnt-chart-candidates.csv
+JSON: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\cnt-sample-grouping.json

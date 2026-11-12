@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-11-04T01:19:14-05:00",
+  "input_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_raw\\explorer\\cnt-electrical-conductivity-search-response.json",
+  "input_sha256": "ee152465b853d3ca07a8cf540d571f523d9b945e40a17587649d30fea81de7e3",
+  "counts": {
+    "search_hits_downloaded": 400,
+    "search_total_declared": {
+      "value": 663,
+      "relation": "eq"
+    },
+    "sparql_hits_with_bindings": 18,
+    "electrical_sparql_hits": 6,
+    "raw_cnt_electrical_bindings": 0,
+    "unique_cnt_electrical_bindings": 0,
+    "duplicates_removed": 0,
+    "rejected_non_cnt_or_missing_property": 1410,
+    "cnt_sample_hit_candidates": 203,
+    "series_groups": 0,
+    "series_with_5_levels_and_unit": 0,
+    "unique_query_hashes": 9,
+    "unique_response_hashes": 9
+  },
+  "cnt_filter_rule": "CNT terminology must occur in the Filler binding value; search-hit text alone is insufficient.",
+  "deduplication_key": [
+    "sample_uri",
+    "matrix_original",
+    "filler_original",
+    "property_name",
+    "property_value_original",
+    "property_unit_original",
+    "composition_basis",
+    "composition_value_original"
+  ],
+  "series": [],
+  "notes": [
+    "Non-electrical SPARQL results were excluded.",
+    "Electrical bindings whose filler was not CNT were rejected, including the l172 Fe3O4@BaTiO3 series.",
+    "Units were not inferred and resistivity was not converted to conductivity.",
+    "Sample-index keyword candidates are metadata only, not measurements."
+  ]
+}

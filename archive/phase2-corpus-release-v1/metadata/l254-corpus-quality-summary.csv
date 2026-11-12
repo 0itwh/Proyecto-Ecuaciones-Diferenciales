@@ -1,0 +1,16 @@
+﻿check_id,description,passed,observed,expected,severity
+Q001,One study,True,1,1,error
+Q002,One material system,True,1,1,error
+Q003,Five filler variants,True,5,5,error
+Q004,Five distinct aspect ratios,True,"[55.0, 69.0, 73.0, 94.0, 134.0]",5,error
+Q005,36 unique samples,True,36,36,error
+Q006,70 composition rows,True,70,70,error
+Q007,29 electrical measurements,True,29,29,error
+Q008,28 complete composition-conductivity pairs,True,28,28,error
+Q009,Four documented frequencies,True,4,4,error
+Q010,Five independent curves,True,5,5,error
+Q011,Matrix metadata absent from MWCNT commercial identity,True,checked,True,error
+Q012,All conductivity values positive,True,checked,True,error
+Q013,All composition values within 0 to 1,True,checked,True,error
+Q014,No curve marked usable for final modeling,True,checked,True,warning
+Q015,s33 missing processing metadata documented,True,checked,True,error

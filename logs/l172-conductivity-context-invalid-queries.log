@@ -1,0 +1,15 @@
+FASE 2 - DIAGNOSTICO DE CONSULTAS DE CONDUCTIVIDAD
+
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-conductivity-context-query-inventory.csv
+Consultas candidatas: 1
+Consultas validas: 0
+Consultas invalidas: 1
+
+CONSULTAS INVALIDAS
+
+ search_position               hit_id source_date                    classification conductivity_terms relation_terms frequency_terms temperature_terms unit_terms measurement_terms response_variables  binding_count  query_characters  query_lines  query_valid  hash_matches                                                                                                                                                                                       query_file
+             101 Id6llYcB9tZWhu3C0Bqw             conductivity_with_condition_terms       conductivity                                      temperature                   electrical                                 0                71            1        False         False C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\conductivity_context\101-Id6llYcB9tZWhu3C0Bqw-conductivity_with_condition_terms.sparql
+
+CONSULTAS VALIDAS
+
+Ninguna

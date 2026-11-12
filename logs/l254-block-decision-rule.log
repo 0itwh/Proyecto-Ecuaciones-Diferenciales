@@ -1,0 +1,38 @@
+FASE 2 - REGLA DE DECISION PARA BLOQUES L254
+
+Fecha: 2026-11-04T01:50:57-05:00
+
+REGLA
+- Presente en al menos 6 de 7 muestras del bloque.
+- Ausente en los 4 bloques restantes.
+- Significado cientifico interpretable.
+- No derivado de composicion.
+- No derivado de identificadores.
+- Se requieren al menos 2 rasgos coherentes para confirmar un bloque.
+
+RESULTADOS
+- normalized_features_reviewed: 5
+- feature_block_evaluations: 25
+- qualifying_feature_block_pairs: 0
+- blocks_confirmed: 0
+- blocks_not_confirmed: 5
+
+EVALUACION DE LOS CINCO RASGOS
+- Los dos rasgos de componente separan unidades de densidad: g/cm3 en bloques 3 y 5; kg/m3 en bloques 1, 2 y 4.
+- Ninguno esta ausente en los cuatro bloques restantes, porque cada rasgo aparece en dos o tres bloques.
+- La unidad por si sola no demuestra una variante material; puede ser una diferencia de representacion del metadato.
+- Los tres rasgos de procesamiento aparecen en los cinco bloques.
+- En el bloque 5 aparecen en 6 de 7 muestras debido a la ausencia de metadatos de s33.
+- El patron de s33 no se interpreta como condicion experimental distintiva.
+
+DECISION
+- Cero rasgos cumplen la regla estricta para definir un bloque.
+- Cero bloques quedan confirmados por dos rasgos coherentes.
+- Se conservan los nombres numericos block_1 a block_5.
+- Los cinco bloques no deben combinarse en una sola curva.
+- La variable experimental que distingue los bloques permanece no verificada.
+- s33 se conserva con processing_metadata_status=missing_in_extracted_bindings.
+
+Decisiones por rasgo y bloque: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-block-definition-decisions.csv
+Estado por bloque: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\cnt\l254_castillo_2011\block_comparison\l254-block-definition-status.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-block-decision-rule-manifest.json

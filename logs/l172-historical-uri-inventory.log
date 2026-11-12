@@ -1,0 +1,56 @@
+FASE 2 - INVENTARIO DE URI HISTORICOS L172
+
+Fecha: 2026-11-04T00:24:27-05:00
+Muestra: l172-s13-huo-2015
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\explorer\l172-s13-huo-2015-search-response.json
+Hits totales: 238
+Hits exactos: 2
+URI unicos: 24
+DOI literales: 0
+Recursos MaterialsMine no muestra: 1
+
+RESUMEN DE HITS
+
+Hit 1
+Indice: knowledge
+ID: eos225cBqjuXg29aIrM4
+Fecha: 2025-07-05
+Variables: sample
+Bindings: 17
+Muestras: l172-s1-huo-2015, l172-s10-huo-2015, l172-s11-huo-2015, l172-s12-huo-2015, l172-s13-huo-2015, l172-s14-huo-2015, l172-s15-huo-2015, l172-s16-huo-2015, l172-s17-huo-2015, l172-s18-huo-2015, l172-s2-huo-2015, l172-s3-huo-2015, l172-s4-huo-2015, l172-s5-huo-2015, l172-s6-huo-2015, l172-s7-huo-2015, l172-s8-huo-2015, l172-s9-huo-2015
+URI no muestra:
+- http://materialsmine.org/ns/
+- http://purl.org/dc/terms/
+- http://semanticscience.org/resource/
+- http://www.w3.org/1999/02/22-rdf-syntax-ns#
+- http://www.w3.org/2000/01/rdf-schema#
+- http://www.w3.org/ns/prov#
+DOI literales:
+- Ninguno
+
+Hit 2
+Indice: knowledge
+ID: IaTKTZIBGO0wWaevBdGP
+Fecha: 2024-10-02
+Variables: sample
+Bindings: 17
+Muestras: l172-s1-huo-2015, l172-s10-huo-2015, l172-s11-huo-2015, l172-s12-huo-2015, l172-s13-huo-2015, l172-s14-huo-2015, l172-s15-huo-2015, l172-s16-huo-2015, l172-s17-huo-2015, l172-s18-huo-2015, l172-s2-huo-2015, l172-s3-huo-2015, l172-s4-huo-2015, l172-s5-huo-2015, l172-s6-huo-2015, l172-s7-huo-2015, l172-s8-huo-2015, l172-s9-huo-2015
+URI no muestra:
+- http://materialsmine.org/ns/
+- http://purl.org/dc/terms/
+- http://semanticscience.org/resource/
+- http://www.w3.org/1999/02/22-rdf-syntax-ns#
+- http://www.w3.org/2000/01/rdf-schema#
+- http://www.w3.org/ns/prov#
+DOI literales:
+- Ninguno
+
+RECURSOS MATERIALSMINE NO MUESTRA
+- http://materialsmine.org/ns/ | materialsmine_resource
+
+INTERPRETACION
+- Si no aparecen recursos MaterialsMine distintos de sample, la variable ?doi no fue conservada en los bindings.
+- Si aparecen URI de articulo o dataset, se revisaran antes de consultarlas.
+- Los URI de ontologia no son DOI ni identificadores de registros.
+
+JSON detallado: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\l172-historical-uri-inventory.json

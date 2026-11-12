@@ -1,0 +1,40 @@
+FASE 2 - INFORME DE CALIDAD DEL CORPUS RELACIONAL L172
+
+Fecha: 2026-11-04T01:08:37-05:00
+Corpus: l172-corpus-v1
+Estado: auxiliary_quarantine
+
+CONTEOS
+- studies: 1
+- material_systems: 1
+- samples: 18
+- sample_composition: 5
+- processing_steps: 15
+- measurements_unresolved: 235
+- provenance: 300
+- exclusions: 3
+
+CONTROLES DE CALIDAD
+- Q001 | PASS | Exactly 18 unique samples | observado=rows=18, unique=18 | esperado=18 rows and 18 unique | severidad=error
+- Q002 | PASS | Exactly 235 unique measurements | observado=rows=235, unique=235 | esperado=235 rows and 235 unique | severidad=error
+- Q003 | PASS | Measurement foreign keys resolve to samples | observado=[] | esperado=empty unresolved set | severidad=error
+- Q004 | PASS | Five unique observed volume fractions | observado=5 | esperado=5 | severidad=error
+- Q005 | PASS | All fractions within [0,1] | observado=[0.036, 0.078, 0.128, 0.186, 0.254] | esperado=all in [0,1] | severidad=error
+- Q006 | PASS | All conductivity values finite and positive | observado=valid=235/235 | esperado=235/235 | severidad=error
+- Q007 | PASS | Conductivity unit absent is explicitly documented | observado=235 | esperado=235 | severidad=warning
+- Q008 | PASS | All measurements blocked pending unit and conditions | observado=235 | esperado=235 | severidad=error
+- Q009 | PASS | All measurements unusable for modeling | observado=235 | esperado=235 | severidad=error
+- Q010 | PASS | No exact scientific-key duplicates in measurements | observado=0 | esperado=0 | severidad=error
+- Q011 | PASS | Study DOI confirmed | observado=10.1021/acs.jpcc.5b08809 | esperado=10.1021/acs.jpcc.5b08809 | severidad=error
+- Q012 | PASS | Processing table preserves 15 rows | observado=15 | esperado=15 | severidad=error
+- Q013 | PASS | At least one material system recovered | observado=1 | esperado=>=1 | severidad=error
+
+DECISION CIENTIFICA
+- La familia l172 se conserva como corpus auxiliar en cuarentena.
+- Las 235 mediciones no son aptas para modelado.
+- La unidad de conductividad y las condiciones de medicion siguen no verificadas.
+- 25 C permanece como atributo general de muestra, no como temperatura de la medicion electrica.
+- 19.5 permanece excluido por tipo defectuoso y unidad ausente.
+
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-corpus-manifest.json
+Resumen de calidad: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l172-corpus-quality-summary.csv

@@ -1,0 +1,39 @@
+FASE 2 - INFORME FINAL DE CIERRE
+
+Fecha de congelacion: 2026-11-04T02:15:57-05:00
+Release: phase2-corpus-release-v1
+
+RESULTADO
+- Fase 2 cerrada: adquisicion y curacion del corpus completadas.
+- l172-corpus-v1 queda como corpus auxiliar en cuarentena.
+- l254-corpus-v1 queda como corpus principal candidato para analisis exploratorio.
+- Las cinco variantes MWCNT de l254 se conservan como cinco curvas independientes.
+- Ninguna curva queda liberada para modelado final por condiciones de medicion incompletas.
+- No se imputaron unidades, frecuencias, conductividades, procesamiento ni identidades comerciales.
+- No se ejecutaron ajustes de percolacion, regresiones ni modelos.
+
+CORPUS L172
+- 18 muestras.
+- 5 registros de composicion.
+- 235 mediciones de conductividad bloqueadas.
+- Unidad y condiciones electricas no verificadas.
+
+CORPUS L254
+- 36 muestras.
+- 70 registros de composicion.
+- 29 mediciones electricas en S/cm.
+- 28 pares completos composicion-conductividad.
+- 5 variantes MWCNT con relaciones de aspecto 134, 94, 55, 73 y 69.
+- 4 frecuencias documentadas; 25 condiciones de frecuencia no verificadas entre las mediciones.
+- Bloque AR134: 7 pares completos, candidato principal para Fase 3.
+
+ESTADO DE EVIDENCIA
+- Confirmado: estructura relacional, conteos, claves, unidades de l254, cinco variantes y controles de calidad.
+- Documentado: DOI, matriz Makrolon 2600, fabricante Bayer MaterialScience, procesamiento y frecuencias disponibles.
+- Inferido: ninguna condicion ausente fue completada; los identificadores internos de variantes no son nombres comerciales.
+- No verificado: identidades comerciales MWCNT, semantica de densidad y condiciones electricas completas.
+
+SIGUIENTE FASE AUTORIZADA
+- Fase 3: analisis exploratorio por curva.
+- Permitido: cobertura, faltantes, visualizacion logaritmica, monotonia, rangos y comparacion descriptiva.
+- Fuera de alcance hasta nueva autorizacion: ajuste de percolacion y modelado final.

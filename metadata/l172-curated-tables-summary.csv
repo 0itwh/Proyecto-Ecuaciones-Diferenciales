@@ -1,0 +1,6 @@
+﻿table,rows,key_values_present,output_file
+study_provenance,2,2,C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-study-provenance.csv
+material_components,14,14,C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-material-components.csv
+processing_steps,15,13,C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-processing-steps.csv
+observed_attributes,16,16,C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-observed-attributes.csv
+unclassified,18,0,C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l172_family\l172-unclassified-bindings.csv

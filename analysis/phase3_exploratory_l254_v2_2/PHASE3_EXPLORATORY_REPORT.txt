@@ -1,0 +1,22 @@
+FASE 3 - PAQUETE EXPLORATORIO L254
+
+Generado: 2026-11-04T23:05:51-05:00
+Alcance: descriptivo; no se ajustaron modelos de percolacion.
+
+COBERTURA POR CURVA
+- Nanocyl NC7000 | AR=134 | pares=7 | disminuciones=0 | rango=11.953235372975174 decadas
+- SWeNT SMW-100 | AR=94 | pares=6 | disminuciones=0 | rango=15.482780897855475 decadas
+- Hyperion Masterbatch (15 wt.%) | AR=55 | pares=5 | disminuciones=0 | rango=13.737864086722027 decadas
+- Baytubes C150P | AR=73 | pares=5 | disminuciones=0 | rango=15.116850553712165 decadas
+- Continental Carbon MWNT | AR=69 | pares=5 | disminuciones=0 | rango=5.347452370163989 decadas
+
+INTERPRETACION PERMITIDA
+- Las figuras muestran tendencias observadas en escala logaritmica.
+- Los saltos mayores son descriptores, no umbrales ajustados.
+- Las curvas incompletas conservan sus faltantes sin imputacion.
+- Los benchmarks publicados no se ajustan ni se presentan como resultados propios.
+- La frecuencia electrica se registra como no reportada; 1 Hz corresponde solo a DMA.
+- La fraccion volumetrica es descriptiva dentro de cada curva y no comparable entre variantes.
+
+SIGUIENTE DECISION
+- Revisar monotonicidad, puntos influyentes y cobertura antes de reproducir los ajustes publicados.

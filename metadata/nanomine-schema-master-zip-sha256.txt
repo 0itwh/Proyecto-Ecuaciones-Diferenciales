@@ -1,0 +1,3 @@
+SHA256 hash de archive\nanomine-schema-master.zip:
+5efccddbdb67f2d9127e589a450f509d5e9fc988e7f900cd90f51b2b04bf1535
+CertUtil: -hashfile comando completado correctamente.

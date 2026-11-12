@@ -1,0 +1,951 @@
+{
+  "generated_at": "2026-11-04T00:08:42-05:00",
+  "input_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_raw\\explorer\\l172-s13-huo-2015-search-response.json",
+  "input_sha256": "ee4aaabe419af4ee038ef3a43df87759467603aea82fcd4138f9fad3f30df30a",
+  "sample_id": "l172-s13-huo-2015",
+  "search_hits_total": 238,
+  "exact_hits_found": 2,
+  "search_terms": [
+    "unitofmeasure",
+    "unit",
+    "frequency",
+    "temperature",
+    "doi",
+    "controlid",
+    "curationid",
+    "fileid",
+    "xml",
+    "sample",
+    "conductivity",
+    "volumefraction",
+    "matrix",
+    "filler",
+    "article",
+    "reference",
+    "title"
+  ],
+  "unique_priority_values": {
+    "unitofmeasure": [],
+    "unit": [],
+    "frequency": [],
+    "temperature": [],
+    "doi": [
+      "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s17-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+      "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s8-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } "
+    ],
+    "controlid": [],
+    "curationid": [],
+    "fileid": [],
+    "xml": [],
+    "sample": [
+      "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s17-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+      "sample",
+      "uri",
+      "http://materialsmine.org/sample/l172-s12-huo-2015",
+      "http://materialsmine.org/sample/l172-s18-huo-2015",
+      "http://materialsmine.org/sample/l172-s1-huo-2015",
+      "http://materialsmine.org/sample/l172-s6-huo-2015",
+      "http://materialsmine.org/sample/l172-s4-huo-2015",
+      "http://materialsmine.org/sample/l172-s10-huo-2015",
+      "http://materialsmine.org/sample/l172-s11-huo-2015",
+      "http://materialsmine.org/sample/l172-s15-huo-2015",
+      "http://materialsmine.org/sample/l172-s2-huo-2015",
+      "http://materialsmine.org/sample/l172-s9-huo-2015",
+      "http://materialsmine.org/sample/l172-s13-huo-2015",
+      "http://materialsmine.org/sample/l172-s7-huo-2015",
+      "http://materialsmine.org/sample/l172-s14-huo-2015",
+      "http://materialsmine.org/sample/l172-s3-huo-2015",
+      "http://materialsmine.org/sample/l172-s5-huo-2015",
+      "http://materialsmine.org/sample/l172-s8-huo-2015",
+      "http://materialsmine.org/sample/l172-s16-huo-2015",
+      "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s8-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+      "http://materialsmine.org/sample/l172-s17-huo-2015"
+    ],
+    "conductivity": [],
+    "volumefraction": [],
+    "matrix": [],
+    "filler": [],
+    "article": [],
+    "reference": [],
+    "title": []
+  },
+  "exact_hits": [
+    {
+      "position_in_search_results": 0,
+      "index": "knowledge",
+      "hit_id": "eos225cBqjuXg29aIrM4",
+      "score": 20.723,
+      "source_keys": [
+        "date",
+        "label",
+        "response"
+      ],
+      "title": "",
+      "date": "2025-07-05",
+      "label": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s17-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+      "matched_fields": [
+        {
+          "json_path": "$._source.label",
+          "value": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s17-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+          "value_type": "str",
+          "matched_terms": [
+            "doi",
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.head.vars[0]",
+          "value": "sample",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[0].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[0].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s12-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[1].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[1].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s18-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[2].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[2].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s1-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[3].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[3].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s6-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[4].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[4].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s4-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[5].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[5].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s10-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[6].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[6].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s11-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[7].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[7].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s15-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[8].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[8].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s2-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[9].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[9].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s9-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[10].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[10].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s13-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[11].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[11].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s7-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[12].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[12].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s14-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[13].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[13].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s3-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[14].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[14].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s5-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[15].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[15].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s8-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[16].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[16].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s16-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        }
+      ],
+      "original_hit": {
+        "_index": "knowledge",
+        "_type": "_doc",
+        "_id": "eos225cBqjuXg29aIrM4",
+        "_score": 20.723,
+        "_ignored": [
+          "label.keyword"
+        ],
+        "_source": {
+          "label": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s17-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+          "response": {
+            "head": {
+              "vars": [
+                "sample"
+              ]
+            },
+            "results": {
+              "bindings": [
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s12-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s18-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s1-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s6-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s4-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s10-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s11-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s15-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s2-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s9-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s13-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s7-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s14-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s3-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s5-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s8-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s16-huo-2015"
+                  }
+                }
+              ]
+            }
+          },
+          "date": "2025-07-05"
+        }
+      }
+    },
+    {
+      "position_in_search_results": 1,
+      "index": "knowledge",
+      "hit_id": "IaTKTZIBGO0wWaevBdGP",
+      "score": 18.901825,
+      "source_keys": [
+        "date",
+        "label",
+        "response"
+      ],
+      "title": "",
+      "date": "2024-10-02",
+      "label": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s8-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+      "matched_fields": [
+        {
+          "json_path": "$._source.label",
+          "value": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s8-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+          "value_type": "str",
+          "matched_terms": [
+            "doi",
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.head.vars[0]",
+          "value": "sample",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[0].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[0].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s12-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[1].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[1].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s18-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[2].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[2].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s1-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[3].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[3].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s6-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[4].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[4].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s4-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[5].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[5].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s10-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[6].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[6].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s17-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[7].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[7].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s11-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[8].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[8].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s15-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[9].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[9].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s2-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[10].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[10].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s9-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[11].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[11].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s13-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[12].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[12].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s7-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[13].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[13].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s14-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[14].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[14].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s3-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[15].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[15].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s5-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[16].sample.type",
+          "value": "uri",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        },
+        {
+          "json_path": "$._source.response.results.bindings[16].sample.value",
+          "value": "http://materialsmine.org/sample/l172-s16-huo-2015",
+          "value_type": "str",
+          "matched_terms": [
+            "sample"
+          ]
+        }
+      ],
+      "original_hit": {
+        "_index": "knowledge",
+        "_type": "_doc",
+        "_id": "IaTKTZIBGO0wWaevBdGP",
+        "_score": 18.901825,
+        "_ignored": [
+          "label.keyword"
+        ],
+        "_source": {
+          "label": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s8-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+          "response": {
+            "head": {
+              "vars": [
+                "sample"
+              ]
+            },
+            "results": {
+              "bindings": [
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s12-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s18-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s1-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s6-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s4-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s10-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s17-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s11-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s15-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s2-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s9-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s13-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s7-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s14-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s3-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s5-huo-2015"
+                  }
+                },
+                {
+                  "sample": {
+                    "type": "uri",
+                    "value": "http://materialsmine.org/sample/l172-s16-huo-2015"
+                  }
+                }
+              ]
+            }
+          },
+          "date": "2024-10-02"
+        }
+      }
+    }
+  ],
+  "evidence_status": {
+    "sample_identifier": "confirmed",
+    "unit": "not_verified",
+    "frequency": "not_verified",
+    "temperature": "not_verified",
+    "doi": "not_verified",
+    "control_id": "not_verified",
+    "curation_id": "not_verified",
+    "file_id": "not_verified"
+  },
+  "notes": [
+    "Solo se conservaron hits que contienen el identificador exacto de muestra.",
+    "Las coincidencias de frecuencia, temperatura o DOI deben revisarse en su contexto antes de aceptarse.",
+    "No se aplicaron conversiones, promedios ni modelos."
+  ]
+}

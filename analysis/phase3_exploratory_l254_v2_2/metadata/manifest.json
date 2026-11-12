@@ -1,0 +1,28 @@
+{
+  "release": "phase3-exploratory-l254-v2.2",
+  "generated_at": "2026-11-04T23:05:51-05:00",
+  "source_corpus": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l254_corpus_article_validated",
+  "source_manifest_sha256": "9ad6ea08b2ae096e3443f84445dd766125ba66a4b27a272ffeb63acb1980602f",
+  "counts": {
+    "samples": 36,
+    "measurements": 29,
+    "curves": 5,
+    "complete_pairs": 28
+  },
+  "scope": "exploratory_only_no_percolation_fit",
+  "electrical_frequency_status": "not_reported_for_electrical_method",
+  "dma_frequency_hz": 1.0,
+  "dma_frequency_scope": "DMA_only_not_electrical_conductivity",
+  "volume_fraction_policy": "descriptive_within_curve_only_cross_variant_comparison_blocked",
+  "transformations": [
+    "mass fraction multiplied by 100 for plotting",
+    "volume fraction multiplied by 100 for plotting",
+    "base-10 logarithm used only for descriptive visualization",
+    "historical sample frequency status removed",
+    "1 Hz labeled as DMA-only context",
+    "volume fraction labeled as non-comparable across variants"
+  ],
+  "random_seed": null,
+  "model_fitted": false,
+  "quality_passed": true
+}

@@ -1,0 +1,20 @@
+FASE 1B - DESCARGA DE ARCHIVOS ENUMERADOS POR METAMINE
+
+Fecha: 2026-11-03T23:25:38-05:00
+Catalogo: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\metamine\files-metamine-response.json
+Archivos enumerados: 2
+Archivos consultados: 2
+
+                                                  original_file_name  http_status                    content_type  response_bytes csv_read_status csv_rows csv_columns csv_column_names                                                           sha256
+chubby_tick_madeline-2024-01-23T17:47:06.141Z-freeform_2d_sample.csv          500 application/json; charset=utf-8              48  not_applicable     None        None                  44cf793c70ed3aab589841e7ff4c137b657dd26d5eddbbc00b8fd6f991dfa94a
+ chubby_tick_madeline-2024-01-23T17:47:06.153Z-lattice_2d_sample.csv          500 application/json; charset=utf-8              48  not_applicable     None        None                  44cf793c70ed3aab589841e7ff4c137b657dd26d5eddbbc00b8fd6f991dfa94a
+
+ADVERTENCIAS
+- Los nombres proceden directamente de fetchedNames.
+- Los dos archivos parecen muestras de MetaMine por su nombre.
+- La descarga no demuestra todavía series composicion-propiedad.
+- No se aplicaron transformaciones ni modelos.
+- Los dos puntos del nombre original se sustituyen solo en el nombre local porque Windows no los permite.
+
+Metadatos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\metamine-downloaded-files.csv
+Directorio: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\metamine\downloaded

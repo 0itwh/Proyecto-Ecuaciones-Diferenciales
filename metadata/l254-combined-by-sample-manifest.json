@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-11-04T01:35:05-05:00",
+  "input_files": [
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-samples.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-composition.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-electrical-attributes.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-study-provenance.csv"
+  ],
+  "output_file": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\l254-combined-by-sample.csv",
+  "row_count": 36,
+  "doi_values": [
+    "10.1016/j.polymer.2011.06.018"
+  ],
+  "counts": {
+    "samples": 36,
+    "composition_available": 35,
+    "conductivity_available": 29,
+    "complete_pairs": 28,
+    "frequency_documented": 4,
+    "strictly_usable_for_modeling": 3
+  },
+  "block_rule": {
+    "status": "inferred_not_experimentally_verified",
+    "definition": {
+      "block_1_s2_s8": "samples s2 through s8",
+      "block_2_s9_s15": "samples s9 through s15",
+      "block_3_s16_s22": "samples s16 through s22",
+      "block_4_s23_s29": "samples s23 through s29",
+      "block_5_s30_s36": "samples s30 through s36",
+      "control_or_unassigned": "sample s1"
+    }
+  },
+  "block_summary": [
+    {
+      "block_id": "block_1_s2_s8",
+      "sample_count": 7,
+      "complete_pair_count": 7,
+      "conductivity_count": 7,
+      "composition_count": 7,
+      "frequency_documented_count": 3,
+      "mass_fraction_min": 0.0025,
+      "mass_fraction_max": 0.03,
+      "volume_fraction_min": 4.556639e-05,
+      "volume_fraction_max": 0.0005620082,
+      "conductivity_min_s_per_cm": 2.81e-13,
+      "conductivity_max_s_per_cm": 0.2523142
+    },
+    {
+      "block_id": "block_2_s9_s15",
+      "sample_count": 7,
+      "complete_pair_count": 6,
+      "conductivity_count": 6,
+      "composition_count": 7,
+      "frequency_documented_count": 0,
+      "mass_fraction_min": 0.0025,
+      "mass_fraction_max": 0.03,
+      "volume_fraction_min": 1.769097e-05,
+      "volume_fraction_max": 0.0002182665,
+      "conductivity_min_s_per_cm": 1.95e-17,
+      "conductivity_max_s_per_cm": 0.05926735
+    },
+    {
+      "block_id": "block_3_s16_s22",
+      "sample_count": 7,
+      "complete_pair_count": 5,
+      "conductivity_count": 5,
+      "composition_count": 7,
+      "frequency_documented_count": 0,
+      "mass_fraction_min": 0.0025,
+      "mass_fraction_max": 0.03,
+      "volume_fraction_min": 0.001155402,
+      "volume_fraction_max": 0.01407349,
+      "conductivity_min_s_per_cm": 1e-15,
+      "conductivity_max_s_per_cm": 0.05468448
+    },
+    {
+      "block_id": "block_4_s23_s29",
+      "sample_count": 7,
+      "complete_pair_count": 5,
+      "conductivity_count": 5,
+      "composition_count": 7,
+      "frequency_documented_count": 0,
+      "mass_fraction_min": 0.005,
+      "mass_fraction_max": 0.03,
+      "volume_fraction_min": 4.158552e-05,
+      "volume_fraction_max": 0.000255889,
+      "conductivity_min_s_per_cm": 4.35e-17,
+      "conductivity_max_s_per_cm": 0.05692982
+    },
+    {
+      "block_id": "block_5_s30_s36",
+      "sample_count": 7,
+      "complete_pair_count": 5,
+      "conductivity_count": 5,
+      "composition_count": 7,
+      "frequency_documented_count": 0,
+      "mass_fraction_min": 0.0025,
+      "mass_fraction_max": 0.03,
+      "volume_fraction_min": 0.001155402,
+      "volume_fraction_max": 0.01407349,
+      "conductivity_min_s_per_cm": 1.93e-07,
+      "conductivity_max_s_per_cm": 0.0429546
+    },
+    {
+      "block_id": "control_or_unassigned",
+      "sample_count": 1,
+      "complete_pair_count": 0,
+      "conductivity_count": 1,
+      "composition_count": 0,
+      "frequency_documented_count": 1,
+      "mass_fraction_min": NaN,
+      "mass_fraction_max": NaN,
+      "volume_fraction_min": NaN,
+      "volume_fraction_max": NaN,
+      "conductivity_min_s_per_cm": 2.52e-19,
+      "conductivity_max_s_per_cm": 2.52e-19
+    }
+  ],
+  "notes": [
+    "Mass and volume fractions are retained as documented dimensionless fractions.",
+    "Electrical conductivity is retained in Siemens per Centimeter; no unit conversion was performed.",
+    "Frequency 1 Hz is assigned only to samples where it is explicitly documented.",
+    "The five-block allocation is inferred from sample numbering and repeated composition patterns.",
+    "No percolation model or regression was fitted."
+  ]
+}

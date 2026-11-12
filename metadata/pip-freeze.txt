@@ -1,0 +1,23 @@
+backports.zstd @ file:///D:/bld/bld/rattler-build_backports.zstd_1792695583/work
+Brotli @ file:///D:/bld/brotli-split_1792653575697/work
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1793720052803/work/certifi
+charset-normalizer @ file:///D:/bld/bld/rattler-build_charset-normalizer_1790766070/work
+et_xmlfile @ file:///home/conda/feedstock_root/build_artifacts/et_xmlfile_1733749653422/work
+h2 @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_h2_1785796355/work
+hpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_1782283902770/work
+hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1737618333194/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_idna_1790020377/work
+lxml==6.0.2
+numpy @ file:///D:/bld/bld/rattler-build_numpy_1791675323/work/dist/numpy-2.5.4-cp312-cp312-win_amd64.whl#sha256=138bbe5b08c09ae9ec871eff62a37b7a4212e5834d278ac7c37e3bbc22c7e804
+openpyxl @ file:///D:/bld/openpyxl_1788523091565/work
+packaging==26.3
+pandas @ file:///D:/bld/bld/rattler-build_pandas_1792679045/work
+PySocks @ file:///D:/bld/pysocks_1733217287171/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_h5ded981_1793535232/work
+PyYAML @ file:///D:/bld/bld/rattler-build_pyyaml_1793655093/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_requests_1778851103/work
+setuptools==84.2.1
+tzdata @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-tzdata_h5ded981_1793205938/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1789566614899/work
+wheel==0.48.0
+win_inet_pton @ file:///D:/bld/win_inet_pton_1733130564612/work

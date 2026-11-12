@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-11-04T01:44:56-05:00",
+  "inputs": [
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\l254-combined-by-sample.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-material-components.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\cnt\\l254_castillo_2011\\l254-processing-steps.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-sample-features.csv"
+  ],
+  "outputs": [
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-normalized-distinguishing-features.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-normalized-component-matrix.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-normalized-processing-matrix.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-samples-missing-processing.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\cnt\\l254_castillo_2011\\block_comparison\\l254-normalized-block-summary.csv",
+    "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\metadata\\l254-normalized-feature-quality.csv"
+  ],
+  "counts": {
+    "raw_candidate_features_previous": 143,
+    "normalized_component_features": 7,
+    "normalized_processing_features": 3,
+    "normalized_distinguishing_features": 5,
+    "excluded_composition_component_rows": 70,
+    "samples_missing_processing": 2
+  },
+  "block_5_missing_processing_samples": [
+    "l254-s33-castillo-2011"
+  ],
+  "normalization_rules": [
+    "Remove l254 sample identifiers and sample-specific URIs.",
+    "Replace remaining HTTP(S) URIs with a generic placeholder and exclude the placeholder from scientific identity.",
+    "Remove UUID-like identifiers and processing-step sequence identifiers.",
+    "Exclude mass-fraction, volume-fraction, loading, concentration, and composition features from block discrimination.",
+    "Compare component names, roles, non-composition attribute types/units/labels, processing parameter labels, and normalized descriptions."
+  ],
+  "interpretation_limits": [
+    "Feature absence can indicate incomplete metadata rather than experimental absence.",
+    "Normalized differences remain candidates and do not prove the block definition.",
+    "No missing processing information was imputed.",
+    "No model was fitted."
+  ]
+}

@@ -1,0 +1,147 @@
+FASE 2 - EXTRACCION DE CONTEXTO DE MUESTRA
+
+Fecha: 2026-11-04T00:08:42-05:00
+Muestra: l172-s13-huo-2015
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\explorer\l172-s13-huo-2015-search-response.json
+SHA256 entrada: ee4aaabe419af4ee038ef3a43df87759467603aea82fcd4138f9fad3f30df30a
+Hits totales: 238
+Hits con identificador exacto: 2
+
+HITS EXACTOS
+
+Hit 1
+Posicion: 0
+Indice: knowledge
+ID del hit: eos225cBqjuXg29aIrM4
+Titulo: 
+Fecha: 2025-07-05
+Claves principales: date, label, response
+Campos prioritarios encontrados: 36
+Vista previa:
+{
+  "_index": "knowledge",
+  "_type": "_doc",
+  "_id": "eos225cBqjuXg29aIrM4",
+  "_score": 20.723,
+  "_ignored": [
+    "label.keyword"
+  ],
+  "_source": {
+    "label": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s17-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+    "response": {
+      "head": {
+        "vars": [
+          "sample"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "sample": {
+              "type": "uri",
+              "value": "http://materialsmine.org/sample/l172-s12-huo-2015"
+            }
+          },
+          {
+            "sample": {
+              "type": "uri",
+              "value": "http://materialsmine.org/sample/l172-s18-huo-2015"
+            }
+          },
+          {
+            "sample": {
+              "type": "uri",
+              "value": "http://materialsmine.org/sample/l172-s1-huo-2015"
+            }
+          },
+          {
+            "sample": {
+              "type": "uri",
+              "value": "http://materialsmine.org/sample/l172-s6-huo-2015"
+            }
+          },
+          {
+         
+... VISTA PREVIA TRUNCADA ...
+
+Hit 2
+Posicion: 1
+Indice: knowledge
+ID del hit: IaTKTZIBGO0wWaevBdGP
+Titulo: 
+Fecha: 2024-10-02
+Claves principales: date, label, response
+Campos prioritarios encontrados: 36
+Vista previa:
+{
+  "_index": "knowledge",
+  "_type": "_doc",
+  "_id": "IaTKTZIBGO0wWaevBdGP",
+  "_score": 18.901825,
+  "_ignored": [
+    "label.keyword"
+  ],
+  "_source": {
+    "label": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX mm: <http://materialsmine.org/ns/>\nPREFIX prov: <http://www.w3.org/ns/prov#>SELECT DISTINCT ?sample WHERE {\n    VALUES ?this { <http://materialsmine.org/sample/l172-s8-huo-2015>}\n    ?doi sio:hasPart ?this, ?sample .\n    ?sample a mm:PolymerNanocomposite .\n    FILTER(?this != ?sample)\n  } ",
+    "response": {
+      "head": {
+        "vars": [
+          "sample"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "sample": {
+              "type": "uri",
+              "value": "http://materialsmine.org/sample/l172-s12-huo-2015"
+            }
+          },
+          {
+            "sample": {
+              "type": "uri",
+              "value": "http://materialsmine.org/sample/l172-s18-huo-2015"
+            }
+          },
+          {
+            "sample": {
+              "type": "uri",
+              "value": "http://materialsmine.org/sample/l172-s1-huo-2015"
+            }
+          },
+          {
+            "sample": {
+              "type": "uri",
+              "value": "http://materialsmine.org/sample/l172-s6-huo-2015"
+            }
+          },
+          {
+       
+... VISTA PREVIA TRUNCADA ...
+
+CONTEOS DE VALORES PRIORITARIOS
+unitofmeasure: 0
+unit: 0
+frequency: 0
+temperature: 0
+doi: 2
+controlid: 0
+curationid: 0
+fileid: 0
+xml: 0
+sample: 22
+conductivity: 0
+volumefraction: 0
+matrix: 0
+filler: 0
+article: 0
+reference: 0
+title: 0
+
+ADVERTENCIAS
+- Una coincidencia textual no demuestra automáticamente su relación experimental.
+- No se asumieron unidades.
+- No se interpretaron frecuencia o temperatura sin ruta contextual.
+- No se ejecutaron modelos.
+
+JSON extraído: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_interim\l172-s13-huo-2015-exact-context.json

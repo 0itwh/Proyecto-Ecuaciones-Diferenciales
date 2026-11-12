@@ -1,0 +1,4 @@
+﻿mapping_id,project_variable,xsd_element,historical_xml_path,xsd_type,cardinality
+MAP-001,electrical_conductivity,ElectricConductivity,PolymerNanocomposite/PROPERTIES/Electrical/ElectricConductivity,ScalarUncertainty,0..unbounded
+MAP-002,surface_resistivity,SurfaceResistivity,PolymerNanocomposite/PROPERTIES/Electrical/SurfaceResistivity,ScalarUncertainty,0..unbounded
+MAP-003,volume_resistivity,VolumeResistivity,PolymerNanocomposite/PROPERTIES/Electrical/VolumeResistivity,ScalarUncertainty,0..unbounded

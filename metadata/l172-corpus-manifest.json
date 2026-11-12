@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-11-04T01:08:37-05:00",
+  "corpus_id": "l172-corpus-v1",
+  "phase": "2_acquisition_and_curation",
+  "corpus_status": "auxiliary_quarantine",
+  "inputs": [
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_interim\\sparql-bindings-deduplicated.csv",
+      "sha256": "5ae720a44a059e9f862c1941805dc31752275938764491c6567cd686927a52bb",
+      "bytes": 63384
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\samples.csv",
+      "sha256": "a8fb7279a9aeec8beff95f1563bd14477e3ecfe49e39e563aef3253949cafb3f",
+      "bytes": 7384
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-study-provenance.csv",
+      "sha256": "88a234bfb53e863e5ce1e9b79e5f0547595db61c039283f2e4b2741b98a25bc2",
+      "bytes": 959
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-material-components.csv",
+      "sha256": "b0c979b82a8d8b07f0724f62194100caa1c329f747bad4e0a1290e4df6649aad",
+      "bytes": 5769
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-processing-steps-with-sample-id.csv",
+      "sha256": "a164b76b9de3c6f2bc8df5b55b6095ce17909c89b1292dd1bc28e4fa00c7d465",
+      "bytes": 7409
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-observed-attributes.csv",
+      "sha256": "c83416897e016689a7f753751ea52f99fc0ba70efcba0935e607f25e52dbdfce",
+      "bytes": 6733
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_family\\l172-attribute-context-25C-19_5.csv",
+      "sha256": "33bdf3788e3c66662d93b93415839c90f0530daa1179b1ccff907cad14dac9ea",
+      "bytes": 2373
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_corpus\\studies.csv",
+      "sha256": "ad03ed2ea635ec4a1b192b1049a922cec610fa7c8fecab1a4b83dadd9b2cfe6a",
+      "bytes": 431
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_corpus\\material_systems.csv",
+      "sha256": "e5ed6c9c8eb34c1b540a5ea243f2396b388613d8b87f5740e59cbc9b952b9fc7",
+      "bytes": 359
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_corpus\\samples.csv",
+      "sha256": "192607c302a8ae4084c888cab1559b40dc282af4aeff66a8ed247a83fd5d0500",
+      "bytes": 9552
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_corpus\\sample_composition.csv",
+      "sha256": "cbef8f77dc3b7ef1bbb87cf2345994daf40613881b1f54df5bb437128056504b",
+      "bytes": 1024
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_corpus\\processing_steps.csv",
+      "sha256": "f0faed974871b1b5192a3943c6cc14b84d1c7a882bce0b8b0d24a6ae82ae8356",
+      "bytes": 8241
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_corpus\\measurements_unresolved.csv",
+      "sha256": "065bdfe96c3116712caae0ffbc3de98aa7347e06513296fb978a8d5af0518ab5",
+      "bytes": 55739
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_corpus\\provenance.csv",
+      "sha256": "7dbca05f3a17ddc950b75159039c393df02b62ccc4aa1986a06be0d438dfa0bf",
+      "bytes": 99388
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\data_processed\\l172_corpus\\exclusions.csv",
+      "sha256": "9d2a610a64c8485e4b44fd0547f85743ea27bc18402ca2efbe16c253c2df50ae",
+      "bytes": 653
+    },
+    {
+      "path": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\metadata\\l172-corpus-quality-summary.csv",
+      "sha256": "91fd8a663f7c35315f7b93076c1f244c4719fb95ca27a43fbd7f6cc69e1fd964",
+      "bytes": 1065
+    }
+  ],
+  "counts": {
+    "studies": 1,
+    "material_systems": 1,
+    "samples": 18,
+    "sample_composition": 5,
+    "processing_steps": 15,
+    "measurements_unresolved": 235,
+    "provenance": 300,
+    "exclusions": 3
+  },
+  "quality": {
+    "checks_total": 13,
+    "checks_passed": 13,
+    "error_failures": 0,
+    "warning_failures": 0
+  },
+  "methodological_notes": [
+    "No conductivity units were inferred.",
+    "No measurement conditions were assigned from general sample attributes.",
+    "No averages, conversions, interpolation, percolation fitting, or modeling were performed.",
+    "The corpus remains in auxiliary quarantine until unit and measurement conditions are verified."
+  ]
+}

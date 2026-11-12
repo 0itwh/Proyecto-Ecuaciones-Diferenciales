@@ -1,0 +1,42 @@
+FASE 3 - VALIDACION DOCUMENTAL DEL ARTICULO L254
+
+Fecha: 2026-11-04T20:42:32-05:00
+Documento: 49-doi10.1016j.polymer.2011.06.018_Castillo.pdf
+DOI: 10.1016/j.polymer.2011.06.018
+
+DECISION PRINCIPAL
+- Las conductividades no son mediciones DMA a 1 Hz.
+- El articulo documenta mediciones de resistividad electrica volumetrica y calculo posterior de conductividad.
+- Para rho > 1e7 ohm cm se uso Keithley 6517A con fixture 8009.
+- Para rho < 1e7 ohm cm se uso una configuracion de cuatro puntos con Keithley DMM 2000.
+- La frecuencia de 1 Hz pertenece exclusivamente a DMA; el articulo no declara una frecuencia para la medicion electrica.
+
+MAPEO DE CURVAS
+- AR134 = Nanocyl NC7000.
+- AR94 = SWeNT SMW-100.
+- AR55 = Hyperion Masterbatch (15 wt.%).
+- AR73 = Baytubes C150P.
+- AR69 = Continental Carbon MWNT.
+
+VALORES PUBLICADOS DE PERCOLACION
+- Nanocyl NC7000: pc=0.28 wt.%, B=6.2e-2 S/cm, t=1.3.
+- SWeNT SMW-100: pc=0.33 wt.%, B=8.2e-3 S/cm, t=2.0.
+- Hyperion Masterbatch: pc=0.50 wt.%, B=1.4e-2 S/cm, t=1.7.
+- Baytubes C150P: pc=0.61 wt.%, B=8.5e-3 S/cm, t=2.0.
+- Continental Carbon MWNT: pc=0.49 wt.%, B=9.0e-3 S/cm, t=1.8.
+
+CONSECUENCIA
+- Se elimina el bloqueo basado en frecuencia para las curvas electricas.
+- Los valores publicados se conservan como benchmark y no como ajustes propios.
+- La Fase 3 puede reproducir los ajustes publicados y evaluar sensibilidad.
+- El modelado final sigue pendiente de reproduccion independiente y revision de puntos faltantes.
+
+CONTROLES
+- Q001 | PASS | five commercial MWCNT identities mapped
+- Q002 | PASS | aspect ratios preserved
+- Q003 | PASS | nine documented method fields per measurement
+- Q004 | PASS | one frequency-not-applicable record per electrical measurement
+- Q005 | PASS | 1 Hz removed from electrical interpretation
+- Q006 | PASS | pure PC zero composition added
+- Q007 | PASS | frequency exclusions removed
+- Q008 | PASS | five published percolation benchmarks recorded

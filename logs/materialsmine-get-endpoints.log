@@ -1,0 +1,35 @@
+FASE 1B - OPERACIONES GET DOCUMENTADAS
+
+Titulo: MaterialsMine Project API Docs
+Version OpenAPI: 3.0.0
+Version API: 1.0.0
+Servidor de produccion: https://materialsmine.org/api
+Operaciones GET: 11
+GET sin parametros obligatorios: 6
+
+TODAS LAS OPERACIONES GET
+                              path      operation_id required_parameters             security      response_codes
+                         /admin/es                                       [{"BearerAuth": []}]     200;401;403;500
+                           /curate                                       [{"BearerAuth": []}]         200;401;500
+                    /curate/schema                                               not_declared             201;500
+                   /files/metamine                                               not_declared             200;500
+       /knowledge/charts/favorites getFavoriteCharts                     [{"BearerAuth": []}]         200;401;500
+                      /mn/ontology                                               not_declared 200;400;401;404;500
+          /curate/get/{curationId}                            curationId [{"BearerAuth": []}]     200;401;404;500
+/files/image_migration/{imageType}                             imageType         not_declared         200;400;500
+        /files/metamine/{fileName}                              fileName         not_declared             200;500
+                   /files/{fileId}                                fileId         not_declared         200;400;500
+                  /xml/{controlID}                             controlID         not_declared         200;404;500
+
+CANDIDATOS SIN PARAMETROS OBLIGATORIOS
+                       path      operation_id                                    summary             security
+                  /admin/es                   Check the status of elastic search service [{"BearerAuth": []}]
+                    /curate                                    Gets curation Base Object [{"BearerAuth": []}]
+             /curate/schema                                             Gets XSD  Schema         not_declared
+            /files/metamine                                 fetch metamine dataset files         not_declared
+/knowledge/charts/favorites getFavoriteCharts                   Retrieve favorite charts [{"BearerAuth": []}]
+               /mn/ontology                      A route to Extract Ontology Information         not_declared
+
+NOTA:
+Este script solo inspecciona la especificacion OpenAPI local.
+No ejecuta llamadas a la API ni descarga registros.

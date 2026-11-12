@@ -1,0 +1,35 @@
+FASE 1B - MAPEO CURADO REVISADO DEL XSD HISTORICO
+
+Fecha: 2026-11-03T23:15:14-05:00
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-curated-mapping-review.csv
+Salida: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-curated-mapping-reviewed.csv
+
+Declaraciones revisadas: 59
+Include: 42
+Ambiguous: 2
+Exclude: 15
+Decisiones modificadas: 14
+
+RESUMEN POR CATEGORIA
+              category reviewed_decision  declarations
+           composicion           include            10
+condiciones_electricas         ambiguous             2
+condiciones_electricas           exclude            14
+condiciones_electricas           include             6
+            materiales           exclude             1
+            materiales           include            26
+
+DECLARACIONES AMBIGUAS
+project_variable xsd_element           semantic_context                                                                             reviewed_reason
+       frequency   frequency DDTemperatureConditionType Posible condicion de frecuencia dielectrica; la ruta en registros reales no esta verificada
+     temperature Temperature      GeneralConditionsType       Condicion general de temperatura no vinculada exclusivamente a una medicion electrica
+
+ADVERTENCIAS
+- Include representa correspondencia estructural en el XSD historico.
+- No demuestra observabilidad ni cobertura en registros reales.
+- El XSD de produccion continua no verificado por el error HTTP 500.
+- VARIABLEINVENTORY.csv no fue modificado.
+
+Detalle revisado: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-curated-mapping-reviewed.csv
+Resumen: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-curated-mapping-reviewed-summary.csv
+Cambios: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\historical-xsd-curated-mapping-review-changes.csv

@@ -1,0 +1,30 @@
+FASE 1B - ACCESO A GET /mn/ontology
+
+Fecha: 2026-11-03T23:29:48-05:00
+Metodo: GET
+URL solicitada: https://materialsmine.org/api/mn/ontology
+URL final: https://materialsmine.org/api/mn/ontology
+HTTP: 200 OK
+Tipo: application/json; charset=utf-8
+Content-Disposition: None
+Bytes: 222515
+SHA256: 87a427079d43792d146acc7587524b7525052d4d82a7a8a18ff6ee7c7c1fa7f9
+Redirecciones: 0
+JSON: parsed
+Tipo JSON superior: dict
+Cantidad superior: 7
+Claves superiores: appName, data, details, lastUpdateDate, metrics, properties, submissions
+Tipos de muestra: dict, list, str
+
+VISTA PREVIA LIMITADA
+{"details":{"Acronyms":"MATERIALSMINE","Visibility":"Public","Description":"A materials ontology to support data publication involving nanomaterials and metamaterials.","Status":"Alpha","Format":"OWL","Contact":"Cate L. Brinson, Ph.D., cate.brinson@duke.edu","Categories":"Chemical, Development, Physicochemical"},"metrics":{"Classes":543,"Individuals":224,"Properties":17,"Maximum Depth":5,"Maximum number of children":21,"Average number of children":1,"Classes with a single child":216,"Classes with more than 25 children":0,"Classes with no definition":248},"data":[{"ID":"http://www.w3.org/2002/07/owl#Thing","Preferred Name":"Thing","prefixIRI":"owl:Thing","prefLabel":"Thing","subClasses":[{"ID":"obo:ID_0000061","subClasses":[{"ID":"http://materialsmine.org/ns/DMA_Mode","subClasses":[{"subClasses":[],"ID":"http://materialsmine.org/ns/TemperatureSweep","prefixIRI":"materialsmine:TemperatureSweep","prefLabel":"Temperature Sweep","Label":"Temperature Sweep","Preferred Name":"Temperature Swee
+
+ADVERTENCIAS
+- La ontologia puede describir vocabulario sin contener registros.
+- La presencia de una clase o propiedad no demuestra observabilidad.
+- No se ejecutaron consultas posteriores.
+- No se aplicaron transformaciones ni modelos.
+
+Respuesta original: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\ontology\materialsmine-ontology-response.bin
+Metadatos: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\materialsmine-ontology-response-metadata.json
+JSON normalizado: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\ontology\materialsmine-ontology-response.json

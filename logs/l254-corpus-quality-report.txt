@@ -1,0 +1,54 @@
+FASE 2 - INFORME DE CALIDAD DEL CORPUS RELACIONAL DEFINITIVO L254
+
+Fecha: 2026-11-04T02:11:42-05:00
+Corpus: l254-corpus-v1
+Estado: primary_candidate_under_measurement_condition_validation
+
+CONTEOS
+- studies: 1
+- material_systems: 1
+- filler_variants: 5
+- samples: 36
+- sample_composition: 70
+- processing_steps: 102
+- electrical_measurements: 29
+- measurement_conditions: 29
+- provenance: 632
+- exclusions: 40
+- curves: 5
+
+ESTADO DE CURVAS
+- block_1_s2_s8 | variante=l254-mwcnt-v1-ar134 | pares=7 | frecuencia=3 | estado=primary_candidate_complete_curve_conditions_partial
+- block_2_s9_s15 | variante=l254-mwcnt-v2-ar94 | pares=6 | frecuencia=0 | estado=conditional_candidate_incomplete_curve_conditions_unverified
+- block_3_s16_s22 | variante=l254-mwcnt-v3-ar55 | pares=5 | frecuencia=0 | estado=conditional_candidate_incomplete_curve_conditions_unverified
+- block_4_s23_s29 | variante=l254-mwcnt-v4-ar73 | pares=5 | frecuencia=0 | estado=conditional_candidate_incomplete_curve_conditions_unverified
+- block_5_s30_s36 | variante=l254-mwcnt-v5-ar69 | pares=5 | frecuencia=0 | estado=conditional_candidate_incomplete_curve_conditions_unverified
+
+CONTROLES DE CALIDAD
+- Q001 | PASS | One study | observado=1 | esperado=1
+- Q002 | PASS | One material system | observado=1 | esperado=1
+- Q003 | PASS | Five filler variants | observado=5 | esperado=5
+- Q004 | PASS | Five distinct aspect ratios | observado=[55.0, 69.0, 73.0, 94.0, 134.0] | esperado=5
+- Q005 | PASS | 36 unique samples | observado=36 | esperado=36
+- Q006 | PASS | 70 composition rows | observado=70 | esperado=70
+- Q007 | PASS | 29 electrical measurements | observado=29 | esperado=29
+- Q008 | PASS | 28 complete composition-conductivity pairs | observado=28 | esperado=28
+- Q009 | PASS | Four documented frequencies | observado=4 | esperado=4
+- Q010 | PASS | Five independent curves | observado=5 | esperado=5
+- Q011 | PASS | Matrix metadata absent from MWCNT commercial identity | observado=checked | esperado=True
+- Q012 | PASS | All conductivity values positive | observado=checked | esperado=True
+- Q013 | PASS | All composition values within 0 to 1 | observado=checked | esperado=True
+- Q014 | PASS | No curve marked usable for final modeling | observado=checked | esperado=True
+- Q015 | PASS | s33 missing processing metadata documented | observado=checked | esperado=True
+
+DECISION CIENTIFICA
+- l254 es el corpus principal candidato de Fase 2.
+- Los cinco bloques representan cinco variantes distintas de MWCNT y se conservan separados.
+- Ninguna curva queda liberada para modelado final por cobertura incompleta de condiciones de medicion.
+- El bloque 1 conserva siete pares completos y es el candidato principal para analisis exploratorio.
+- No se imputaron conductividades, frecuencias, procesamiento ni identidades comerciales.
+- No se ejecutaron modelos.
+
+Corpus: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_processed\l254_corpus
+Calidad: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-corpus-quality-summary.csv
+Manifiesto: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\l254-corpus-manifest.json

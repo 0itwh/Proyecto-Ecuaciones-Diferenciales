@@ -1,0 +1,141 @@
+FASE 1B - INSPECCION PRIORITARIA DE LA ONTOLOGIA
+
+Entrada: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\data_raw\ontology\materialsmine-ontology-response.json
+Coincidencias: 122
+
+RESUMEN
+          search_group  matches
+           composicion       20
+       identificadores        3
+            materiales       61
+propiedades_electricas       38
+
+NOMBRES ENCONTRADOS
+
+composicion:
+- Atactic
+- Binary 2D Geometry
+- Composition
+- Compressive Loading Profile
+- Filler Component Composition
+- Filler Composition
+- Flexural Loading Profile
+- Mass Fraction
+- Matrix Component Composition
+- Particle Surface Treatment Composition
+- Physical Property
+- Poisson Ratio
+- Shear Loading Profile
+- Spectroscopy
+- Strain Amplitude
+- Tensile Loading Profile
+- Thermal Decomposition Temperature
+- Volume Fraction
+- XRay Diffraction and Scattering
+
+identificadores:
+- Metamaterial Dataset
+- Nanomaterial Dataset
+- dcat:Dataset
+
+materiales:
+- Atactic
+- C Matrix Element
+- C Matrix Index I
+- C Matrix Index J
+- C Matrix Indices I J
+- C11
+- C12
+- C16
+- C22
+- C26
+- C66
+- Copolymer
+- Crystallization Temperature
+- Degree of Crystallinity
+- Elastomer
+- Electric Percolation Threshold
+- Eutactic
+- Filler
+- Filler Component
+- Filler Component Composition
+- Filler Component in Composite
+- Filler Composition
+- Filler Processing
+- Full Material Property Field Matrix
+- Glass Transition Temperature
+- Graft Density
+- Hardener
+- Homopolymer
+- In-Situ Polymerization
+- Interphase Thickness
+- Isotactic
+- Lattice vector
+- Material Stiffness Matrix
+- Matrix
+- Matrix Component
+- Matrix Component Composition
+- Matrix Processing
+- Melt Mixing
+- Melt Processing
+- Melt Viscosity
+- Molecular Weight
+- Nanocomposite
+- Particle
+- Particle Diameter
+- Particle Surface Treatment Composition
+- Plastic
+- Polymer
+- Polymer Blend
+- Polymer Nanocomposite
+- Solution Processing
+- Syndiotactic
+- Thermoplastic
+- Thermoset
+- Water Absorption
+- nan
+
+propiedades_electricas:
+- 1D Dispersion Relation
+- 2D Dispersion Relation
+- 3D Dispersion Relation
+- AC Dielectric Constant
+- AC Dielectric Dispersion
+- Arc Resistance
+- Band Gap
+- DC Dielectric Constant
+- Dielectric Breakdown Strength
+- Dielectric Loss Permittivity
+- Dielectric Loss Tangent
+- Dielectric Real Permittivity
+- Dielectric and Impedance Spectroscopy Analysis
+- Dispersion Relation
+- Dynamic Mechanical Analysis
+- Electric Conductivity
+- Frequency
+- Frequency Band
+- Frequency Sweep
+- Group Velocity
+- Normalized Frequency
+- Phase Velocity
+- Physics Model
+- Pulsed Electro Acoustic
+- Raman Spectroscopy
+- Resonance Frequency
+- Rheological Master Curve
+- Rheometer Mode
+- Rotational Frequency
+- Surface Resistivity
+- Thermal Conductivity
+- Thermal Diffusivity
+- Volume Resistivity
+- Weilbull Plot
+
+ADVERTENCIAS
+- Las coincidencias describen vocabulario de la ontologia.
+- No demuestran presencia ni cobertura en registros.
+- Una coincidencia textual puede requerir revision contextual.
+- No se realizaron nuevas consultas a Internet.
+
+Detalle: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\materialsmine-ontology-priority-matches.csv
+Resumen: C:\Users\Alexis\Documents\ProyectoDiferenciales\PHASE1_AUDIT_PACKAGE_CORRECTED\metadata\materialsmine-ontology-priority-summary.csv
