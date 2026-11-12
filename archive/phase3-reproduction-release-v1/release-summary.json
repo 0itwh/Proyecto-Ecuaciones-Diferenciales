@@ -1,0 +1,17 @@
+{
+  "release_id": "phase3-reproduction-release-v1",
+  "created_at": "2026-11-11T20:51:44-05:00",
+  "phase_status": "PHASE_3_CLOSED_READY_FOR_PHASE_4",
+  "figure_language": "en",
+  "included_packages": [
+    "analysis/phase3_exploratory_l254_v2_2",
+    "analysis/phase3_nanocyl_nc7000_fit_reproduction_v1",
+    "analysis/phase3_swent_smw100_fit_reproduction_v1",
+    "analysis/phase3_baytubes_c150p_fit_reproduction_v1",
+    "analysis/phase3_hyperion_masterbatch_fit_reproduction_v1",
+    "analysis/phase3_continental_carbon_fit_reproduction_v1",
+    "analysis/phase3_joint_percolation_comparison_v1"
+  ],
+  "canonical_corpus_modified": false,
+  "final_models_released": false
+}

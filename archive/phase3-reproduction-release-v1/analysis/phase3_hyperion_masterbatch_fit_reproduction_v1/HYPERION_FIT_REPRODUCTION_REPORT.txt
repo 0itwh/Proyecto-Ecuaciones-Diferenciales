@@ -1,0 +1,21 @@
+FASE 3 - REPRODUCCION RESTRINGIDA DE HYPERION MASTERBATCH (15 wt.%)
+
+Generado: 2026-11-11T20:39:59-05:00
+Estado: curva restringida por sub-identificacion (faltan 0.75 y 1.00 wt.% en zona conductora); no es un modelo final.
+
+DIAGNOSTICO CIENTIFICO
+- Las muestras s16 (0.25 wt.%, 1e-15 S/cm) y s17 (0.375 wt.%, 2.64e-15 S/cm) pertenecen al regimen aislante.
+- Las muestras s20 (0.75 wt.%) y s21 (1.00 wt.%) carecen de medicion electrica en el corpus y NO fueron imputadas.
+- Como consecuencia, por encima del umbral publicado (pc = 0.50 wt.%) solo existen N = 2 puntos observados (0.625 y 3.00 wt.%), lo cual impide ajustar un modelo de 3 parametros (B, pc, t) con pc >= 0.50 wt.%.
+- En el intervalo del salto principal (0.375, 0.50 wt.%), existen N = 3 puntos (0.50, 0.625 y 3.00 wt.%), dejando 0 grados de libertad (3 puntos para 3 parametros), lo que pega pc a la frontera inferior (0.375 wt.%) e infla artificialmente el exponente critico a t = 4.8476.
+
+PARAMETROS PUBLICADOS (EVALUADOS EN N=2 PUNTOS > 0.50 wt.%)
+B = 0.014 S/cm | pc = 0.5 wt.% | t = 1.7
+RMSE log10 = 2.1299363
+
+AJUSTE EN INTERVALO DE SALTO (0.375, 0.50 wt.%, N=3 PUNTOS)
+B = 0.00046913979 S/cm | pc = 0.37500001 wt.% | t = 4.8475502
+RMSE log10 = 0.11333847 | R2 log10 = 0.99829564
+
+DECISION PARA FASE 4
+- Esta curva NO debe usarse para estimar libremente (B, pc, t) de forma aislada en Fase 4; solo puede participar en modelos multivariantes o jerarquicos con restricciones fisicas sobre t.

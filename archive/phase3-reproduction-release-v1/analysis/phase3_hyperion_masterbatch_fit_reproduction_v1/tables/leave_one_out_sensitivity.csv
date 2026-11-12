@@ -1,0 +1,6 @@
+﻿left_out_wt_percent,left_out_sigma_s_per_cm,fit_B_s_per_cm,fit_pc_wt_percent,fit_t,training_n,training_rmse_log10,left_out_prediction_s_per_cm,left_out_abs_error_log10,status
+0.25,1e-15,0.00046913978565922456,0.37500001,4.847550154884692,3,0.11333847366492816,,not_applicable_below_fitted_pc,fit_completed_zero_dof_3_points
+0.375,2.64e-15,0.00021877048547902349,0.303150005748,5.565355327964167,3,1.6891831807702505e-05,9.453599127706425e-11,4.553993255578108,fit_completed_zero_dof_3_points
+0.5,2.58e-08,,,,2,,,,underdetermined_fewer_than_3_conducting_points:ValueError
+0.625,3.98e-07,,,,2,,,,underdetermined_fewer_than_3_conducting_points:ValueError
+3.0,0.05468448,,,,2,,,,underdetermined_fewer_than_3_conducting_points:ValueError

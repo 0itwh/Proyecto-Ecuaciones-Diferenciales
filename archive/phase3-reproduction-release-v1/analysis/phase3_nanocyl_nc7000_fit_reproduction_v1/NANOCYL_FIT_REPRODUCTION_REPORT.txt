@@ -1,0 +1,35 @@
+FASE 3 - REPRODUCCION DEL AJUSTE DE NANOCYL NC7000
+
+Generado: 2026-11-04T23:09:41-05:00
+Estado: reproduccion exploratoria; no es un modelo final.
+
+METODO
+- Modelo: sigma = B * (p - pc)^t para p > pc.
+- Variable de composicion: porcentaje en masa.
+- Objetivo: minimo RMSE en log10(conductividad).
+- pc: perfil determinista denso entre 0.25000001 y 0.37499999 wt.%.
+- Para cada pc se estiman log10(B) y t por regresion lineal en espacio logaritmico.
+- Sensibilidad: leave-one-out sobre los siete puntos observados.
+- Semilla aleatoria: no aplica.
+
+PARAMETROS PUBLICADOS
+B = 0.062 S/cm
+pc = 0.28 wt.%
+t = 1.3
+RMSE log10 = 0.071559346
+
+REPRODUCCION INDEPENDIENTE
+B = 0.056675444 S/cm
+pc = 0.25100501 wt.%
+t = 1.4730961
+N puntos ajustados = 6
+RMSE log10 = 0.044998278
+R2 log10 = 0.99469932
+
+LIMITACIONES
+- Solo hay siete puntos para Nanocyl.
+- El punto de 0.25 wt.% queda por debajo de ambos umbrales y no entra en la ley de potencia conductora.
+- No se definieron errores experimentales ni pesos por punto.
+- La estimacion depende del espacio objetivo logaritmico y del intervalo permitido para pc.
+- Los parametros publicados son un benchmark documental, no una restriccion del ajuste independiente.
+- Ningun resultado queda promovido a modelo final en esta fase.

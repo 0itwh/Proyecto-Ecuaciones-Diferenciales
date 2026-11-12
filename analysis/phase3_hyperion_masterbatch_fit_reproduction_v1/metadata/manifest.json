@@ -1,0 +1,31 @@
+{
+  "release": "phase3-hyperion-masterbatch-fit-reproduction-v1",
+  "generated_at": "2026-11-11T20:39:59-05:00",
+  "source_package": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\analysis\\phase3_exploratory_l254_v2_2",
+  "source_dataset_sha256": "3df41a6e3b9614a7eaa264617188a9239886e1be7f5fbd9bdc6d104c8fba2677",
+  "source_manifest_sha256": "8616d64743c2f944539f7f06447b29bb4ee04ee8e35288092b195b5cb79c7cba",
+  "variant_id": "l254-mwcnt-v3-ar55",
+  "commercial_name": "Hyperion Masterbatch (15 wt.%)",
+  "model": "sigma = B*(p-pc)^t for p>pc",
+  "composition_basis": "wt_percent",
+  "objective": "least_squares_log10_conductivity",
+  "pc_profile_grid_size": 50001,
+  "random_seed": null,
+  "published_reference": {
+    "B_s_per_cm": 0.014,
+    "pc_wt_percent": 0.5,
+    "t": 1.7
+  },
+  "reproduced_parameters": {
+    "B_s_per_cm": 0.00046913978565922456,
+    "pc_wt_percent": 0.37500001,
+    "t": 4.847550154884692
+  },
+  "missing_points_unimputed": [
+    "l254-s20-castillo-2011 (0.75 wt.%)",
+    "l254-s21-castillo-2011 (1.00 wt.%)"
+  ],
+  "eligibility_status_for_phase4": "restricted_underdetermined_3_conducting_points",
+  "final_model": false,
+  "quality_passed": true
+}

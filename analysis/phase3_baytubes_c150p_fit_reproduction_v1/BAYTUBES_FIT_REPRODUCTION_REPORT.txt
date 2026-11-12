@@ -1,0 +1,36 @@
+FASE 3 - REPRODUCCION DEL AJUSTE DE BAYTUBES C150P
+
+Generado: 2026-11-11T20:38:46-05:00
+Estado: reproduccion exploratoria condicional (4 puntos conductores); no es un modelo final.
+
+METODO
+- Modelo: sigma = B * (p - pc)^t para p > pc.
+- Variable de composicion: porcentaje en masa.
+- Objetivo: minimo RMSE en log10(conductividad).
+- pc: perfil determinista denso entre 0.50000001 y 0.62499999 wt.%.
+- Sensibilidad: leave-one-out sobre los cinco puntos observados.
+
+PARAMETROS PUBLICADOS
+B = 0.0085 S/cm
+pc = 0.61 wt.%
+t = 2
+RMSE log10 = 0.18132272
+R2 log10 = 0.98699378
+
+REPRODUCCION INDEPENDIENTE
+B = 0.0081868498 S/cm
+pc = 0.5928925 wt.%
+t = 2.3358485
+N puntos ajustados = 4
+RMSE log10 = 0.10715566
+R2 log10 = 0.99545769
+
+EVALUACION DE DATOS FALTANTES (s26 = 0.875 wt.%, s28 = 1.25 wt.%) SIN IMPUTACION
+- Las muestras s26 y s28 carecen de medicion electrica y NO fueron imputadas.
+- En 0.875 wt.%: prediccion publicada = 0.000596913 S/cm | reproducida = 0.00042596 S/cm.
+- En 1.25 wt.%: prediccion publicada = 0.0034816 S/cm | reproducida = 0.00307003 S/cm.
+
+LIMITACIONES
+- Hay cinco puntos completos (uno preumbral en 0.50 wt.% y cuatro conductores).
+- Con N=4 puntos conductores y 3 parametros estimados solo queda 1 grado de libertad en el ajuste completo y 0 grados de libertad al retirar un punto conductor en leave-one-out.
+- Ningun resultado queda promovido a modelo final en esta fase.

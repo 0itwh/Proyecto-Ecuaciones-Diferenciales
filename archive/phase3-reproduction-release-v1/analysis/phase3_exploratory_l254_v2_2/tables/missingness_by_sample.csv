@@ -1,0 +1,9 @@
+﻿sample_id,filler_variant_id,commercial_name,missing_fields,exploratory_consequence
+l254-s1-castillo-2011,,,mass_fraction|volume_fraction,exclude_only_from_analysis_requiring_missing_field
+l254-s12-castillo-2011,l254-mwcnt-v2-ar94,SWeNT SMW-100,electrical_conductivity,exclude_only_from_analysis_requiring_missing_field
+l254-s20-castillo-2011,l254-mwcnt-v3-ar55,Hyperion Masterbatch (15 wt.%),electrical_conductivity,exclude_only_from_analysis_requiring_missing_field
+l254-s21-castillo-2011,l254-mwcnt-v3-ar55,Hyperion Masterbatch (15 wt.%),electrical_conductivity,exclude_only_from_analysis_requiring_missing_field
+l254-s26-castillo-2011,l254-mwcnt-v4-ar73,Baytubes C150P,electrical_conductivity,exclude_only_from_analysis_requiring_missing_field
+l254-s28-castillo-2011,l254-mwcnt-v4-ar73,Baytubes C150P,electrical_conductivity,exclude_only_from_analysis_requiring_missing_field
+l254-s30-castillo-2011,l254-mwcnt-v5-ar69,Continental Carbon MWNT,electrical_conductivity,exclude_only_from_analysis_requiring_missing_field
+l254-s31-castillo-2011,l254-mwcnt-v5-ar69,Continental Carbon MWNT,electrical_conductivity,exclude_only_from_analysis_requiring_missing_field

@@ -1,0 +1,22 @@
+PHASE 4 - PHYSICS-CONSTRAINED PERCOLATION & STRUCTURE-PROPERTY MODELING REPORT
+
+Generated: 2026-11-12T00:22:50-05:00
+Release: phase4-castillo-enriched-modeling-v1
+
+1. RESOLUTION OF PHASE 3 INFERRED ITEMS VIA CASTILLO ET AL. (2011) PDF & ERROR PROFILES
+- Point 2 (Continental Carbon & s1 control): Figure 2 of Castillo et al. (page 30) visually plots pure PC at 0.0 wt.% (~2.52e-19 S/cm, confirming s1) and an unfilled insulating square for Continental Carbon at 0.375 wt.% (~4e-17 S/cm, confirming s31 is below pc). The 5% RMSE profile tolerance band in (0.375, 0.50 wt.%) bounds pc to [0.4881, 0.4935] wt.%, enclosing the published 0.49 wt.% benchmark.
+- Homogeneous Volume Fraction Policy (Table 2 footnote, page 13): Using the authors' embedded MWCNT density (1.75 g/cm3) and PC density (1.20 g/cm3) resolves the 37x-96x distortion caused by bulk powder densities in NanoMine.
+- Point 4 (Hyperion regularization & Aspect Ratio Scaling): Enforcing the physical 3D percolation exponent bound (1.3 <= t <= 2.3) shifts Hyperion's threshold from the artificial 0.3750 wt.% boundary to pc = 0.4952 wt.% (matching the published 0.50 wt.% within 0.96%).
+
+2. CANDIDATE EQUATION REGISTRY SUMMARY (10 EQUATIONS)
+equation_id                                           family_or_scope                                                symbolic_expression  rmse_metric  r2_metric                                                   decision_status
+  EQ-N3-001                     l254_series_specific_mass_percolation                              sigma(p) = B * (p - pc)^t  for p > pc     0.106300   0.992100        accepted_for_4_identifiable_series_restricted_for_Hyperion
+  EQ-N3-002                   l254_piecewise_additive_matrix_baseline                          sigma(p) = sigma_m + B * max(0, p - pc)^t     0.106300   0.992100             accepted_piecewise_formulation_Master_Prompt_Sec_11_3
+  EQ-N3-003         l254_homogeneous_volume_percolation_unconstrained          sigma(phi) = A_vol * (phi - phi_c)^t_vol  for phi > phi_c     0.106200   0.992100            accepted_for_4_series_requires_constraint_for_Hyperion
+  EQ-N3-004 l254_physics_constrained_percolation_Hyperion_regularized              sigma(p) = B * (p - pc)^t  subject to 1.3 <= t <= 2.3     1.010700   0.892000             accepted_physics_constrained_regularization_benchmark
+  EQ-N3-005               l254_excluded_volume_zero_intercept_scaling                                        pc(alpha) = 36.4649 / alpha     0.058167   0.809324                      accepted_parsimonious_structure_property_law
+  EQ-N3-006                  l254_inverse_aspect_ratio_linear_scaling                         pc(alpha) = 43.8386 * (1 / alpha) - 0.0902     0.054226   0.834285                    accepted_empirical_interpolation_within_domain
+  EQ-N3-007   l254_continuum_percolation_theory_scaling_Castillo_Fig3    pc_exp = 0.3136 * pc_theory + 0.1115  where phi_p = 1/(2*alpha)     0.029995   0.903774                accepted_theoretical_bridge_equation_Castillo_Fig3
+  EQ-N3-008             l254_global_master_curve_excess_concentration             log10(sigma) = -1.7715 + 2.2604 * log10(p - pc(alpha))     0.558780   0.872286         retained_as_global_baseline_inferior_to_series_specific_B
+  EQ-N3-009           l254_rubbery_network_modulus_180C_Castillo_Fig6                           E'_180C(alpha) = 0.3333 * alpha - 7.4578     0.929568   0.988427                    accepted_cross_property_mechanical_network_law
+  EQ-N3-010                    l254_sindy_dynamic_evolution_exclusion dq/dt = k_f*(1 - q) - k_d*q  [EXCLUDED: static composition corpus]          NaN        NaN formally_excluded_by_protocol_static_symbolic_regression_selected

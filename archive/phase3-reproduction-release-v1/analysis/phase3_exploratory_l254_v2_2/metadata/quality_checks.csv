@@ -1,0 +1,15 @@
+﻿check_id,passed,observed,expected,description
+Q001,True,36,36,36 samples
+Q002,True,29,29,29 electrical measurements
+Q003,True,5,5,five independent curves
+Q004,True,28,28,28 complete mass-conductivity pairs
+Q005,True,checked,True,positive conductivities
+Q006,True,"[7, 6, 5, 5, 5]","[7, 6, 5, 5, 5]",expected curve coverage
+Q007,True,checked,True,no final-model release
+Q008,True,checked,True,commercial identities documented
+Q009,True,29,29,all 29 electrical measurements carry the validated frequency status
+Q009B,True,7,7,all 7 samples without conductivity are labeled no_electrical_measurement
+Q009C,True,7,7,exactly seven samples lack electrical conductivity
+Q010,True,checked,True,1 Hz labeled as DMA only
+Q011,True,checked,True,cross-variant volume comparison blocked
+Q012,True,checked,True,historical ambiguous frequency column removed

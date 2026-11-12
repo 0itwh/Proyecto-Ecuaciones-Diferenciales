@@ -1,0 +1,13 @@
+﻿fit_type,sample_id,mass_percent,observed_sigma_s_per_cm,predicted_sigma_s_per_cm,residual_log10,included_in_fit_regime
+published_reference,l254-s9-castillo-2011,0.25,1.95e-17,,not_applicable_at_or_below_pc,False
+published_reference,l254-s10-castillo-2011,0.375,1.07897e-05,1.660499999999999e-05,-0.18722951033544533,True
+published_reference,l254-s11-castillo-2011,0.5,0.00021194,0.00023697999999999997,-0.04849876514083418,True
+published_reference,l254-s13-castillo-2011,0.75,0.000902277,0.00144648,-0.20497254629882988,True
+published_reference,l254-s14-castillo-2011,1.0,0.00489013,0.0036809799999999995,0.12335694684585663,True
+published_reference,l254-s15-castillo-2011,3.0,0.05926735,0.058456980000000006,0.005979134105126516,True
+independent_profile_log_fit,l254-s9-castillo-2011,0.25,1.95e-17,,not_applicable_at_or_below_pc,False
+independent_profile_log_fit,l254-s10-castillo-2011,0.375,1.07897e-05,1.0842028332572544e-05,-0.0021011682528149223,True
+independent_profile_log_fit,l254-s11-castillo-2011,0.5,0.00021194,0.00019442222890743319,0.03746701231073857,True
+independent_profile_log_fit,l254-s13-castillo-2011,0.75,0.000902277,0.001308853261051406,-0.16155107251355716,True
+independent_profile_log_fit,l254-s14-castillo-2011,1.0,0.00489013,0.0034803925883185147,0.14769216949962027,True
+independent_profile_log_fit,l254-s15-castillo-2011,3.0,0.05926735,0.06227624955104162,-0.021506941043989425,True

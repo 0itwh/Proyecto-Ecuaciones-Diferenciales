@@ -1,0 +1,16 @@
+﻿check_id,passed,observed,expected,description
+Q001,True,6,6,six complete SWeNT SMW-100 points
+Q002,True,checked,True,strictly increasing mass fractions
+Q003,True,checked,True,positive conductivities
+Q004,True,checked,True,validated electrical-frequency status
+Q005,True,checked,True,positive fitted B and t
+Q006,True,0.3333949966568,between 0.25 and 0.375,pc inside observed transition bracket
+Q007,True,5,>=5,at least five points above fitted pc
+Q008,True,0.09978222927392881,finite,finite log-space error
+Q009,True,50001,>1000,dense pc profile evaluated
+Q010,True,6,6,leave-one-out sensitivity completed on six observed points
+Q011,True,True,True,source package manifest available
+Q012,True,checked,True,published parameters retained as external benchmark
+Q013,True,checked,True,no source corpus or exploratory package modified
+Q014,True,checked,True,"fit labeled reproduction, not final model"
+Q015,True,1,1,missing 0.625 wt.% point evaluated without imputation

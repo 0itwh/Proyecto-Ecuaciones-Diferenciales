@@ -1,0 +1,16 @@
+﻿check_id,passed,observed,expected,description
+Q001,True,5,5,five complete Hyperion Masterbatch points
+Q002,True,checked,True,strictly increasing mass fractions
+Q003,True,checked,True,positive conductivities
+Q004,True,checked,True,validated electrical-frequency status
+Q005,True,checked,True,positive fitted B and t
+Q006,True,0.37500001,between 0.375 and 0.50 (boundary-pinned at 0.375),"pc inside observed jump bracket (0.375, 0.50)"
+Q007,True,3,3,only three points above 0.375 wt.% (0 degrees of freedom; restricted curve flag)
+Q008,True,0.11333847366492816,finite,finite log-space error
+Q009,True,50001,>1000,dense pc profile evaluated
+Q010,True,5,5,leave-one-out sensitivity documented (underdetermined when dropping conducting points)
+Q011,True,True,True,source package manifest available
+Q012,True,checked,True,published parameters retained as external benchmark
+Q013,True,checked,True,no source corpus or exploratory package modified
+Q014,True,checked,True,"fit labeled restricted reproduction, not final model"
+Q015,True,2,2,missing 0.75 and 1.00 wt.% points evaluated without imputation

@@ -1,0 +1,19 @@
+FASE 3 - REPRODUCCION RESTRINGIDA DE CONTINENTAL CARBON MWNT
+
+Generado: 2026-11-11T20:41:28-05:00
+Estado: reproduccion restringida (sin linea base preumbral observada); no es un modelo final.
+
+DIAGNOSTICO DE FRONTERA PREUMBRAL
+- Faltan las mediciones electricas en s30 (0.25 wt.%) y s31 (0.375 wt.%); NO fueron imputadas.
+- Los cinco puntos medidos (0.50 a 3.00 wt.%) ya presentan conductividades >= 1.93e-7 S/cm (rango dinamico observado de 5.35 decadas).
+- Al evaluar pc en el intervalo (0.375, 0.50 wt.%) —donde los 5 puntos observados son conductores, tal como ocurre con el pc publicado de 0.49 wt.%—, aparece un minimo interior en pc = 0.491122 wt.% (a solo 0.23 % del valor publicado de 0.49 wt.%), reduciendo el RMSE log10 de 0.602772 a 0.166344.
+- Si en cambio se restringe pc al intervalo observado (0.50, 0.625 wt.%) con N=4 puntos, pc colapsa al borde inferior de 0.500000 wt.% con RMSE log10 = 0.189097.
+
+PARAMETROS PUBLICADOS (N=5)
+B = 0.009 S/cm | pc = 0.49 wt.% | t = 1.8 | RMSE log10 = 0.60277215
+
+REPRODUCCION EN INTERVALO (0.375, 0.50 wt.%, N=5)
+B = 0.005864362 S/cm | pc = 0.49112249 wt.% | t = 2.1836479 | RMSE log10 = 0.16634354
+
+REPRODUCCION EN INTERVALO (0.50, 0.625 wt.%, N=4)
+B = 0.0060390886 S/cm | pc = 0.50000001 wt.% | t = 2.1341804 | RMSE log10 = 0.18909702

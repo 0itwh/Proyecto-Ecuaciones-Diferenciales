@@ -1,0 +1,26 @@
+{
+  "release": "phase3-nanocyl-nc7000-fit-reproduction-v1",
+  "generated_at": "2026-11-04T23:09:41-05:00",
+  "source_package": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\analysis\\phase3_exploratory_l254_v2_2",
+  "source_dataset_sha256": "3df41a6e3b9614a7eaa264617188a9239886e1be7f5fbd9bdc6d104c8fba2677",
+  "source_manifest_sha256": "8616d64743c2f944539f7f06447b29bb4ee04ee8e35288092b195b5cb79c7cba",
+  "variant_id": "l254-mwcnt-v1-ar134",
+  "commercial_name": "Nanocyl NC7000",
+  "model": "sigma = B*(p-pc)^t for p>pc",
+  "composition_basis": "wt_percent",
+  "objective": "least_squares_log10_conductivity",
+  "pc_profile_grid_size": 50001,
+  "random_seed": null,
+  "published_reference": {
+    "B_s_per_cm": 0.062,
+    "pc_wt_percent": 0.28,
+    "t": 1.3
+  },
+  "reproduced_parameters": {
+    "B_s_per_cm": 0.0566754438597548,
+    "pc_wt_percent": 0.2510050098392,
+    "t": 1.4730960992172328
+  },
+  "final_model": false,
+  "quality_passed": true
+}

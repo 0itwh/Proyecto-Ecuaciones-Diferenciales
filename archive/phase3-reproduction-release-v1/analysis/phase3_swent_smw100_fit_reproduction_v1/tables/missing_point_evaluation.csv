@@ -1,0 +1,2 @@
+﻿sample_id,mass_percent,observed_sigma_s_per_cm,electrical_frequency_status,imputation_applied,published_model_prediction_s_per_cm,reproduced_model_prediction_s_per_cm,log10_difference_pub_vs_rep,flanking_observed_points_wt_percent,policy_status
+l254-s12-castillo-2011,0.625,,no_electrical_measurement,False,0.000713605,0.0006230865105607977,0.058909535191562945,0.50 and 0.75,evaluated_analytically_not_imputed_into_corpus_or_fit

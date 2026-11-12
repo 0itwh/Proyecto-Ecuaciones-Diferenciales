@@ -1,0 +1,28 @@
+{
+  "release": "phase3-joint-percolation-comparison-v1",
+  "generated_at": "2026-11-11T20:43:15-05:00",
+  "source_packages": {
+    "l254-mwcnt-v1-ar134": {
+      "package": "analysis/phase3_nanocyl_nc7000_fit_reproduction_v1",
+      "manifest_sha256": "1d918fcfe920b32cd9b7d11297bbde706a713a5eadf4c001cee5b7713c890b08"
+    },
+    "l254-mwcnt-v2-ar94": {
+      "package": "analysis/phase3_swent_smw100_fit_reproduction_v1",
+      "manifest_sha256": "bfe52b5a1c8f2071baf79ebadb8fcb59a6123304b084619b740c907272ff2c99"
+    },
+    "l254-mwcnt-v4-ar73": {
+      "package": "analysis/phase3_baytubes_c150p_fit_reproduction_v1",
+      "manifest_sha256": "7ab48f8c5003691a6078b4be7cb41e3afcfe2222c6fc11f63bbc333e8d3ffc16"
+    },
+    "l254-mwcnt-v3-ar55": {
+      "package": "analysis/phase3_hyperion_masterbatch_fit_reproduction_v1",
+      "manifest_sha256": "12acc852186c4d0effe6c9b1485e5bc6f685df5d69d7c2126d99cd1912bd8e06"
+    },
+    "l254-mwcnt-v5-ar69": {
+      "package": "analysis/phase3_continental_carbon_fit_reproduction_v1",
+      "manifest_sha256": "cdaabad710158b74d07ad4a656526a838cf38fa939aa2459729f8aa69f0692e9"
+    }
+  },
+  "final_model": false,
+  "quality_passed": true
+}

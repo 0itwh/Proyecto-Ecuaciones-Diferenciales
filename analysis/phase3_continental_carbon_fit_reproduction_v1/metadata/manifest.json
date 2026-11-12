@@ -1,0 +1,36 @@
+{
+  "release": "phase3-continental-carbon-fit-reproduction-v1",
+  "generated_at": "2026-11-11T20:41:28-05:00",
+  "source_package": "C:\\Users\\Alexis\\Documents\\ProyectoDiferenciales\\PHASE1_AUDIT_PACKAGE_CORRECTED\\analysis\\phase3_exploratory_l254_v2_2",
+  "source_dataset_sha256": "3df41a6e3b9614a7eaa264617188a9239886e1be7f5fbd9bdc6d104c8fba2677",
+  "source_manifest_sha256": "8616d64743c2f944539f7f06447b29bb4ee04ee8e35288092b195b5cb79c7cba",
+  "variant_id": "l254-mwcnt-v5-ar69",
+  "commercial_name": "Continental Carbon MWNT",
+  "model": "sigma = B*(p-pc)^t for p>pc",
+  "composition_basis": "wt_percent",
+  "objective": "least_squares_log10_conductivity",
+  "pc_profile_grid_size": 50001,
+  "random_seed": null,
+  "published_reference": {
+    "B_s_per_cm": 0.009,
+    "pc_wt_percent": 0.49,
+    "t": 1.8
+  },
+  "reproduced_parameters_pre_050_bracket": {
+    "B_s_per_cm": 0.005864361952825605,
+    "pc_wt_percent": 0.4911224914204,
+    "t": 2.183647935444571
+  },
+  "reproduced_parameters_in_sample_bracket": {
+    "B_s_per_cm": 0.006039088562929294,
+    "pc_wt_percent": 0.50000001,
+    "t": 2.1341804283584787
+  },
+  "missing_points_unimputed": [
+    "l254-s30-castillo-2011 (0.25 wt.%)",
+    "l254-s31-castillo-2011 (0.375 wt.%)"
+  ],
+  "eligibility_status_for_phase4": "conditional_restricted_no_observed_prethreshold_baseline",
+  "final_model": false,
+  "quality_passed": true
+}

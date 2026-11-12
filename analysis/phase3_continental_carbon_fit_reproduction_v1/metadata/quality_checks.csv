@@ -1,0 +1,16 @@
+﻿check_id,passed,observed,expected,description
+Q001,True,5,5,five complete Continental Carbon points
+Q002,True,checked,True,strictly increasing mass fractions
+Q003,True,checked,True,positive conductivities
+Q004,True,checked,True,validated electrical-frequency status
+Q005,True,checked,True,positive fitted B and t
+Q006,True,0.4911224914204,between 0.375 and 0.50,interior pc in pre-0.50 bracket matching published 0.49 wt.%
+Q007,True,5,5,"five conducting points in (0.375, 0.50) regime; no observed insulating baseline"
+Q008,True,0.16634354153941458,finite,finite log-space error
+Q009,True,100002,>2000,dense dual-bracket pc profile evaluated
+Q010,True,5,5,leave-one-out sensitivity completed
+Q011,True,True,True,source package manifest available
+Q012,True,checked,True,published parameters retained as external benchmark
+Q013,True,checked,True,no source corpus or exploratory package modified
+Q014,True,checked,True,"fit labeled restricted reproduction, not final model"
+Q015,True,2,2,missing 0.25 and 0.375 wt.% points documented without imputation

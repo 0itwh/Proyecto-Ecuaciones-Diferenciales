@@ -1,0 +1,41 @@
+FASE 3 - REPRODUCCION DEL AJUSTE DE SWENT SMW-100
+
+Generado: 2026-11-11T20:24:13-05:00
+Estado: reproduccion exploratoria; no es un modelo final.
+
+METODO
+- Modelo: sigma = B * (p - pc)^t para p > pc.
+- Variable de composicion: porcentaje en masa.
+- Objetivo: minimo RMSE en log10(conductividad).
+- pc: perfil determinista denso entre 0.25000001 y 0.37499999 wt.%.
+- Para cada pc se estiman log10(B) y t por regresion lineal en espacio logaritmico.
+- Sensibilidad: leave-one-out sobre los seis puntos observados.
+- Semilla aleatoria: no aplica.
+
+PARAMETROS PUBLICADOS
+B = 0.0082 S/cm
+pc = 0.33 wt.%
+t = 2
+RMSE log10 = 0.13760338
+R2 log10 = 0.98806602
+
+REPRODUCCION INDEPENDIENTE
+B = 0.0080925064 S/cm
+pc = 0.333395 wt.%
+t = 2.0805759
+N puntos ajustados = 5
+RMSE log10 = 0.099782229
+R2 log10 = 0.99372471
+
+EVALUACION DEL DATO FALTANTE (l254-s12-castillo-2011, 0.625 wt.%) SIN IMPUTACION
+- La muestra s12 (0.625 wt.%) carece de medicion electrica en el corpus y NO fue imputada.
+- Prediccion con parametros publicados en 0.625 wt.%: 0.000713605 S/cm
+- Prediccion con ajuste reproducido en 0.625 wt.%: 0.00062308651 S/cm
+- Diferencia absoluta en log10 entre ambas curvas en 0.625 wt.%: 0.058910 decadas.
+
+LIMITACIONES
+- Hay seis puntos completos para SWeNT SMW-100 y un faltante intermedio en 0.625 wt.% no imputado.
+- El punto de 0.25 wt.% queda por debajo de ambos umbrales y delimita el limite inferior de la transicion.
+- No se definieron errores experimentales ni pesos por punto.
+- Los parametros publicados son un benchmark documental, no una restriccion del ajuste independiente.
+- Ningun resultado queda promovido a modelo final en esta fase.
