@@ -1,0 +1,14 @@
+﻿audit_layer,item_id,summary,verdict
+corpus_gate,l172-corpus-v1,"18 samples, 235 pts — unverified electrical units & conditions",QUARANTINED
+corpus_gate,Raw NanoMine phi,Dry bulk density (66-170 kg/m3) distorts phi by 37.5x-96.5x,BLOCKED
+corpus_gate,7 Missing Samples,"s12, s20, s21, s26, s28, s30, s31 — zero-imputation rule (Sec. 5.3)",UNIMPUTED
+corpus_gate,l254-castillo-2011,"36 samples, 5 MWCNT grades, 28 complete pairs, SHA-256 frozen",PASSED
+equation_gate,EQ-N3-002,RMSE=0.111 dec (-90.8% vs lin.); s1 anchored,SELECTED
+equation_gate,EQ-N3-003,Table 2 rho_f=1.75 g/cm^3; RMSE=0.106,SELECTED
+equation_gate,EQ-N3-004,Hyperion N_{mathrm{fit}}=3: p_c=0.495 wt.% (-96.2% err),ACCEPTED
+equation_gate,EQ-N3-005,LOSO RMSE=0.0840 wt.% (-16.2%); p_cto 0^+,SELECTED
+equation_gate,EQ-N3-007,Continuum (R^2=0.904); excl. Baytubes,ACCEPTED
+equation_gate,EQ-N3-009,"DMA >T_g (1 Hz): R^2=0.988, LOSO=3.17",ACCEPTED
+equation_gate,EQ-N3-006,Fails Gate (3): p_c<0 for alpha>486; LOSO=0.100,INTERP. ONLY
+equation_gate,EQ-N3-008,5.0x higher RMSE (0.559 vs 0.111); shared B,BASELINE
+equation_gate,EQ-N3-010,Blocked Gate (4): fixed t_{mathrm{mix}}=5 min,EXCLUDED
